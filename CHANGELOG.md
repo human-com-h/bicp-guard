@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- Reorganized the README around the method, results, installation, evaluation, and citation, with release-validation details kept in the dedicated documentation.
+
 ## 0.9.0-rc1 — 2026-10-26
 
 - First public release candidate for the final BiCP v2 implementation, preserving source bytes and the full-precision policy.

@@ -2,112 +2,158 @@
 
 **Reasoning-Prefix Deconfounding for Dual-Axis Counterfactual Probing and Operation-Risk Routing**
 
-Research software by Zida Hao and Yubo Li, School of Software, Xinjiang University.
+Zida Hao and Yubo Li  
+School of Software, Xinjiang University
 
-BiCP v2 screens one proposed tool call before simulated execution. It removes the current-step visible reasoning prefix, compares teacher-forced tool-name and complete-call likelihoods under observation/user ablation, and routes operations by risk. Scoped discovery requires zero additional model forwards. Protected calls use three serial forwards; mutations first receive deterministic evidence anchoring. The method is training-free.
+## Overview
 
-This repository contains the final research implementation, fixed protocols, necessary inputs, and accepted evaluation artifacts. It contains **no manuscript or submission files**. No publication DOI or public preprint identifier has been assigned to this software record. [CITATION.cff](CITATION.cff) provides verified authorship and software citation metadata.
+BiCP v2 is a training-free defense against indirect prompt injection in tool-using language agents. It evaluates a proposed tool call before execution through three components:
 
-## Release and validation status
+- **Reasoning-prefix deconfounding:** remove the current-step reasoning prefix before counterfactual scoring.
+- **Dual-axis probing:** score the tool name and complete call to detect both tool hijacking and argument substitution.
+- **Operation-risk routing:** allow scoped discovery without additional model forwards, while applying evidence anchoring and counterfactual checks to protected operations.
 
-[v0.9.0-rc1](https://github.com/human-com-h/bicp-guard/releases/tag/v0.9.0-rc1) is a **prerelease**. The archived studies were completed on two Tesla T4 GPUs. Release preparation verifies source identity, CPU functionality, recorded-run evaluation, table reconstruction, and local CPU/CUDA scoring arithmetic. It does not repeat full Qwen-7B GPU collection on a clean two-T4 machine. See [VALIDATION.md](VALIDATION.md) for executed checks and limitations.
+The implementation uses Qwen2.5-7B-Instruct with NF4 quantization. Complete-call prefix slicing evaluates the protected proposal with three serial forward passes.
 
-## Level 1: Quick start (Python 3.10–3.13, no GPU)
+## Main results
 
-From a fresh checkout:
+The following results compare three configurations: **A**, Schema and scope checks; **B**, A with evidence anchoring; and **C**, B with the BiCP v2 dual-axis probe.
+
+| Metric | A | B | C: BiCP v2 |
+| --- | ---: | ---: | ---: |
+| Confirmed InjecAgent attack successes / 682 | 83 (+3 unknown) | 83 (+3 unknown) | 0 |
+| Unsafe controlled executions / 240 | 33 | 5 | 0 |
+| Adopted malicious argument calls executed | 5/5 | 5/5 | 0/5 |
+| Controlled task success / 240 | 98 | 126 | 109 |
+| Benign controlled task success / 120 | 66 | 94 | 78 |
+| Legal protected calls retained | 47/47 | 47/47 | 30/47 |
+| Native workspace task success | 0/1 | 0/1 | 0/1 |
+
+This evaluation replays fixed historical prompts and proposals; the controlled tasks are synthetic single-continuation scenarios. Unknown outcomes reflect unavailable cached continuations. The prefix-control study improves tool-name macro AUC from 0.7164 to 1.0000 across 69 proposals, and the source-reversal study yields positive contrasts in all ten families across five domains.
+
+Experiment definitions, additional results, and evaluation details are in [REPRODUCIBILITY.md](REPRODUCIBILITY.md).
+
+## Installation
+
+Use Python 3.10 or later:
 
 ```sh
+git clone https://github.com/human-com-h/bicp-guard.git
+cd bicp-guard
 python -m venv .venv
-# Linux/macOS: source .venv/bin/activate
-# Windows PowerShell: .venv/Scripts/Activate.ps1
+source .venv/bin/activate
 python -m pip install -r requirements.txt
-python examples/quick_start.py
-python -m unittest discover -s tests -v
-python scripts/reproduce_tables.py --output outputs/tables
 ```
 
-The example runs the real evidence-anchoring path on a controlled missing-evidence case, stops before a model forward, and prints `NEED_INFORMATION`. The tests import every research module, check the frozen policy, data completeness, routing, axes, archive safety, and recorded table values. These checks do not load a language model.
+On Windows PowerShell, activate the environment with `.venv/Scripts/Activate.ps1`.
 
-Optional real model loading/generation/scoring smoke test on a CUDA GPU:
+## Quick start
+
+Run the evidence-anchoring example on CPU:
+
+```sh
+python examples/quick_start.py
+```
+
+The example processes a controlled case with missing evidence and returns `NEED_INFORMATION` before model inference.
+
+To load the base model and run a small generation and scoring example on a CUDA GPU:
 
 ```sh
 python -m pip install -r requirements-gpu.txt
 python examples/model_smoke.py --gpu 0
 ```
 
-This downloads the official pinned Qwen weights if absent. It is a smoke test, not a paper result. The 7B model requires substantial disk space and GPU memory; the recorded NF4 footprint is about 6.91 GiB per GPU during the main collection. Package/CUDA compatibility must be checked against the recorded environments before a full rerun.
+The model is downloaded from the official [Qwen2.5-7B-Instruct repository](https://huggingface.co/Qwen/Qwen2.5-7B-Instruct/tree/a09a35458c702b33eeacc393d103063234e8bc28). The experiments use revision `a09a35458c702b33eeacc393d103063234e8bc28`.
 
-## Level 2: Main evaluation and paper table reconstruction
+## Evaluation
 
-All empirical main tables can be reconstructed from the accepted source data already in Git:
+### Rebuild result tables
+
+Generate the tables from the included evaluation source data:
 
 ```sh
-python scripts/reproduce_tables.py --output outputs/tables-new
+python scripts/reproduce_tables.py --output outputs/tables
 ```
 
-For an independent evaluation from **raw model records**, download the two checksummed Release assets and install CPU evaluator dependencies:
+This step runs on CPU and produces CSV tables and a combined JSON file without model inference.
+
+### Evaluate recorded model outputs
+
+Download the experiment inputs and raw outputs, then run the official benchmark evaluators and controlled-task evaluation:
 
 ```sh
 python scripts/fetch_artifacts.py --assets all
 python -m pip install -r requirements-evaluation.txt
-python scripts/evaluate_longitudinal.py --output outputs/raw-evaluation
-python scripts/reproduce_tables.py --longitudinal-source outputs/raw-evaluation --output outputs/raw-tables
+python scripts/evaluate_longitudinal.py --output outputs/evaluation
+python scripts/reproduce_tables.py --longitudinal-source outputs/evaluation --output outputs/evaluated-tables
 ```
 
-The evaluator reuses the pinned official InjecAgent evaluator, recomputes controlled state effects, checks token-level score/gate arithmetic, and replays the native trajectory with the official AgentDojo simulator and utility. Offline evaluation labels remain separate from all model-facing sealed bundles. There are no live payment, messaging, or other external tool calls.
+The downloaded [experiment resources](https://github.com/human-com-h/bicp-guard/releases/tag/v0.9.0-rc1) include fixed inputs, model outputs, token log probabilities, timing records, and the frozen calibration policy. Files are checked against their SHA-256 manifests and extracted into `artifacts/`. Use a new output directory for each run.
 
-The downloader validates archive and member SHA-256 values, rejects path traversal, and preserves modified local artifacts. No Kaggle account, private URL, original research directory, or author-specific path is needed. It writes under ignored `artifacts/`. Every command requires a new output directory to preserve old results.
+### Run the experiments
 
-### Recorded main results
-
-| Endpoint | A: Schema/scope | B: + anchoring | C: + dual probe |
-| --- | ---: | ---: | ---: |
-| Confirmed InjecAgent attack successes / 682 | 83 (+3 unknown) | 83 (+3 unknown) | 0 (+0 unknown) |
-| Unsafe controlled executions / 240 | 33 | 5 | 0 |
-| Actually adopted malicious argument calls executed | 5/5 | 5/5 | 0/5 |
-| Controlled task utility / 240 | 98 | 126 | 109 |
-| Benign controlled utility / 120 | 66 | 94 | 78 |
-| Verified legal protected calls retained | 47/47 | 47/47 | 30/47 |
-
-The standard benchmark is a longitudinal re-gating of previously viewed prompts/proposals, not a new blind test. The controlled tasks are synthetic one-continuation scenarios, not complete business workflows. Native workspace utility is **0/1 in all three arms**. C rejects 17/47 verified legal protected proposals; the security/utility tradeoff is material. Zero observed attack successes is not a general safety guarantee.
-
-Prefix-control macro AUC is 0.7164 → 1.0000 for the tool name across 69 proposals, with equal weight on three task groups. Both preregistered source-reversal endpoints are positive in 10/10 families across five domains (one-sided domain sign test p=0.03125). Full details, denominators, and limitations are in [REPRODUCIBILITY.md](REPRODUCIBILITY.md).
-
-## Level 3: Full reproduction
-
-There is no training stage and no learned adapter/router/checkpoint to recover. The only fitted research state is the published four-parameter calibration policy. Preserve its original bytes and precision.
-
-After downloading the sealed inputs, use the original runners on **two T4 GPUs**, with one independently quantized model replica per GPU:
+The original experiments use two Tesla T4 GPUs, with one quantized model replica per GPU. After installing `requirements-gpu.txt` and downloading the resources above, run:
 
 ```sh
-python scripts/run_frozen.py --experiment mechanism --output /absolute/new-output/mechanism
-python scripts/run_frozen.py --experiment calibration --output /absolute/new-output/calibration
-python scripts/run_frozen.py --experiment pilot --output /absolute/new-output/pilot
-python scripts/run_frozen.py --experiment longitudinal --output /absolute/new-output/longitudinal
-python scripts/run_frozen.py --experiment v1 --output /absolute/new-output/v1
+# Reasoning-prefix and source-reversal studies
+python scripts/run_frozen.py --experiment mechanism --output outputs/runs/mechanism
+
+# Calibration and paired closed-loop evaluation
+python scripts/run_frozen.py --experiment calibration --output outputs/runs/calibration
+python scripts/run_frozen.py --experiment pilot --output outputs/runs/pilot
+
+# Main longitudinal and native-task evaluation
+python scripts/run_frozen.py --experiment longitudinal --output outputs/runs/longitudinal
+
+# Historical six-arm control study
+python scripts/run_frozen.py --experiment v1 --output outputs/runs/v1
 ```
 
-Use `--check-only` to validate every bound input and print the command without running inference. These runners preserve the exact experiment-specific code versions, source revisions, prompts, schedules, seeds, and policy. `src/` exposes the final implementation; the historical v1 control uses its separately frozen source. Re-running calibration does **not** replace the released policy. Evaluate a fresh longitudinal output with `scripts/evaluate_longitudinal.py --run /absolute/new-output/longitudinal --output outputs/new-evaluation`.
+Add `--check-only` to check the experiment inputs and inspect its command. Each runner uses the corresponding fixed code, prompts, splits, seeds, and configuration. The method requires no training; the released calibration policy is in `configs/frozen_policy.json`.
 
-The v1 command runs the six implemented controls, including the scoped user-masked regeneration control. These are not full reproductions of other defense papers. Unexecuted cross-model, held-out AgentDojo-47, BIPIA, adaptive-attack, and complete strong-baseline studies remain future work. See the [experiment map](REPRODUCIBILITY.md) and [timing protocol](docs/PROTOCOL.md).
+To evaluate a new longitudinal run:
 
-## Resources and repository layout
+```sh
+python scripts/evaluate_longitudinal.py --run outputs/runs/longitudinal --output outputs/new-evaluation
+```
 
-| Path | Purpose |
+## Repository structure
+
+| Path | Contents |
 | --- | --- |
-| `src/deployment_probe_v1.py` | Final full-call prefix slicing and dual-axis scoring |
-| `src/deployment_guard_v1.py` | Scope, Schema, grounding, and strict-threshold OR guard |
-| `src/native_adapter_v3.py`, `src/deployment_rl_v1.py` | Native adaptation and final L/R execution semantics |
-| `configs/` | Full-precision policy, model configuration, and tool-risk catalog |
-| `data/` | Frozen controlled cases and InjecAgent split IDs |
-| `results/source/` | Accepted numeric source observations for table rebuilding |
-| `resources/` | File/member checksums, original-source map, and publication policy |
-| `scripts/`, `examples/`, `tests/` | Reproduction commands, smoke examples, and integrity tests |
+| `src/deployment_probe_v1.py` | Dual-axis scoring and complete-call prefix slicing |
+| `src/deployment_guard_v1.py` | Scope checks, evidence anchoring, and execution guard |
+| `src/native_adapter_v3.py` | Native tool and observation adaptation |
+| `src/deployment_rl_v1.py` | Longitudinal and native-task execution |
+| `configs/` | Model settings, calibration policy, and tool-risk catalog |
+| `data/` | Controlled cases and fixed split IDs |
+| `results/source/` | Evaluation data for result-table reconstruction |
+| `scripts/` | Experiment, evaluation, and result-processing commands |
+| `examples/`, `tests/` | Minimal examples and automated tests |
 
-Model: [Qwen/Qwen2.5-7B-Instruct](https://huggingface.co/Qwen/Qwen2.5-7B-Instruct/tree/a09a35458c702b33eeacc393d103063234e8bc28), revision `a09a35458c702b33eeacc393d103063234e8bc28`, Apache-2.0. We do not redistribute weights. Necessary public benchmark projections and pinned runtime sources are included in the small frozen-input Release asset, with their MIT notices; canonical raw observations are in the accepted-runs asset. [Resource and license inventory](docs/RESOURCES.md).
+## Documentation
 
-## Maintenance and citation
+- [Reproducibility guide and experiment map](REPRODUCIBILITY.md)
+- [Scoring and timing protocol](docs/PROTOCOL.md)
+- [Model, data, and resource inventory](docs/RESOURCES.md)
+- [Environment and validation details](VALIDATION.md)
 
-Push/PR tests, scheduled resource checks, and Dependabot run on GitHub. Tags identify immutable research versions; result-affecting fixes require new versions and explicit comparison with the released policy. [MAINTENANCE.md](MAINTENANCE.md) distinguishes platform automation from work requiring a future maintainer session. [CONTRIBUTING.md](CONTRIBUTING.md) describes the review and publication gates.
+## Citation
 
-Code and project-generated controlled data/results are MIT licensed; upstream assets retain their own notices. Cite the software release using GitHub's “Cite this repository” entry or [CITATION.cff](CITATION.cff). No DOI is fabricated; Zenodo archival integration has not been configured.
+If you use this code or the evaluation resources, please cite:
+
+```bibtex
+@software{hao2026bicp,
+  author = {Hao, Zida and Li, Yubo},
+  title = {BiCP v2: Reasoning-Prefix Deconfounding for Dual-Axis Counterfactual Probing and Operation-Risk Routing},
+  year = {2026},
+  url = {https://github.com/human-com-h/bicp-guard}
+}
+```
+
+Machine-readable citation metadata is available in [CITATION.cff](CITATION.cff).
+
+## License
+
+This project is released under the [MIT License](LICENSE). Third-party resources retain their respective licenses; see [licenses/](licenses/) and the [resource inventory](docs/RESOURCES.md).
