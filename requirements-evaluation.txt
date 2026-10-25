@@ -5,4 +5,4 @@ PyYAML==6.0.2
 docstring-parser==0.17.0
 email-validator==2.3.0
 rich==13.9.4
-deepdiff==8.6.1
+deepdiff==9.1.0
