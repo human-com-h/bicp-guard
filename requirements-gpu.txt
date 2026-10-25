@@ -8,7 +8,7 @@ huggingface-hub==0.30.2
 tokenizers==0.21.1
 nltk==3.9.1
 pydantic==2.10.3
-PyYAML==6.0.2
+PyYAML==6.0.3
 docstring-parser==0.17.0
 email-validator==2.3.0
 dnspython==2.9.0
