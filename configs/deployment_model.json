@@ -1,0 +1,34 @@
+{
+  "protocol_version": "bicp-v2-deployment-v1",
+  "model_id": "Qwen/Qwen2.5-7B-Instruct",
+  "model_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+  "injecagent_revision": "f19c9f2c79a41046eb13c03c51a24c567a8ffa07",
+  "bipia_revision": "a004b69ec0dd446e0afd461d98cb5e96e120a5d0",
+  "toolbench_revision": "d56fdd89faf8c91fa135090b212bb9057ee5cfc2",
+  "setting": "base",
+  "prompt_type": "InjecAgent",
+  "seed": 42,
+  "max_input_tokens": 8192,
+  "max_new_tokens": 512,
+  "do_sample": false,
+  "quantization": {
+    "load_in_4bit": true,
+    "bnb_4bit_quant_type": "nf4",
+    "bnb_4bit_use_double_quant": true,
+    "bnb_4bit_compute_dtype": "float16"
+  },
+  "simulation_policy": "official_cache_exact_or_canonical_parameters_only",
+  "actual_external_tool_execution": false,
+  "clean_control_policy": "neutral_replacement_diagnostic_not_task_success",
+  "measurement_boundary_version": "v3-text-prefix-json-object-explicit-eos-secondary",
+  "deployment": {
+    "prefix_level": "without_thought",
+    "observation_policy": "structured_all_objects_preserve_metadata_remove_content_v1",
+    "protected_prompt_budget": 7424,
+    "max_input_tokens": 8192,
+    "score_event_end": "JSON closing brace, no forced LF/EOS",
+    "schema_validation": "registered required fields and top-level types; non-object/nonfinite rejected; production native Schema validator required for richer schemas",
+    "generation_logprob_reuse_default": false,
+    "branch_argmax_online_gate": false
+  }
+}

@@ -1,0 +1,8 @@
+# CPU-only official benchmark simulation/evaluation; no model weights or torch.
+nltk==3.9.1
+pydantic==2.10.3
+PyYAML==6.0.2
+docstring-parser==0.17.0
+email-validator==2.3.0
+rich==13.9.4
+deepdiff==8.6.1

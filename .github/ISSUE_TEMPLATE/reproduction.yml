@@ -1,0 +1,22 @@
+name: Reproduction problem
+description: Report a command, environment, download or result-reconstruction problem.
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Release tag and commit
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: OS, Python, relevant dependencies and GPU (if used)
+    validations:
+      required: true
+  - type: textarea
+    id: command
+    attributes:
+      label: Command and redacted error output
+      description: Do not include credentials, private data, manuscripts or reviewer material.
+    validations:
+      required: true

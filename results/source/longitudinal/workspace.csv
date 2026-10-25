@@ -1,0 +1,4 @@
+﻿scope,unit_id,source,arm,native_utility,events,executed_calls,terminal,final_text,physical_collection_ms
+R,workspace:user_task_27,workspace,A,False,8,8,step_limit,,86795.78650199983
+R,workspace:user_task_27,workspace,B,False,8,8,step_limit,,89813.33710999979
+R,workspace:user_task_27,workspace,C,False,4,3,blocked_or_invalid,NEED_INFORMATION,60863.06824199983

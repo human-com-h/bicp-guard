@@ -1,0 +1,1294 @@
+{
+  "version": "native-tool-risk-layers-v3",
+  "source_revision": "089ed468cf3ed0322acc66b0211f26d9d90dbf60",
+  "benchmark": "v1.2.2",
+  "inventory_sha256": "969682d61ba66552ac0c417280de266564c721c02a6a62e1d4cb1ecd7da86562",
+  "classification_basis": "Official public Schema, return fields, implementation side effects; no model score or oracle labels",
+  "discovery_preconditions": [
+    "trusted application scope",
+    "official native Schema validation",
+    "registered output adapter applied before any observation reaches agent"
+  ],
+  "unknown_tool_policy": "NEED_INFORMATION, no execution; never silently assign discovery",
+  "file_metadata_contract": {
+    "version": "file_metadata_v3",
+    "remove_fields": [
+      "content"
+    ],
+    "preserve": "all objects and all remaining fields, including ID/owner/shared_with; compact JSON",
+    "get_file_by_id_layer": "protected_sensitive_read",
+    "labels_or_oracles_used": false
+  },
+  "suites": {
+    "banking": {
+      "get_balance": {
+        "layer": "protected_sensitive_read",
+        "native_raw_layer": "protected_sensitive_read",
+        "output_contract": "native_return_v1",
+        "rationale": "Private message/file/calendar/account data returned; Schema may be read-only but payload is sensitive.",
+        "schema_sha256": "e5168827e76b5928a9d9e61608bad1f79e779cc459460b6f5b57e56fafdce184",
+        "source_file": "data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/banking_client.py",
+        "implementation_sha256": "26c60bf5bb2fbb25451cdb5c36b7c669717be519a648b387d621476ff007ccfd",
+        "parameter_fields": [],
+        "anchored_fields": [],
+        "synthesizable_text_fields": [],
+        "evaluation_labels_used": false
+      },
+      "get_iban": {
+        "layer": "protected_sensitive_read",
+        "native_raw_layer": "protected_sensitive_read",
+        "output_contract": "native_return_v1",
+        "rationale": "Private message/file/calendar/account data returned; Schema may be read-only but payload is sensitive.",
+        "schema_sha256": "0b21275ec7bbb691bf89adf1d8699069ad02550829d756387691a5ca90ab075a",
+        "source_file": "data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/banking_client.py",
+        "implementation_sha256": "717ad8642960a84e6c096dc322ec7564c3e82af79d33433b7b6ecd3d4336015e",
+        "parameter_fields": [],
+        "anchored_fields": [],
+        "synthesizable_text_fields": [],
+        "evaluation_labels_used": false
+      },
+      "get_most_recent_transactions": {
+        "layer": "protected_sensitive_read",
+        "native_raw_layer": "protected_sensitive_read",
+        "output_contract": "native_return_v1",
+        "rationale": "Private message/file/calendar/account data returned; Schema may be read-only but payload is sensitive.",
+        "schema_sha256": "a83a3dfbe906e1d972be963e44230e39793fa60ec2b7c0416476fe990283db81",
+        "source_file": "data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/banking_client.py",
+        "implementation_sha256": "305e7de5386cbc06dacc40772a62ab6a1c80183154abb3bcd01f48faa783c5c4",
+        "parameter_fields": [
+          "n"
+        ],
+        "anchored_fields": [],
+        "synthesizable_text_fields": [],
+        "evaluation_labels_used": false
+      },
+      "get_scheduled_transactions": {
+        "layer": "protected_sensitive_read",
+        "native_raw_layer": "protected_sensitive_read",
+        "output_contract": "native_return_v1",
+        "rationale": "Private message/file/calendar/account data returned; Schema may be read-only but payload is sensitive.",
+        "schema_sha256": "30a4b849302a8cf2f8bcd4faf592aa7990b5f53c95fb0628d2e5e15906c78963",
+        "source_file": "data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/banking_client.py",
+        "implementation_sha256": "b5ad2611a894595723ba793491d36edf98c9fe24d7922ddce20da9be6b6945cd",
+        "parameter_fields": [],
+        "anchored_fields": [],
+        "synthesizable_text_fields": [],
+        "evaluation_labels_used": false
+      },
+      "get_user_info": {
+        "layer": "protected_sensitive_read",
+        "native_raw_layer": "protected_sensitive_read",
+        "output_contract": "native_return_v1",
+        "rationale": "Return includes account holder name and home address; private account information read.",
+        "schema_sha256": "d89e96239069c62b29a15b2687c893943fe0c20989be8c06ce5fb56eeb0d1a73",
+        "source_file": "data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/user_account.py",
+        "implementation_sha256": "d913e9182453b3fa248888a9cf7801fe3d3d136fc431663e5ae6b05e2f8f424a",
+        "parameter_fields": [],
+        "anchored_fields": [],
+        "synthesizable_text_fields": [],
+        "evaluation_labels_used": false
+      },
+      "read_file": {
+        "layer": "protected_sensitive_read",
+        "native_raw_layer": "protected_sensitive_read",
+        "output_contract": "native_return_v1",
+        "rationale": "Private message/file/calendar/account data returned; Schema may be read-only but payload is sensitive.",
+        "schema_sha256": "59497774dddb9684b55436e56447a0b8b6e8bd5677b31982b186f3857f79f05b",
+        "source_file": "data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/file_reader.py",
+        "implementation_sha256": "ed80c3f0894d516045bdaff071aa63aa8f19c0a99b90f4e0b21a6ebccf82d1a1",
+        "parameter_fields": [
+          "file_path"
+        ],
+        "anchored_fields": [],
+        "synthesizable_text_fields": [],
+        "evaluation_labels_used": false
+      },
+      "schedule_transaction": {
+        "layer": "protected_state_mutation_or_external_communication",
+        "native_raw_layer": "protected_state_mutation_or_external_communication",
+        "output_contract": "native_return_v1",
+        "rationale": "Changes application state, permissions, bookings, funds or communicates externally, per official implementation.",
+        "schema_sha256": "dfd8e5207b173ffc3a9ebf2c71532e9f779140acecd573890b7842f3f9b35be3",
+        "source_file": "data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/banking_client.py",
+        "implementation_sha256": "2a862dfe37bebfc9fefde2ce52cfb0adf471558c164eb9eb68758c380edc5535",
+        "parameter_fields": [
+          "recipient",
+          "amount",
+          "subject",
+          "date",
+          "recurring"
+        ],
+        "anchored_fields": [
+          "recipient",
+          "amount",
+          "date",
+          "recurring"
+        ],
+        "synthesizable_text_fields": [
+          "subject"
+        ],
+        "evaluation_labels_used": false
+      },
+      "send_money": {
+        "layer": "protected_state_mutation_or_external_communication",
+        "native_raw_layer": "protected_state_mutation_or_external_communication",
+        "output_contract": "native_return_v1",
+        "rationale": "Changes application state, permissions, bookings, funds or communicates externally, per official implementation.",
+        "schema_sha256": "e22b1b3d3ea2a7aa238b5e8f97525f45e15928aa9397d98c4bc2c79f09040873",
+        "source_file": "data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/banking_client.py",
+        "implementation_sha256": "1ba43651b85f7703815d81172c3aead5a292cc5454c517e1f518fa2c57125332",
+        "parameter_fields": [
+          "recipient",
+          "amount",
+          "subject",
+          "date"
+        ],
+        "anchored_fields": [
+          "recipient",
+          "amount",
+          "date"
+        ],
+        "synthesizable_text_fields": [
+          "subject"
+        ],
+        "evaluation_labels_used": false
+      },
+      "update_password": {
+        "layer": "protected_state_mutation_or_external_communication",
+        "native_raw_layer": "protected_state_mutation_or_external_communication",
+        "output_contract": "native_return_v1",
+        "rationale": "Changes application state, permissions, bookings, funds or communicates externally, per official implementation.",
+        "schema_sha256": "80c216f2bd436bd64061e6a15a1116dc4bedda78132a85a8d2a12a667c70b9be",
+        "source_file": "data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/user_account.py",
+        "implementation_sha256": "177532629c62cc70a34796436f22c7299393134936560485597592dec258a33d",
+        "parameter_fields": [
+          "password"
+        ],
+        "anchored_fields": [
+          "password"
+        ],
+        "synthesizable_text_fields": [],
+        "evaluation_labels_used": false
+      },
+      "update_scheduled_transaction": {
+        "layer": "protected_state_mutation_or_external_communication",
+        "native_raw_layer": "protected_state_mutation_or_external_communication",
+        "output_contract": "native_return_v1",
+        "rationale": "Changes application state, permissions, bookings, funds or communicates externally, per official implementation.",
+        "schema_sha256": "1e29e63defbffa831922afbeb72894857ef56c4e77e327dcbcb52cbd261348f8",
+        "source_file": "data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/banking_client.py",
+        "implementation_sha256": "bbdecf87dbb85b1ce5bf8f754370f1e5334860dc1cddd63db5defb3ae6055acf",
+        "parameter_fields": [
+          "id",
+          "recipient",
+          "amount",
+          "subject",
+          "date",
+          "recurring"
+        ],
+        "anchored_fields": [
+          "id",
+          "recipient",
+          "amount",
+          "date",
+          "recurring"
+        ],
+        "synthesizable_text_fields": [
+          "subject"
+        ],
+        "evaluation_labels_used": false
+      },
+      "update_user_info": {
+        "layer": "protected_state_mutation_or_external_communication",
+        "native_raw_layer": "protected_state_mutation_or_external_communication",
+        "output_contract": "native_return_v1",
+        "rationale": "Changes application state, permissions, bookings, funds or communicates externally, per official implementation.",
+        "schema_sha256": "9a39762a5856af346e453fa1bb3328841e57c1df69bfa6be5eb284a96ef14bb5",
+        "source_file": "data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/user_account.py",
+        "implementation_sha256": "82a6f13c5bf3cf623de86a46b5086a4b2903f51a6bdb20db0c230b2b6c63a93d",
+        "parameter_fields": [
+          "first_name",
+          "last_name",
+          "street",
+          "city"
+        ],
+        "anchored_fields": [
+          "first_name",
+          "last_name",
+          "street",
+          "city"
+        ],
+        "synthesizable_text_fields": [],
+        "evaluation_labels_used": false
+      }
+    },
+    "slack": {
+      "add_user_to_channel": {
+        "layer": "protected_state_mutation_or_external_communication",
+        "native_raw_layer": "protected_state_mutation_or_external_communication",
+        "output_contract": "native_return_v1",
+        "rationale": "Changes application state, permissions, bookings, funds or communicates externally, per official implementation.",
+        "schema_sha256": "3c2e3e67044625c8875eb85513194aa7de633b7ec19fe24b6157a1d687627927",
+        "source_file": "data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/slack.py",
+        "implementation_sha256": "0dce65cc7a6a16da40e7edcfa9845795156ad2a514750da8e3f9234df40e6517",
+        "parameter_fields": [
+          "user",
+          "channel"
+        ],
+        "anchored_fields": [
+          "user",
+          "channel"
+        ],
+        "synthesizable_text_fields": [],
+        "evaluation_labels_used": false
+      },
+      "get_channels": {
+        "layer": "read_only_discovery",
+        "native_raw_layer": "read_only_discovery",
+        "output_contract": "native_return_v1",
+        "rationale": "Public business catalog/status fields; no account secrets or state mutation.",
+        "schema_sha256": "af53fe99bd6c11f797b10e8fa2e9b8f76ca8f826d37a01624460b31efb766245",
+        "source_file": "data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/slack.py",
+        "implementation_sha256": "f5176752ef433b4f3b2c838cc441d6233a1c50244fdfb330e26c4d7323458ea2",
+        "parameter_fields": [],
+        "anchored_fields": [],
+        "synthesizable_text_fields": [],
+        "evaluation_labels_used": false
+      },
+      "get_users_in_channel": {
+        "layer": "read_only_discovery",
+        "native_raw_layer": "read_only_discovery",
+        "output_contract": "native_return_v1",
+        "rationale": "Public business catalog/status fields; no account secrets or state mutation.",
+        "schema_sha256": "702c235c574259f200180ab5f47c9596166c2fdc2ddbb1ca304bd5edc6e6b8db",
+        "source_file": "data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/slack.py",
+        "implementation_sha256": "f17a88654be2b513e28e2f95c757f71d116c4cb1dc498e7ea1741605f5f98285",
+        "parameter_fields": [
+          "channel"
+        ],
+        "anchored_fields": [],
+        "synthesizable_text_fields": [],
+        "evaluation_labels_used": false
+      },
+      "get_webpage": {
+        "layer": "protected_state_mutation_or_external_communication",
+        "native_raw_layer": "protected_state_mutation_or_external_communication",
+        "output_contract": "native_return_v1",
+        "rationale": "Official implementation appends an outbound URL request; URL is an external communication surface, not a side-effect-free metadata query.",
+        "schema_sha256": "7f22bee0ce6f935aa4976cc65d8eab4d8039d3deb002a06bf0d448cbab106643",
+        "source_file": "data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/web.py",
+        "implementation_sha256": "53acd0a2ab55cdb7899402384e04889d3f1aed7964a62f3c777dbbb43a61750a",
+        "parameter_fields": [
+          "url"
+        ],
+        "anchored_fields": [
+          "url"
+        ],
+        "synthesizable_text_fields": [],
+        "evaluation_labels_used": false
+      },
+      "invite_user_to_slack": {
+        "layer": "protected_state_mutation_or_external_communication",
+        "native_raw_layer": "protected_state_mutation_or_external_communication",
+        "output_contract": "native_return_v1",
+        "rationale": "Changes application state, permissions, bookings, funds or communicates externally, per official implementation.",
+        "schema_sha256": "0fc7b75cf06d13b01f3a20d913aee3b7725430053bf1b0da766c76f37b3c495a",
+        "source_file": "data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/slack.py",
+        "implementation_sha256": "8659c124f4d742e772aa2e8942591ee0f30281bf1b0d569b30047ebb52ba2402",
+        "parameter_fields": [
+          "user",
+          "user_email"
+        ],
+        "anchored_fields": [
+          "user",
+          "user_email"
+        ],
+        "synthesizable_text_fields": [],
+        "evaluation_labels_used": false
+      },
+      "post_webpage": {
+        "layer": "protected_state_mutation_or_external_communication",
+        "native_raw_layer": "protected_state_mutation_or_external_communication",
+        "output_contract": "native_return_v1",
+        "rationale": "Changes application state, permissions, bookings, funds or communicates externally, per official implementation.",
+        "schema_sha256": "763291cb7f01fef6da698f30845872c10162846e5e5be9e9f966b1eb021b81d8",
+        "source_file": "data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/web.py",
+        "implementation_sha256": "2808cdb8b732a506708e4a93c029ac8dae47ff0d61ddbaad6a7abfa8bccdb977",
+        "parameter_fields": [
+          "url",
+          "content"
+        ],
+        "anchored_fields": [
+          "url"
+        ],
+        "synthesizable_text_fields": [
+          "content"
+        ],
+        "evaluation_labels_used": false
+      },
+      "read_channel_messages": {
+        "layer": "protected_sensitive_read",
+        "native_raw_layer": "protected_sensitive_read",
+        "output_contract": "native_return_v1",
+        "rationale": "Private message/file/calendar/account data returned; Schema may be read-only but payload is sensitive.",
+        "schema_sha256": "8fea77892f904932ca002cee8739fe8693aac1f4c6371323b62b666c6a663f45",
+        "source_file": "data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/slack.py",
+        "implementation_sha256": "64524d431362eb4a0f98ab85f5aac18b1c1651f162a02feb82fe4c959ffc0e27",
+        "parameter_fields": [
+          "channel"
+        ],
+        "anchored_fields": [],
+        "synthesizable_text_fields": [],
+        "evaluation_labels_used": false
+      },
+      "read_inbox": {
+        "layer": "protected_sensitive_read",
+        "native_raw_layer": "protected_sensitive_read",
+        "output_contract": "native_return_v1",
+        "rationale": "Private message/file/calendar/account data returned; Schema may be read-only but payload is sensitive.",
+        "schema_sha256": "c392256f330e69c9ce4fbc270585e1ffa412675a8a4c34b26a7883fc1b987fa0",
+        "source_file": "data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/slack.py",
+        "implementation_sha256": "82a8b19fba68d6ddca51e2e6049dbf08a0bbe23d596ab4a577e6bf39b3062f42",
+        "parameter_fields": [
+          "user"
+        ],
+        "anchored_fields": [],
+        "synthesizable_text_fields": [],
+        "evaluation_labels_used": false
+      },
+      "remove_user_from_slack": {
+        "layer": "protected_state_mutation_or_external_communication",
+        "native_raw_layer": "protected_state_mutation_or_external_communication",
+        "output_contract": "native_return_v1",
+        "rationale": "Changes application state, permissions, bookings, funds or communicates externally, per official implementation.",
+        "schema_sha256": "ea3c9292d57e85809c0a370495950a232e0488960a58346c8bee9e5d99e93c5b",
+        "source_file": "data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/slack.py",
+        "implementation_sha256": "4a2a1c3c4fba2d6bb48019260902402840a387a9c8993ff57111521c59f0417a",
+        "parameter_fields": [
+          "user"
+        ],
+        "anchored_fields": [
+          "user"
+        ],
+        "synthesizable_text_fields": [],
+        "evaluation_labels_used": false
+      },
+      "send_channel_message": {
+        "layer": "protected_state_mutation_or_external_communication",
+        "native_raw_layer": "protected_state_mutation_or_external_communication",
+        "output_contract": "native_return_v1",
+        "rationale": "Changes application state, permissions, bookings, funds or communicates externally, per official implementation.",
+        "schema_sha256": "791f12db9382bc0f443a90a7f29ab9fd144574b8f10165f03470543e1ccad299",
+        "source_file": "data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/slack.py",
+        "implementation_sha256": "d7ca3ab7bf6ad55d6cdfcf8d0ac02f2d22f4abe6368a3aefae36d7b9482c3ce4",
+        "parameter_fields": [
+          "channel",
+          "body"
+        ],
+        "anchored_fields": [
+          "channel"
+        ],
+        "synthesizable_text_fields": [
+          "body"
+        ],
+        "evaluation_labels_used": false
+      },
+      "send_direct_message": {
+        "layer": "protected_state_mutation_or_external_communication",
+        "native_raw_layer": "protected_state_mutation_or_external_communication",
+        "output_contract": "native_return_v1",
+        "rationale": "Changes application state, permissions, bookings, funds or communicates externally, per official implementation.",
+        "schema_sha256": "42f6574afecf8bda28c4d7088d2134e5a4ed9b1dd48512bd2e27764f7398c84b",
+        "source_file": "data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/slack.py",
+        "implementation_sha256": "9d0cf8164878b0c97a90814964f5fe181d9e37fed37a594e4551ca0d6c905c17",
+        "parameter_fields": [
+          "recipient",
+          "body"
+        ],
+        "anchored_fields": [
+          "recipient"
+        ],
+        "synthesizable_text_fields": [
+          "body"
+        ],
+        "evaluation_labels_used": false
+      }
+    },
+    "travel": {
+      "cancel_calendar_event": {
+        "layer": "protected_state_mutation_or_external_communication",
+        "native_raw_layer": "protected_state_mutation_or_external_communication",
+        "output_contract": "native_return_v1",
+        "rationale": "Changes application state, permissions, bookings, funds or communicates externally, per official implementation.",
+        "schema_sha256": "2a38d49372100d635f2f8d231e7ba501b7c3f90d9baf4f4f9085917f1a8db3fe",
+        "source_file": "data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/calendar_client.py",
+        "implementation_sha256": "c2f759fdf46a8a70249870830af4fab5dad818be2378a998093cceb9447509ab",
+        "parameter_fields": [
+          "event_id"
+        ],
+        "anchored_fields": [
+          "event_id"
+        ],
+        "synthesizable_text_fields": [],
+        "evaluation_labels_used": false
+      },
+      "check_restaurant_opening_hours": {
+        "layer": "read_only_discovery",
+        "native_raw_layer": "read_only_discovery",
+        "output_contract": "native_return_v1",
+        "rationale": "Public business catalog/status fields; no account secrets or state mutation.",
+        "schema_sha256": "2128687782a73a262a39acaad427a456bf653b4c7850517ffdf8b4a055cced34",
+        "source_file": "data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/travel_booking_client.py",
+        "implementation_sha256": "6f0177567271ec64d2c7e8e8d2d2efe27b10f9d7ea81e30c7696d86e091858e4",
+        "parameter_fields": [
+          "restaurant_names"
+        ],
+        "anchored_fields": [],
+        "synthesizable_text_fields": [],
+        "evaluation_labels_used": false
+      },
+      "create_calendar_event": {
+        "layer": "protected_state_mutation_or_external_communication",
+        "native_raw_layer": "protected_state_mutation_or_external_communication",
+        "output_contract": "native_return_v1",
+        "rationale": "Changes application state, permissions, bookings, funds or communicates externally, per official implementation.",
+        "schema_sha256": "10e86fe602f38952b1e540655fab60d558a2c35fedb182d894808104c0d8830b",
+        "source_file": "data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/calendar_client.py",
+        "implementation_sha256": "19517d57606fe5b0f6c64c4993570b5443e18a5c3cfbb95eec076efa37380497",
+        "parameter_fields": [
+          "title",
+          "start_time",
+          "end_time",
+          "description",
+          "participants",
+          "location"
+        ],
+        "anchored_fields": [
+          "start_time",
+          "end_time",
+          "participants",
+          "location"
+        ],
+        "synthesizable_text_fields": [
+          "title",
+          "description"
+        ],
+        "evaluation_labels_used": false
+      },
+      "get_all_car_rental_companies_in_city": {
+        "layer": "read_only_discovery",
+        "native_raw_layer": "read_only_discovery",
+        "output_contract": "native_return_v1",
+        "rationale": "Public business catalog/status fields; no account secrets or state mutation.",
+        "schema_sha256": "76f7560e7bfdf261e1aa77d9d415a5b2cb941293e3e386df10d9082fc03e37b2",
+        "source_file": "data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/travel_booking_client.py",
+        "implementation_sha256": "33e0d2894afdf9362edda54af06eb762c6d069e706c69fec7ac4a0c52b9fec2b",
+        "parameter_fields": [
+          "city"
+        ],
+        "anchored_fields": [],
+        "synthesizable_text_fields": [],
+        "evaluation_labels_used": false
+      },
+      "get_all_hotels_in_city": {
+        "layer": "read_only_discovery",
+        "native_raw_layer": "read_only_discovery",
+        "output_contract": "native_return_v1",
+        "rationale": "Public business catalog/status fields; no account secrets or state mutation.",
+        "schema_sha256": "2bb08e94951940010b833ade2ddeb6fb35795ac5f72d31003d99285dec206143",
+        "source_file": "data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/travel_booking_client.py",
+        "implementation_sha256": "78de6b06996b4d444e52822143b8f127a2f9adcfc51651c47407cc0e8298862e",
+        "parameter_fields": [
+          "city"
+        ],
+        "anchored_fields": [],
+        "synthesizable_text_fields": [],
+        "evaluation_labels_used": false
+      },
+      "get_all_restaurants_in_city": {
+        "layer": "read_only_discovery",
+        "native_raw_layer": "read_only_discovery",
+        "output_contract": "native_return_v1",
+        "rationale": "Public business catalog/status fields; no account secrets or state mutation.",
+        "schema_sha256": "c7870d2a7c23b4e35ea7954aa3369a846a04068c7048cbe3ace98c035e3710fa",
+        "source_file": "data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/travel_booking_client.py",
+        "implementation_sha256": "5b6e74a109fbe4c25b2fffc19f046fe0c36ed6eb0beb3c52936312eea0ad2c2d",
+        "parameter_fields": [
+          "city"
+        ],
+        "anchored_fields": [],
+        "synthesizable_text_fields": [],
+        "evaluation_labels_used": false
+      },
+      "get_car_fuel_options": {
+        "layer": "read_only_discovery",
+        "native_raw_layer": "read_only_discovery",
+        "output_contract": "native_return_v1",
+        "rationale": "Public business catalog/status fields; no account secrets or state mutation.",
+        "schema_sha256": "497e066c47ee193490deee2d5123fd3e0d0dd5cf0010dac8a65a5c81f4859e21",
+        "source_file": "data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/travel_booking_client.py",
+        "implementation_sha256": "6dfff658f13960574e8e403ecde86a4121ba9477b38ea1acdbff88cae97c501a",
+        "parameter_fields": [
+          "company_name"
+        ],
+        "anchored_fields": [],
+        "synthesizable_text_fields": [],
+        "evaluation_labels_used": false
+      },
+      "get_car_price_per_day": {
+        "layer": "read_only_discovery",
+        "native_raw_layer": "read_only_discovery",
+        "output_contract": "native_return_v1",
+        "rationale": "Public business catalog/status fields; no account secrets or state mutation.",
+        "schema_sha256": "98c00635793f9b0ff333d4cb9d73de99e05b966bbc7426965c6ec12de7400e09",
+        "source_file": "data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/travel_booking_client.py",
+        "implementation_sha256": "b1766032c0067c76c31e74f5b761f990e2f3a18c41324001cdf147e4c27b1c83",
+        "parameter_fields": [
+          "company_name"
+        ],
+        "anchored_fields": [],
+        "synthesizable_text_fields": [],
+        "evaluation_labels_used": false
+      },
+      "get_car_rental_address": {
+        "layer": "read_only_discovery",
+        "native_raw_layer": "read_only_discovery",
+        "output_contract": "native_return_v1",
+        "rationale": "Public business catalog/status fields; no account secrets or state mutation.",
+        "schema_sha256": "23c2a653ad470b61e2c79f937239503117a7ee95cc63a92288450fd4d3c503b4",
+        "source_file": "data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/travel_booking_client.py",
+        "implementation_sha256": "5297e598a9e5763cb6ac4a4b86a8d5bfb1ecad031d1620247f31ded36281de7e",
+        "parameter_fields": [
+          "company_name"
+        ],
+        "anchored_fields": [],
+        "synthesizable_text_fields": [],
+        "evaluation_labels_used": false
+      },
+      "get_car_types_available": {
+        "layer": "read_only_discovery",
+        "native_raw_layer": "read_only_discovery",
+        "output_contract": "native_return_v1",
+        "rationale": "Public business catalog/status fields; no account secrets or state mutation.",
+        "schema_sha256": "286de81e906242bd0bbe0e5e3190de9bf3655924239d9a6013af78e03e95a8eb",
+        "source_file": "data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/travel_booking_client.py",
+        "implementation_sha256": "71c4de66971fb2934a037b08616ee9abe045e0745bfa3a3512fdc12e810cddf4",
+        "parameter_fields": [
+          "company_name"
+        ],
+        "anchored_fields": [],
+        "synthesizable_text_fields": [],
+        "evaluation_labels_used": false
+      },
+      "get_contact_information_for_restaurants": {
+        "layer": "read_only_discovery",
+        "native_raw_layer": "read_only_discovery",
+        "output_contract": "native_return_v1",
+        "rationale": "Public business catalog/status fields; no account secrets or state mutation.",
+        "schema_sha256": "2197f51f98a35d7e45a575d352023db66134a999bae2a1b6be9486b6569cf391",
+        "source_file": "data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/travel_booking_client.py",
+        "implementation_sha256": "ccece9dfc0e4c68ea2b5b6afc0109991991633c5ff01007d2cb3a5891bfa6c3c",
+        "parameter_fields": [
+          "restaurant_names"
+        ],
+        "anchored_fields": [],
+        "synthesizable_text_fields": [],
+        "evaluation_labels_used": false
+      },
+      "get_cuisine_type_for_restaurants": {
+        "layer": "read_only_discovery",
+        "native_raw_layer": "read_only_discovery",
+        "output_contract": "native_return_v1",
+        "rationale": "Public business catalog/status fields; no account secrets or state mutation.",
+        "schema_sha256": "758ebe856c2d9f306581c1ddd5b21e14555a039c18c861a12739f55a5a5e4f5b",
+        "source_file": "data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/travel_booking_client.py",
+        "implementation_sha256": "be4c25cd5720cf79e4760eba3ef792d43eb680db8cdbd37bb3b95eadf90b0b6f",
+        "parameter_fields": [
+          "restaurant_names"
+        ],
+        "anchored_fields": [],
+        "synthesizable_text_fields": [],
+        "evaluation_labels_used": false
+      },
+      "get_day_calendar_events": {
+        "layer": "protected_sensitive_read",
+        "native_raw_layer": "protected_sensitive_read",
+        "output_contract": "native_return_v1",
+        "rationale": "Private message/file/calendar/account data returned; Schema may be read-only but payload is sensitive.",
+        "schema_sha256": "fa5aff80333c293bc0ad1e3d7e6a3ba23820d7a1cc3d87700370088888f9d116",
+        "source_file": "data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/calendar_client.py",
+        "implementation_sha256": "8cff7dbab55572e111736707626e552420795317e67c3936a3899ee31f630c08",
+        "parameter_fields": [
+          "day"
+        ],
+        "anchored_fields": [],
+        "synthesizable_text_fields": [],
+        "evaluation_labels_used": false
+      },
+      "get_dietary_restrictions_for_all_restaurants": {
+        "layer": "read_only_discovery",
+        "native_raw_layer": "read_only_discovery",
+        "output_contract": "native_return_v1",
+        "rationale": "Public business catalog/status fields; no account secrets or state mutation.",
+        "schema_sha256": "25490e35a8bbd5fe5cc0db0b85e20cc8f668bb505f9761529a0fbdf9fc40f0aa",
+        "source_file": "data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/travel_booking_client.py",
+        "implementation_sha256": "2dcffca82a42cd2da7581b2f47806d4c9440e5d398c132f8b984ce707ef8a559",
+        "parameter_fields": [
+          "restaurant_names"
+        ],
+        "anchored_fields": [],
+        "synthesizable_text_fields": [],
+        "evaluation_labels_used": false
+      },
+      "get_flight_information": {
+        "layer": "read_only_discovery",
+        "native_raw_layer": "read_only_discovery",
+        "output_contract": "native_return_v1",
+        "rationale": "Public business catalog/status fields; no account secrets or state mutation.",
+        "schema_sha256": "40b10af084699151c4ca99b2eed43d88ef3c8ad53b63b8fa8e91b2efce87887b",
+        "source_file": "data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/travel_booking_client.py",
+        "implementation_sha256": "f0dc4f302b2fa0e03605c38f5a8f65ea91bfcf37039a396999dbd043014b2f70",
+        "parameter_fields": [
+          "departure_city",
+          "arrival_city"
+        ],
+        "anchored_fields": [],
+        "synthesizable_text_fields": [],
+        "evaluation_labels_used": false
+      },
+      "get_hotels_address": {
+        "layer": "read_only_discovery",
+        "native_raw_layer": "read_only_discovery",
+        "output_contract": "native_return_v1",
+        "rationale": "Public business catalog/status fields; no account secrets or state mutation.",
+        "schema_sha256": "f7cafbecb3c4d78f6d80341d2bc874d1ead02abadddfd9e9f8cef94e8b709317",
+        "source_file": "data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/travel_booking_client.py",
+        "implementation_sha256": "2862fc128e0daba7a3f2027c444ccf53c91b34d808202d458bfaeb5bf133db01",
+        "parameter_fields": [
+          "hotel_name"
+        ],
+        "anchored_fields": [],
+        "synthesizable_text_fields": [],
+        "evaluation_labels_used": false
+      },
+      "get_hotels_prices": {
+        "layer": "read_only_discovery",
+        "native_raw_layer": "read_only_discovery",
+        "output_contract": "native_return_v1",
+        "rationale": "Public business catalog/status fields; no account secrets or state mutation.",
+        "schema_sha256": "fe3d8a10b139d9b3ead289727c9cdb7712f8afc69b4fcf659f0476e0637132e6",
+        "source_file": "data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/travel_booking_client.py",
+        "implementation_sha256": "5faa4bfed3f4afa6fbb20e394ac7ad2cfe54fbe0a7037361e0821cf20bd13e8c",
+        "parameter_fields": [
+          "hotel_names"
+        ],
+        "anchored_fields": [],
+        "synthesizable_text_fields": [],
+        "evaluation_labels_used": false
+      },
+      "get_price_for_restaurants": {
+        "layer": "read_only_discovery",
+        "native_raw_layer": "read_only_discovery",
+        "output_contract": "native_return_v1",
+        "rationale": "Public business catalog/status fields; no account secrets or state mutation.",
+        "schema_sha256": "7c876e5898f067c4c039c4557726396730b102f9b2c5471e2fff1bb337451186",
+        "source_file": "data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/travel_booking_client.py",
+        "implementation_sha256": "b4f1e159e2ea47d7e4982d3ae68767c04dd1d04546a7e14915acde2722ccef32",
+        "parameter_fields": [
+          "restaurant_names"
+        ],
+        "anchored_fields": [],
+        "synthesizable_text_fields": [],
+        "evaluation_labels_used": false
+      },
+      "get_rating_reviews_for_car_rental": {
+        "layer": "read_only_discovery",
+        "native_raw_layer": "read_only_discovery",
+        "output_contract": "native_return_v1",
+        "rationale": "Public business catalog/status fields; no account secrets or state mutation.",
+        "schema_sha256": "9ae5f34af4a8165d9e1eba38dbdf09c40a107e5ac4e5711e5eaa972fbd98eeee",
+        "source_file": "data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/travel_booking_client.py",
+        "implementation_sha256": "c7c7cdbfb656a3334e0f65d7224863eee54585ea009271ea4ac5640556457081",
+        "parameter_fields": [
+          "company_name"
+        ],
+        "anchored_fields": [],
+        "synthesizable_text_fields": [],
+        "evaluation_labels_used": false
+      },
+      "get_rating_reviews_for_hotels": {
+        "layer": "read_only_discovery",
+        "native_raw_layer": "read_only_discovery",
+        "output_contract": "native_return_v1",
+        "rationale": "Public business catalog/status fields; no account secrets or state mutation.",
+        "schema_sha256": "2d799b925bb6e95fdee8ead2647363acaefa40fde73547a0c481e17ac3cf1222",
+        "source_file": "data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/travel_booking_client.py",
+        "implementation_sha256": "6b27cc40ed2343e972c40f27c13d2cac0cd0672d5685912d93dd16c160a36645",
+        "parameter_fields": [
+          "hotel_names"
+        ],
+        "anchored_fields": [],
+        "synthesizable_text_fields": [],
+        "evaluation_labels_used": false
+      },
+      "get_rating_reviews_for_restaurants": {
+        "layer": "read_only_discovery",
+        "native_raw_layer": "read_only_discovery",
+        "output_contract": "native_return_v1",
+        "rationale": "Public business catalog/status fields; no account secrets or state mutation.",
+        "schema_sha256": "e36690bd634fce3d7c97c432ed58f3d13a65303af3642b43d6595ba9395e1e0b",
+        "source_file": "data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/travel_booking_client.py",
+        "implementation_sha256": "d668cd67e02aaf703570b97b5986776d94fdbb967e2670dd4c049c4c895955a9",
+        "parameter_fields": [
+          "restaurant_names"
+        ],
+        "anchored_fields": [],
+        "synthesizable_text_fields": [],
+        "evaluation_labels_used": false
+      },
+      "get_restaurants_address": {
+        "layer": "read_only_discovery",
+        "native_raw_layer": "read_only_discovery",
+        "output_contract": "native_return_v1",
+        "rationale": "Public business catalog/status fields; no account secrets or state mutation.",
+        "schema_sha256": "4df431dc8eb983c9e731df9f2c3796ebcd949369e3a1951439a44d8521f52e67",
+        "source_file": "data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/travel_booking_client.py",
+        "implementation_sha256": "2c5ed90be69c851e47f005b1feb631bc0b3116d84c913a939e4de20a2f07c871",
+        "parameter_fields": [
+          "restaurant_names"
+        ],
+        "anchored_fields": [],
+        "synthesizable_text_fields": [],
+        "evaluation_labels_used": false
+      },
+      "get_user_information": {
+        "layer": "protected_sensitive_read",
+        "native_raw_layer": "protected_sensitive_read",
+        "output_contract": "native_return_v1",
+        "rationale": "Return includes passport, bank-account and credit-card identifiers; private information read.",
+        "schema_sha256": "5322bcc3b1f2c858cd88d295769c27da3dc5a9c0e312b7e20cfa14f67591f31e",
+        "source_file": "data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/travel_booking_client.py",
+        "implementation_sha256": "f80cd4c5ed9ffbc5752401ba464af3431e4c4f9879b38c8336622b23dda9b115",
+        "parameter_fields": [],
+        "anchored_fields": [],
+        "synthesizable_text_fields": [],
+        "evaluation_labels_used": false
+      },
+      "reserve_car_rental": {
+        "layer": "protected_state_mutation_or_external_communication",
+        "native_raw_layer": "protected_state_mutation_or_external_communication",
+        "output_contract": "native_return_v1",
+        "rationale": "Changes application state, permissions, bookings, funds or communicates externally, per official implementation.",
+        "schema_sha256": "6fcceb3dd90baac2d135d57acd669fa5ec867222fb1b1f17be7b1e34a1ac329a",
+        "source_file": "data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/travel_booking_client.py",
+        "implementation_sha256": "a3f117563e231be9e4ce209a79dbda3375a8dc32dde4c03efeb98d1fb00eb2cc",
+        "parameter_fields": [
+          "company",
+          "start_time",
+          "end_time"
+        ],
+        "anchored_fields": [
+          "company",
+          "start_time",
+          "end_time"
+        ],
+        "synthesizable_text_fields": [],
+        "evaluation_labels_used": false
+      },
+      "reserve_hotel": {
+        "layer": "protected_state_mutation_or_external_communication",
+        "native_raw_layer": "protected_state_mutation_or_external_communication",
+        "output_contract": "native_return_v1",
+        "rationale": "Changes application state, permissions, bookings, funds or communicates externally, per official implementation.",
+        "schema_sha256": "6cf2dc70e18a8651f6e25c2738c02238c33c2b74803157adf8cf50512a084809",
+        "source_file": "data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/travel_booking_client.py",
+        "implementation_sha256": "640330d6bbfe10fb9c54c57205a98b397737b4d8b41bb3a167d7fa8010b7c701",
+        "parameter_fields": [
+          "hotel",
+          "start_day",
+          "end_day"
+        ],
+        "anchored_fields": [
+          "hotel",
+          "start_day",
+          "end_day"
+        ],
+        "synthesizable_text_fields": [],
+        "evaluation_labels_used": false
+      },
+      "reserve_restaurant": {
+        "layer": "protected_state_mutation_or_external_communication",
+        "native_raw_layer": "protected_state_mutation_or_external_communication",
+        "output_contract": "native_return_v1",
+        "rationale": "Changes application state, permissions, bookings, funds or communicates externally, per official implementation.",
+        "schema_sha256": "0850c9d8285c0803080373dd4ba599120aa4970c7c99ce841161b2651bf118a2",
+        "source_file": "data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/travel_booking_client.py",
+        "implementation_sha256": "1424d77e6c3e53384db372b94ccb8e0e9d2e1774c678ed4841d19411fc58bdd5",
+        "parameter_fields": [
+          "restaurant",
+          "start_time"
+        ],
+        "anchored_fields": [
+          "restaurant",
+          "start_time"
+        ],
+        "synthesizable_text_fields": [],
+        "evaluation_labels_used": false
+      },
+      "search_calendar_events": {
+        "layer": "protected_sensitive_read",
+        "native_raw_layer": "protected_sensitive_read",
+        "output_contract": "native_return_v1",
+        "rationale": "Private message/file/calendar/account data returned; Schema may be read-only but payload is sensitive.",
+        "schema_sha256": "9105d200dc0a30bcb54bfc6b5b3136c57bfa1838596d6f1c668e883cdffb190a",
+        "source_file": "data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/calendar_client.py",
+        "implementation_sha256": "af26b57e0d5013b7be294b56d0b412c6be31e7abf616b45e7c77498c9064407f",
+        "parameter_fields": [
+          "query",
+          "date"
+        ],
+        "anchored_fields": [],
+        "synthesizable_text_fields": [],
+        "evaluation_labels_used": false
+      },
+      "send_email": {
+        "layer": "protected_state_mutation_or_external_communication",
+        "native_raw_layer": "protected_state_mutation_or_external_communication",
+        "output_contract": "native_return_v1",
+        "rationale": "Changes application state, permissions, bookings, funds or communicates externally, per official implementation.",
+        "schema_sha256": "7f9e672ab42f4d535ce7a4527755bb12c1f1709351b8c8094a683bf50b35c671",
+        "source_file": "data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/email_client.py",
+        "implementation_sha256": "c0bb331079e9bc57675ecbdbd28fd222c162abfccd6012b57809e7e85b6a21c8",
+        "parameter_fields": [
+          "recipients",
+          "subject",
+          "body",
+          "attachments",
+          "cc",
+          "bcc"
+        ],
+        "anchored_fields": [
+          "recipients",
+          "attachments",
+          "cc",
+          "bcc"
+        ],
+        "synthesizable_text_fields": [
+          "subject",
+          "body"
+        ],
+        "evaluation_labels_used": false
+      }
+    },
+    "workspace": {
+      "add_calendar_event_participants": {
+        "layer": "protected_state_mutation_or_external_communication",
+        "native_raw_layer": "protected_state_mutation_or_external_communication",
+        "output_contract": "native_return_v1",
+        "rationale": "Changes application state, permissions, bookings, funds or communicates externally, per official implementation.",
+        "schema_sha256": "605c8dcee419718a310679b79a7c23cbcda8e862588ca049c534a43d7da42699",
+        "source_file": "data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/calendar_client.py",
+        "implementation_sha256": "88409ee30ff0d803c1d95a6970e0c67889d1a787aaae8641b42cb8ca0abe19db",
+        "parameter_fields": [
+          "event_id",
+          "participants"
+        ],
+        "anchored_fields": [
+          "event_id",
+          "participants"
+        ],
+        "synthesizable_text_fields": [],
+        "evaluation_labels_used": false
+      },
+      "append_to_file": {
+        "layer": "protected_state_mutation_or_external_communication",
+        "native_raw_layer": "protected_state_mutation_or_external_communication",
+        "output_contract": "native_return_v1",
+        "rationale": "Changes application state, permissions, bookings, funds or communicates externally, per official implementation.",
+        "schema_sha256": "517645b9f28c1e8869f36c2d21f36639a912ccf0c32ade8486aa53350052018e",
+        "source_file": "data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/cloud_drive_client.py",
+        "implementation_sha256": "5b0705b713adc376bcfff023361ab95798f68bb53bd0c6ed0f07b6fe46117344",
+        "parameter_fields": [
+          "file_id",
+          "content"
+        ],
+        "anchored_fields": [
+          "file_id"
+        ],
+        "synthesizable_text_fields": [
+          "content"
+        ],
+        "evaluation_labels_used": false
+      },
+      "cancel_calendar_event": {
+        "layer": "protected_state_mutation_or_external_communication",
+        "native_raw_layer": "protected_state_mutation_or_external_communication",
+        "output_contract": "native_return_v1",
+        "rationale": "Changes application state, permissions, bookings, funds or communicates externally, per official implementation.",
+        "schema_sha256": "2a38d49372100d635f2f8d231e7ba501b7c3f90d9baf4f4f9085917f1a8db3fe",
+        "source_file": "data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/calendar_client.py",
+        "implementation_sha256": "c2f759fdf46a8a70249870830af4fab5dad818be2378a998093cceb9447509ab",
+        "parameter_fields": [
+          "event_id"
+        ],
+        "anchored_fields": [
+          "event_id"
+        ],
+        "synthesizable_text_fields": [],
+        "evaluation_labels_used": false
+      },
+      "create_calendar_event": {
+        "layer": "protected_state_mutation_or_external_communication",
+        "native_raw_layer": "protected_state_mutation_or_external_communication",
+        "output_contract": "native_return_v1",
+        "rationale": "Changes application state, permissions, bookings, funds or communicates externally, per official implementation.",
+        "schema_sha256": "10e86fe602f38952b1e540655fab60d558a2c35fedb182d894808104c0d8830b",
+        "source_file": "data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/calendar_client.py",
+        "implementation_sha256": "19517d57606fe5b0f6c64c4993570b5443e18a5c3cfbb95eec076efa37380497",
+        "parameter_fields": [
+          "title",
+          "start_time",
+          "end_time",
+          "description",
+          "participants",
+          "location"
+        ],
+        "anchored_fields": [
+          "start_time",
+          "end_time",
+          "participants",
+          "location"
+        ],
+        "synthesizable_text_fields": [
+          "title",
+          "description"
+        ],
+        "evaluation_labels_used": false
+      },
+      "create_file": {
+        "layer": "protected_state_mutation_or_external_communication",
+        "native_raw_layer": "protected_state_mutation_or_external_communication",
+        "output_contract": "native_return_v1",
+        "rationale": "Changes application state, permissions, bookings, funds or communicates externally, per official implementation.",
+        "schema_sha256": "074cb51b18499615d4c1c6c83966061ad9acdba478b1ddfe1ec791dcc7892268",
+        "source_file": "data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/cloud_drive_client.py",
+        "implementation_sha256": "5a816714fa88aa028bb0ef710b2093695cef45fef9edf395169c02775b8ffe06",
+        "parameter_fields": [
+          "filename",
+          "content"
+        ],
+        "anchored_fields": [
+          "filename"
+        ],
+        "synthesizable_text_fields": [
+          "content"
+        ],
+        "evaluation_labels_used": false
+      },
+      "delete_email": {
+        "layer": "protected_state_mutation_or_external_communication",
+        "native_raw_layer": "protected_state_mutation_or_external_communication",
+        "output_contract": "native_return_v1",
+        "rationale": "Changes application state, permissions, bookings, funds or communicates externally, per official implementation.",
+        "schema_sha256": "d80b799269faf42cb0d34848775d4d94700902a6d8df2d9c291da9d79264b5a9",
+        "source_file": "data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/email_client.py",
+        "implementation_sha256": "d6e62b089e12dd63cd0a84950569a9aea493614c373242b9c9ab9519322271cf",
+        "parameter_fields": [
+          "email_id"
+        ],
+        "anchored_fields": [
+          "email_id"
+        ],
+        "synthesizable_text_fields": [],
+        "evaluation_labels_used": false
+      },
+      "delete_file": {
+        "layer": "protected_state_mutation_or_external_communication",
+        "native_raw_layer": "protected_state_mutation_or_external_communication",
+        "output_contract": "native_return_v1",
+        "rationale": "Changes application state, permissions, bookings, funds or communicates externally, per official implementation.",
+        "schema_sha256": "d8d87277a0565f79ded530312889b3b9842d586b6c63ca625369288af82154cd",
+        "source_file": "data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/cloud_drive_client.py",
+        "implementation_sha256": "d1317681d1f254f479460dc63479797b5b88fa80a89b5b2f9513693f9cf8640e",
+        "parameter_fields": [
+          "file_id"
+        ],
+        "anchored_fields": [
+          "file_id"
+        ],
+        "synthesizable_text_fields": [],
+        "evaluation_labels_used": false
+      },
+      "get_current_day": {
+        "layer": "read_only_discovery",
+        "native_raw_layer": "read_only_discovery",
+        "output_contract": "native_return_v1",
+        "rationale": "Public business catalog/status fields; no account secrets or state mutation.",
+        "schema_sha256": "372e686477c9a77798d03e1ce5ed1393c4d9f3b2a4256d41b8d882eebbbbd53f",
+        "source_file": "data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/calendar_client.py",
+        "implementation_sha256": "b20daed684a6c41b68878d695a96869078fb9357cbf8665e4dfa7d292aad4612",
+        "parameter_fields": [],
+        "anchored_fields": [],
+        "synthesizable_text_fields": [],
+        "evaluation_labels_used": false
+      },
+      "get_day_calendar_events": {
+        "layer": "protected_sensitive_read",
+        "native_raw_layer": "protected_sensitive_read",
+        "output_contract": "native_return_v1",
+        "rationale": "Private message/file/calendar/account data returned; Schema may be read-only but payload is sensitive.",
+        "schema_sha256": "fa5aff80333c293bc0ad1e3d7e6a3ba23820d7a1cc3d87700370088888f9d116",
+        "source_file": "data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/calendar_client.py",
+        "implementation_sha256": "8cff7dbab55572e111736707626e552420795317e67c3936a3899ee31f630c08",
+        "parameter_fields": [
+          "day"
+        ],
+        "anchored_fields": [],
+        "synthesizable_text_fields": [],
+        "evaluation_labels_used": false
+      },
+      "get_draft_emails": {
+        "layer": "protected_sensitive_read",
+        "native_raw_layer": "protected_sensitive_read",
+        "output_contract": "native_return_v1",
+        "rationale": "Private message/file/calendar/account data returned; Schema may be read-only but payload is sensitive.",
+        "schema_sha256": "f9dc476ad8d5c55ccf9322592ab06881cf5895845f27a00456a95015d26edce3",
+        "source_file": "data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/email_client.py",
+        "implementation_sha256": "bbfeb06a5a82dcb8f385f2bd3c82d9b4b940e201422abf98592e8b5fa80177c2",
+        "parameter_fields": [],
+        "anchored_fields": [],
+        "synthesizable_text_fields": [],
+        "evaluation_labels_used": false
+      },
+      "get_file_by_id": {
+        "layer": "protected_sensitive_read",
+        "native_raw_layer": "protected_sensitive_read",
+        "output_contract": "native_return_v1",
+        "rationale": "Explicit full file retrieval, including content; remains protected even in a metadata-only task.",
+        "schema_sha256": "7916a3e87f0dc2d3d352ce11b6303e5da63357d539851c348217eb21defcb99d",
+        "source_file": "data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/cloud_drive_client.py",
+        "implementation_sha256": "a29928eb449792d88d01b924523284a8f5f5ae23de3a262c3e0311346855b7c5",
+        "parameter_fields": [
+          "file_id"
+        ],
+        "anchored_fields": [],
+        "synthesizable_text_fields": [],
+        "evaluation_labels_used": false
+      },
+      "get_received_emails": {
+        "layer": "protected_sensitive_read",
+        "native_raw_layer": "protected_sensitive_read",
+        "output_contract": "native_return_v1",
+        "rationale": "Private message/file/calendar/account data returned; Schema may be read-only but payload is sensitive.",
+        "schema_sha256": "f62ba40d3d9d95c032fcdb1fb56864de2e8e991d7f8cd558d4ea40bbdd4b27d9",
+        "source_file": "data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/email_client.py",
+        "implementation_sha256": "0bfe44bd54bb49563ab828c911999eb83774c85cca098adde550a2fded53582f",
+        "parameter_fields": [],
+        "anchored_fields": [],
+        "synthesizable_text_fields": [],
+        "evaluation_labels_used": false
+      },
+      "get_sent_emails": {
+        "layer": "protected_sensitive_read",
+        "native_raw_layer": "protected_sensitive_read",
+        "output_contract": "native_return_v1",
+        "rationale": "Private message/file/calendar/account data returned; Schema may be read-only but payload is sensitive.",
+        "schema_sha256": "8bc35bd8aab29abd05015e5657f7c86d67f5847bbc6bdcd75675555cb859aed7",
+        "source_file": "data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/email_client.py",
+        "implementation_sha256": "a5cb4821a5970e0aea8bff4bbfbba7ca64562b4d7a8ab94479896a7d8c559e20",
+        "parameter_fields": [],
+        "anchored_fields": [],
+        "synthesizable_text_fields": [],
+        "evaluation_labels_used": false
+      },
+      "get_unread_emails": {
+        "layer": "protected_state_mutation_or_external_communication",
+        "native_raw_layer": "protected_state_mutation_or_external_communication",
+        "output_contract": "native_return_v1",
+        "rationale": "Official implementation marks returned emails as read: state mutation plus sensitive body retrieval, not a pure discovery query.",
+        "schema_sha256": "087c147a06d577719f220cc2bd72c3932e36ace559d8145c57cfe8136faccf80",
+        "source_file": "data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/email_client.py",
+        "implementation_sha256": "45c04011bb652f1b60bf91e451c8152852bbb9971dd10fc2e3f5f465bb892373",
+        "parameter_fields": [],
+        "anchored_fields": [],
+        "synthesizable_text_fields": [],
+        "evaluation_labels_used": false
+      },
+      "list_files": {
+        "layer": "read_only_discovery",
+        "native_raw_layer": "protected_sensitive_read",
+        "output_contract": "file_metadata_v3",
+        "rationale": "Discovery ONLY through the trusted file_metadata_v3 output adapter; native raw return contains file content.",
+        "schema_sha256": "81102ff1291fb60b171cecc44d9bbf5cec7f535dffc7b3a7ce1e380493825052",
+        "source_file": "data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/cloud_drive_client.py",
+        "implementation_sha256": "790452e71eab9b9607e6c1917f1473c15243382ea2ccde61fbf4cda40cb68754",
+        "parameter_fields": [],
+        "anchored_fields": [],
+        "synthesizable_text_fields": [],
+        "evaluation_labels_used": false
+      },
+      "reschedule_calendar_event": {
+        "layer": "protected_state_mutation_or_external_communication",
+        "native_raw_layer": "protected_state_mutation_or_external_communication",
+        "output_contract": "native_return_v1",
+        "rationale": "Changes application state, permissions, bookings, funds or communicates externally, per official implementation.",
+        "schema_sha256": "2c5014d793afd0d191d0628e1243d9cf01f10ec03792db1b3a5c53ecfa20ecc6",
+        "source_file": "data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/calendar_client.py",
+        "implementation_sha256": "400946bd13f7afcb2664d842d23c7f15fa8ed7f1590cbb3d0cdb948fcbe78634",
+        "parameter_fields": [
+          "event_id",
+          "new_start_time",
+          "new_end_time"
+        ],
+        "anchored_fields": [
+          "event_id",
+          "new_start_time",
+          "new_end_time"
+        ],
+        "synthesizable_text_fields": [],
+        "evaluation_labels_used": false
+      },
+      "search_calendar_events": {
+        "layer": "protected_sensitive_read",
+        "native_raw_layer": "protected_sensitive_read",
+        "output_contract": "native_return_v1",
+        "rationale": "Private message/file/calendar/account data returned; Schema may be read-only but payload is sensitive.",
+        "schema_sha256": "9105d200dc0a30bcb54bfc6b5b3136c57bfa1838596d6f1c668e883cdffb190a",
+        "source_file": "data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/calendar_client.py",
+        "implementation_sha256": "af26b57e0d5013b7be294b56d0b412c6be31e7abf616b45e7c77498c9064407f",
+        "parameter_fields": [
+          "query",
+          "date"
+        ],
+        "anchored_fields": [],
+        "synthesizable_text_fields": [],
+        "evaluation_labels_used": false
+      },
+      "search_contacts_by_email": {
+        "layer": "read_only_discovery",
+        "native_raw_layer": "read_only_discovery",
+        "output_contract": "native_return_v1",
+        "rationale": "Scoped directory metadata (names/email), no mail body or state mutation.",
+        "schema_sha256": "0fd214cedee651c25ba68872a69cfc3d1f1d03be7eaf07d2b7ccf4459a39daf1",
+        "source_file": "data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/email_client.py",
+        "implementation_sha256": "4b0cbd5b9184a4edb35346cdcc51b86db4a94c9bc2604ba4ceee9f7e6baf0454",
+        "parameter_fields": [
+          "query"
+        ],
+        "anchored_fields": [],
+        "synthesizable_text_fields": [],
+        "evaluation_labels_used": false
+      },
+      "search_contacts_by_name": {
+        "layer": "read_only_discovery",
+        "native_raw_layer": "read_only_discovery",
+        "output_contract": "native_return_v1",
+        "rationale": "Scoped directory metadata (names/email), no mail body or state mutation.",
+        "schema_sha256": "c08e8be5c7a2fe03cb697add4cd72d3fde748c576cfd937f62a575bcba90cc6b",
+        "source_file": "data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/email_client.py",
+        "implementation_sha256": "8623d591af57353e6235219f56f7972da91eee62e70b92acb2ec1914fb334376",
+        "parameter_fields": [
+          "query"
+        ],
+        "anchored_fields": [],
+        "synthesizable_text_fields": [],
+        "evaluation_labels_used": false
+      },
+      "search_emails": {
+        "layer": "protected_sensitive_read",
+        "native_raw_layer": "protected_sensitive_read",
+        "output_contract": "native_return_v1",
+        "rationale": "Private message/file/calendar/account data returned; Schema may be read-only but payload is sensitive.",
+        "schema_sha256": "ae425d928bd5cef9e0cd36a215139ddb2148d4cd9b58b11cba941e9be184cbb3",
+        "source_file": "data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/email_client.py",
+        "implementation_sha256": "6d630c9abb91a6b8f3b4cc4c8d1492e62338d89ef795d04d7b8de35dec8b178d",
+        "parameter_fields": [
+          "query",
+          "sender"
+        ],
+        "anchored_fields": [],
+        "synthesizable_text_fields": [],
+        "evaluation_labels_used": false
+      },
+      "search_files": {
+        "layer": "protected_sensitive_read",
+        "native_raw_layer": "protected_sensitive_read",
+        "output_contract": "native_return_v1",
+        "rationale": "Query searches file contents and returns full file bodies; remains protected.",
+        "schema_sha256": "74c4b57f61d32f9821d8aa69b46f336b67acc8258637fff067efee771e16c166",
+        "source_file": "data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/cloud_drive_client.py",
+        "implementation_sha256": "d3610c95304ed3baecf1edb24e2b36515658216cf9d69b7557ab28ac54c7ff97",
+        "parameter_fields": [
+          "query"
+        ],
+        "anchored_fields": [],
+        "synthesizable_text_fields": [],
+        "evaluation_labels_used": false
+      },
+      "search_files_by_filename": {
+        "layer": "read_only_discovery",
+        "native_raw_layer": "protected_sensitive_read",
+        "output_contract": "file_metadata_v3",
+        "rationale": "Filename-filtered discovery ONLY through trusted file_metadata_v3; raw CloudDriveFile return contains content.",
+        "schema_sha256": "34fe74587be7c4a84f3e3458020c24057519b19116438c771a22dc8ca1fc1c3a",
+        "source_file": "data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/cloud_drive_client.py",
+        "implementation_sha256": "6e8061f07db0ddffff9f9239fa8a47c353d3964c4a83a74e0ae91e78242f54bb",
+        "parameter_fields": [
+          "filename"
+        ],
+        "anchored_fields": [],
+        "synthesizable_text_fields": [],
+        "evaluation_labels_used": false
+      },
+      "send_email": {
+        "layer": "protected_state_mutation_or_external_communication",
+        "native_raw_layer": "protected_state_mutation_or_external_communication",
+        "output_contract": "native_return_v1",
+        "rationale": "Changes application state, permissions, bookings, funds or communicates externally, per official implementation.",
+        "schema_sha256": "7f9e672ab42f4d535ce7a4527755bb12c1f1709351b8c8094a683bf50b35c671",
+        "source_file": "data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/email_client.py",
+        "implementation_sha256": "c0bb331079e9bc57675ecbdbd28fd222c162abfccd6012b57809e7e85b6a21c8",
+        "parameter_fields": [
+          "recipients",
+          "subject",
+          "body",
+          "attachments",
+          "cc",
+          "bcc"
+        ],
+        "anchored_fields": [
+          "recipients",
+          "attachments",
+          "cc",
+          "bcc"
+        ],
+        "synthesizable_text_fields": [
+          "subject",
+          "body"
+        ],
+        "evaluation_labels_used": false
+      },
+      "share_file": {
+        "layer": "protected_state_mutation_or_external_communication",
+        "native_raw_layer": "protected_state_mutation_or_external_communication",
+        "output_contract": "native_return_v1",
+        "rationale": "Changes application state, permissions, bookings, funds or communicates externally, per official implementation.",
+        "schema_sha256": "237e940ab0ab01d46b9cfee4fed40a2432b8dfc6c53f85d396dcaa65e9da7466",
+        "source_file": "data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/cloud_drive_client.py",
+        "implementation_sha256": "9bb419e0bbf8a503fc10d92dd56eed92e4c853407c39a07c1be44920ec952a4f",
+        "parameter_fields": [
+          "file_id",
+          "email",
+          "permission"
+        ],
+        "anchored_fields": [
+          "file_id",
+          "email",
+          "permission"
+        ],
+        "synthesizable_text_fields": [],
+        "evaluation_labels_used": false
+      }
+    }
+  }
+}

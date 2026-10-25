@@ -1,0 +1,66 @@
+{
+  "actual_external_tool_executions": 0,
+  "base_set_digest": "228379a5e73b8fdd4c75c12e3dc98b008d0fd38d95d4344931175d2f65643397",
+  "case_set_digest": "b1eec2d4bd4c727f744996811d98645f6dd480e1699375a5712a4719cfcadf42",
+  "files": {
+    "base_tasks.jsonl": "738fb5496bcebb52ebe580188c30a75fb635ce12293a7937ed41a1858b95bbb5",
+    "cases.jsonl": "c00a239124a6a296ce2c2a5b3211537add3f7ac9a96390d6c3faf6324a67e3e7",
+    "splits.json": "38bb70ac04046d9cbc04eee2ac2ad3e9322980345f3ed448b31c05bea8d19973",
+    "summary.json": "fa6c6302f2c5454ff528a3646dd7cd4631ca21bebd0c14e117a44b9b63d51968",
+    "tool_specs.json": "ea9b632c40ed076d9b0854e2e657a16cee43673b793b70ebf20c489c4eba6e91"
+  },
+  "generator": "scripts/build_conditional_tasks.py",
+  "model_evaluation_performed": false,
+  "oracle": "src/conditional_tasks.py",
+  "python_version": "3.12.9",
+  "seed": 20261013,
+  "source": "synthetic_controlled_local_generation",
+  "source_code_sha256": {
+    "scripts/build_conditional_tasks.py": "22100685ea57c52bb46b3cbf915589bb64e8860615bfb139190d6dd4a587c85e",
+    "src/conditional_tasks.py": "156a4191f4dd1add096dcb3695244ee48647a6395a12291f0d90ae744550cb2d",
+    "tests/test_conditional_tasks.py": "0c8791625c5c41f0375ab02ae30a8f219b3816feb05d3d369a61b1475f459567"
+  },
+  "summary": {
+    "actual_external_tool_executions": 0,
+    "attack_cases": 300,
+    "base_instances": 100,
+    "base_instances_by_domain": {
+      "calendar": 20,
+      "document": 20,
+      "email": 20,
+      "invoice": 20,
+      "message": 20
+    },
+    "base_instances_by_split": {
+      "calibration": 20,
+      "development": 40,
+      "test": 40
+    },
+    "benign_cases": 300,
+    "cases": 600,
+    "cases_by_split": {
+      "calibration": 120,
+      "development": 240,
+      "test": 240
+    },
+    "delegation_base_instances": 4,
+    "families_by_split": {
+      "calibration": 5,
+      "development": 10,
+      "test": 10
+    },
+    "oracle_effect_selfcheck_is_model_evaluation": false,
+    "scenario_families": 25,
+    "variants": {
+      "condition_false": 100,
+      "condition_true": 100,
+      "history_pollution": 100,
+      "missing_evidence": 100,
+      "same_tool_argument_attack": 100,
+      "tool_selection_attack": 100
+    },
+    "version": "bicp-conditional-v1"
+  },
+  "upstream_benchmark": null,
+  "version": "bicp-conditional-v1"
+}

@@ -1,0 +1,7 @@
+* text=auto
+src/*.py -text
+configs/*.json -text
+data/** -text
+results/source/** -text
+resources/*.json -text
+licenses/** -text

@@ -1,0 +1,483 @@
+{
+  "frozen_policy_sha256": "95a3f6afcd8fe47aeade2a5fa6499b2ccaadc4d0683ea8968bea02d7dce62e99",
+  "files": [
+    {
+      "source": "src/__init__.py",
+      "public_path": "src/__init__.py",
+      "sha256": "b9d0a9f04da15931d354ba7e67aa749505c83b3756a539944bd7c56376ba087e",
+      "bytes": 37
+    },
+    {
+      "source": "src/agentdojo_core.py",
+      "public_path": "src/agentdojo_core.py",
+      "sha256": "8ae783e416d69d9f9e3c619b8cb08406e251ccd29933a76630be1f60c27d7c0c",
+      "bytes": 2942
+    },
+    {
+      "source": "src/conditional_tasks.py",
+      "public_path": "src/conditional_tasks.py",
+      "sha256": "156a4191f4dd1add096dcb3695244ee48647a6395a12291f0d90ae744550cb2d",
+      "bytes": 27342
+    },
+    {
+      "source": "src/deployment_calibration_v1.py",
+      "public_path": "src/deployment_calibration_v1.py",
+      "sha256": "b6f56f519188ce3a50bc193935138eb91cffc02f0fda55d138ba8dcce720f392",
+      "bytes": 4375
+    },
+    {
+      "source": "src/deployment_collection_v1.py",
+      "public_path": "src/deployment_collection_v1.py",
+      "sha256": "250695cf4ea783bff7a791ad186fb8d4baeac27a6d8c36dc1cdd99eaa35cdc02",
+      "bytes": 24762
+    },
+    {
+      "source": "src/deployment_guard_v1.py",
+      "public_path": "src/deployment_guard_v1.py",
+      "sha256": "71e61a08ec9f16971baf877746cea54da2c88dae7a226bdfe11582218f8538d7",
+      "bytes": 16714
+    },
+    {
+      "source": "src/deployment_pilot_v1.py",
+      "public_path": "src/deployment_pilot_v1.py",
+      "sha256": "b6998ec9929527f27cec6480b7fc73f0dc94421554d08928679104f0d6a084bf",
+      "bytes": 14349
+    },
+    {
+      "source": "src/deployment_pilot_v2.py",
+      "public_path": "src/deployment_pilot_v2.py",
+      "sha256": "28b9081527f2b941b1014355de926b1e3fbe6afc2d15f0332fba00a3a893cde7",
+      "bytes": 8321
+    },
+    {
+      "source": "src/deployment_probe_v1.py",
+      "public_path": "src/deployment_probe_v1.py",
+      "sha256": "9c11d006ef2c28b00e0ad732c52a9196a92e5613196dd82ab144da23630902be",
+      "bytes": 9040
+    },
+    {
+      "source": "src/deployment_rl_v1.py",
+      "public_path": "src/deployment_rl_v1.py",
+      "sha256": "6263ea2316db5f511cdb56b4fbecc2537f3b08f9b1bca8b1f29c2b9d211b6eb0",
+      "bytes": 11352
+    },
+    {
+      "source": "src/injecagent.py",
+      "public_path": "src/injecagent.py",
+      "sha256": "f4f5a4009b52fc89a06a93a413ad77dfd7ce55b9223d07006dd155becd6def3c",
+      "bytes": 4621
+    },
+    {
+      "source": "src/mechanism_probe.py",
+      "public_path": "src/mechanism_probe.py",
+      "sha256": "46fbd193754891184b57b950fa8cae73d568309a0c4325f745107ed0627c9fd2",
+      "bytes": 17318
+    },
+    {
+      "source": "src/mechanism_v3.py",
+      "public_path": "src/mechanism_v3.py",
+      "sha256": "1e654473ac00de0e70e6b71be829f34be84d7ce00627fbf806a6deb6f95e59d7",
+      "bytes": 9570
+    },
+    {
+      "source": "src/mechanism_v4.py",
+      "public_path": "src/mechanism_v4.py",
+      "sha256": "a17c8f76c9f9f67ddbfa6c2cd1a47c382a45ac3472eb930ef1e505473fa5d58e",
+      "bytes": 12452
+    },
+    {
+      "source": "src/metrics.py",
+      "public_path": "src/metrics.py",
+      "sha256": "f1f82d1e2caa9d9b946dadb252cbdb8cddcf812c930a02c9c881e3d2d227186d",
+      "bytes": 2484
+    },
+    {
+      "source": "src/native_adapter_v3.py",
+      "public_path": "src/native_adapter_v3.py",
+      "sha256": "97e61e54fcb8f2c0aee04dafbcd862393d61d7c924d9491b0e3ee73085b11860",
+      "bytes": 17946
+    },
+    {
+      "source": "src/parsing.py",
+      "public_path": "src/parsing.py",
+      "sha256": "8ee69e46a7d405420daa6938933da542fa037af7275a43d0750338ce5e7f477c",
+      "bytes": 3387
+    },
+    {
+      "source": "src/probe.py",
+      "public_path": "src/probe.py",
+      "sha256": "b5c9d4e4224ee179dfb4fd2b88f73bd2f95da2d118ce73cee6406ac635e7c9ef",
+      "bytes": 23643
+    },
+    {
+      "source": "src/public_workspace_runtime_v1.py",
+      "public_path": "src/public_workspace_runtime_v1.py",
+      "sha256": "f80fe00111d78ba730db9b8be36d6961ce8ae5ead34dfead469981c2c6faea1a",
+      "bytes": 2602
+    },
+    {
+      "source": "src/run_agentdojo_bicp.py",
+      "public_path": "src/run_agentdojo_bicp.py",
+      "sha256": "9b6c4d39029462d5b9c5697bd8fd747b1c777ba5cc3f73db2598a4a0467ca3b0",
+      "bytes": 35152
+    },
+    {
+      "source": "src/run_baseline.py",
+      "public_path": "src/run_baseline.py",
+      "sha256": "5811f8ea5926d2dadec1ace974bbeef2a1653f21cb0fd62e6b58be0bd352430b",
+      "bytes": 13331
+    },
+    {
+      "source": "src/run_bicp.py",
+      "public_path": "src/run_bicp.py",
+      "sha256": "a1ac044aee5539ec04481a1f94e44318fa7403084b907a5f25957f93174770c3",
+      "bytes": 51298
+    },
+    {
+      "source": "src/run_bicp_parallel.py",
+      "public_path": "src/run_bicp_parallel.py",
+      "sha256": "c37855877829238888d965dcce7406baee2657a09df5c34371b2fc6da9069ba0",
+      "bytes": 9500
+    },
+    {
+      "source": "src/run_deployment_calibration_v1.py",
+      "public_path": "src/run_deployment_calibration_v1.py",
+      "sha256": "0fdc268bf5cfb7a18774497236ffbe1a43debbeca213bb39ad8ac23fc63187eb",
+      "bytes": 9040
+    },
+    {
+      "source": "src/run_deployment_pilot_v1.py",
+      "public_path": "src/run_deployment_pilot_v1.py",
+      "sha256": "270c3974aadbe1f536bc7a0066a67068c50b152b0cbf492c4d4b9bb757dfbec2",
+      "bytes": 5644
+    },
+    {
+      "source": "src/run_deployment_pilot_v2.py",
+      "public_path": "src/run_deployment_pilot_v2.py",
+      "sha256": "78eb6c5cbfc488e1b0be2a4d79e13472460aec75a062093262ca6f879215dd25",
+      "bytes": 6040
+    },
+    {
+      "source": "src/run_deployment_rl_v1.py",
+      "public_path": "src/run_deployment_rl_v1.py",
+      "sha256": "3d613eca89d72f85d564c10ca77acbbd06572177cf9826bd461b893031e67f7f",
+      "bytes": 6177
+    },
+    {
+      "source": "src/run_mechanism_diagnostic.py",
+      "public_path": "src/run_mechanism_diagnostic.py",
+      "sha256": "c2f15bb5a42de8648ac9e4f5ab4d89302f87b667707ab13c86be0374efa40e58",
+      "bytes": 28622
+    },
+    {
+      "source": "src/run_mechanism_v3.py",
+      "public_path": "src/run_mechanism_v3.py",
+      "sha256": "c702bf0c9ddb3edb85279928feee7dd291691415e4402d8427131228946f9490",
+      "bytes": 22092
+    },
+    {
+      "source": "src/run_mechanism_v4.py",
+      "public_path": "src/run_mechanism_v4.py",
+      "sha256": "9b16d02febaf4b3f4f530c1ac355b6b2f70a62fd7e3a162db63c5fb71724b62d",
+      "bytes": 17422
+    },
+    {
+      "source": "src/run_toolbench.py",
+      "public_path": "src/run_toolbench.py",
+      "sha256": "c64dfd2c8cc7c0aef8dbcbbdda3aa98f3e58649a15ef1b7dde5d5a02c6b6b420",
+      "bytes": 5255
+    },
+    {
+      "source": "src/test_analysis.py",
+      "public_path": "src/test_analysis.py",
+      "sha256": "f1b2f3c7fadc54d15eaaf1bc1157876c19b0c1291d9de614eb4e44a142a7eaae",
+      "bytes": 5660
+    },
+    {
+      "source": "src/toolbench.py",
+      "public_path": "src/toolbench.py",
+      "sha256": "e9f33f73500ae9ead4abc65490ad160dbf88dadf88024bdeb02f52f32d8e0410",
+      "bytes": 1885
+    },
+    {
+      "source": "results/stage2/deployment_calibration_r1_v1/frozen_policy.json",
+      "public_path": "configs/frozen_policy.json",
+      "sha256": "95a3f6afcd8fe47aeade2a5fa6499b2ccaadc4d0683ea8968bea02d7dce62e99",
+      "bytes": 1240
+    },
+    {
+      "source": "configs/bicp_v2_deployment_model_v1.json",
+      "public_path": "configs/deployment_model.json",
+      "sha256": "d0ec15276f666ef854691c78b1df3d2fc5b79d34a054a1255cc6f74bee6b14bc",
+      "bytes": 1515
+    },
+    {
+      "source": "configs/tool_risk_layers.json",
+      "public_path": "configs/tool_risk_layers.json",
+      "sha256": "76ff10f81d5b55c0544dad8c8ee1e1094951dfab0919581ce27a6dcdf83bee8a",
+      "bytes": 64654
+    },
+    {
+      "source": "data/bicp_conditional_v1/cases.jsonl",
+      "public_path": "data/conditional/cases.jsonl",
+      "sha256": "c00a239124a6a296ce2c2a5b3211537add3f7ac9a96390d6c3faf6324a67e3e7",
+      "bytes": 1531820
+    },
+    {
+      "source": "data/bicp_conditional_v1/manifest.json",
+      "public_path": "data/conditional/manifest.json",
+      "sha256": "54982901df8f238d9b011f39e343844a76785afc32b9e96df51b80b32b9490d8",
+      "bytes": 2389
+    },
+    {
+      "source": "data/splits.json",
+      "public_path": "data/injecagent_splits.json",
+      "sha256": "cd29cd4466df7a3749df88d2df9da2681abab063e7aeef9224a5e0650f580d4d",
+      "bytes": 120400
+    },
+    {
+      "source": "data/upstream/InjecAgent/LICENCE",
+      "public_path": "licenses/InjecAgent-MIT.txt",
+      "sha256": "2889829a6a4c3b0b340af05612d2f4fc5424693bf504a49a82dbb6e9fa73e7b9",
+      "bytes": 1086
+    },
+    {
+      "source": "data/upstream/AgentDojo/LICENSE",
+      "public_path": "licenses/AgentDojo-MIT.txt",
+      "sha256": "a090c871ff2aa6abb58a0eda1b6262dca39a7610de3df3411497fba7aa6fad09",
+      "bytes": 1182
+    },
+    {
+      "source": "results/stage3/bicp_full_test_report_v2/outcomes.csv",
+      "public_path": "results/source/v1/outcomes.csv",
+      "sha256": "fce1b8d02ad730ae3d9a242a7e9390b79b6280a99362cce0440244bdb57d8d87",
+      "bytes": 109581
+    },
+    {
+      "source": "results/stage3/bicp_full_test_report_v2/fpr_opportunities.csv",
+      "public_path": "results/source/v1/fpr_opportunities.csv",
+      "sha256": "231cde3791f2575e21d2f9bd46b0271b23f5e484d1d1489dd089b099b9add845",
+      "bytes": 35560
+    },
+    {
+      "source": "results/stage3/bicp_full_test_report_v2/latency.csv",
+      "public_path": "results/source/v1/latency.csv",
+      "sha256": "dbad085fc22357e68f3a78d87d12aed75cd9d1a588516ab1fb00a3682f1c5467",
+      "bytes": 5934
+    },
+    {
+      "source": "results/stage3/bicp_full_test_report_v2/main_results_table.csv",
+      "public_path": "results/source/v1/main_results_table.csv",
+      "sha256": "cf57c4c14c456b7f984c770bd015366450b72800fc2fcf80ba5081318c033098",
+      "bytes": 690
+    },
+    {
+      "source": "results/stage2/mechanism_v4_analysis_r1_v1/thought_scores.csv",
+      "public_path": "results/source/mechanism/thought_scores.csv",
+      "sha256": "5920284ea0d294da4e539c574e9d4f1d91af7f9393d0b9a134d037b74273dd3c",
+      "bytes": 34084
+    },
+    {
+      "source": "results/stage2/mechanism_v4_analysis_r1_v1/factorial_cells.csv",
+      "public_path": "results/source/mechanism/factorial_cells.csv",
+      "sha256": "676a95108ec524bf3e0d990daf1571128c170d649678bb34bb1355890e5fedb5",
+      "bytes": 10434
+    },
+    {
+      "source": "results/stage2/mechanism_v4_analysis_r1_v1/thought_gap_decomposition.csv",
+      "public_path": "results/source/mechanism/thought_gap_decomposition.csv",
+      "sha256": "871ffc5d37324c6578420e1594a1fbe6bd870e539592afae5b2a6a5d67d9e0ca",
+      "bytes": 1378
+    },
+    {
+      "source": "results/stage2/mechanism_v4_analysis_r1_v1/native_scores.csv",
+      "public_path": "results/source/mechanism/native_scores.csv",
+      "sha256": "933cc2efc9dc79181a2178edd09cce91a6059a5dee0e371e5a168937c3fe1b49",
+      "bytes": 4606
+    },
+    {
+      "source": "results/stage2/mechanism_v4_analysis_r1_v1/actual_malicious_target.csv",
+      "public_path": "results/source/mechanism/actual_malicious_target.csv",
+      "sha256": "9f4bd986162dbff933ba2b0ab8abceaa4a7f836ea72e43237fd7ab68ed4e4dfc",
+      "bytes": 3642
+    },
+    {
+      "source": "results/stage2/deployment_calibration_analysis_r1_v3/all_proposals.csv",
+      "public_path": "results/source/calibration/all_proposals.csv",
+      "sha256": "d4f66fa2b5cd58dd1ad2bdf5aa7f1a620888a816abc81ec7e9768e1f19619225",
+      "bytes": 253627
+    },
+    {
+      "source": "results/stage2/deployment_calibration_analysis_r1_v3/preflight_repetitions.csv",
+      "public_path": "results/source/calibration/preflight_repetitions.csv",
+      "sha256": "95ae5cb42a0b176b09e923655ad9c69beb4fb9d95cdf1f36346d02724b0deadc",
+      "bytes": 55563
+    },
+    {
+      "source": "results/stage2/deployment_calibration_analysis_r1_v3/preflight_paired.csv",
+      "public_path": "results/source/calibration/preflight_paired.csv",
+      "sha256": "e2386473fc82d22ee701a6d1b356ea511b3beae492adeff845d39393801a676d",
+      "bytes": 8496
+    },
+    {
+      "source": "results/stage2/deployment_calibration_analysis_r1_v3/leave_group_out.csv",
+      "public_path": "results/source/calibration/leave_group_out.csv",
+      "sha256": "cede5a1271b57611b0ae97eda1c441826ec1623eaa4d143c70712a559392d79d",
+      "bytes": 3269
+    },
+    {
+      "source": "results/stage3/deployment_pilot_analysis_r1_v2_v2/events.csv",
+      "public_path": "results/source/pilot/events.csv",
+      "sha256": "8c5911c4b0cde767895337a15aba93f97c566d3b6307f1d7fb66cd56a5db5a67",
+      "bytes": 51651
+    },
+    {
+      "source": "results/stage3/deployment_pilot_analysis_r1_v2_v2/unit_outcomes.csv",
+      "public_path": "results/source/pilot/unit_outcomes.csv",
+      "sha256": "3874c0bccc8c44b2b2de27e8536dbc8da0ca727d875885559ee3b4f356368eb3",
+      "bytes": 27388
+    },
+    {
+      "source": "results/stage3/deployment_pilot_analysis_r1_v2_v2/healthcheck_timings.csv",
+      "public_path": "results/source/pilot/healthcheck_timings.csv",
+      "sha256": "71355359b2c7bfd4bf1e87bf3b863f9c73fb4aa77f7c03c84080557e82c261c3",
+      "bytes": 4395
+    },
+    {
+      "source": "results/stage3/deployment_pilot_analysis_r1_v2_v2/workspace.csv",
+      "public_path": "results/source/pilot/workspace.csv",
+      "sha256": "a477e3f5e2fad4d00f78168ad5f06e58bd17ac44b9417af5213e5e402cd989fe",
+      "bytes": 1460
+    },
+    {
+      "source": "results/stage3/deployment_rl_analysis_r1_v2/units.csv",
+      "public_path": "results/source/longitudinal/units.csv",
+      "sha256": "8aacebd51c39635dc16dd566a1651ee8432e61546b03812b09c8d5edcf815bec",
+      "bytes": 2143568
+    },
+    {
+      "source": "results/stage3/deployment_rl_analysis_r1_v2/events.csv",
+      "public_path": "results/source/longitudinal/events.csv",
+      "sha256": "caa7082123b1fbf9d8753d359e48dcf90242b7ff6f54a62508119130f4df7dfd",
+      "bytes": 1201548
+    },
+    {
+      "source": "results/stage3/deployment_rl_analysis_r1_v2/healthchecks.csv",
+      "public_path": "results/source/longitudinal/healthchecks.csv",
+      "sha256": "7ea037cfa1bc0d8fe21fc00d611f9a1b97af9a3cacce30a418e895567f0f4e94",
+      "bytes": 3026
+    },
+    {
+      "source": "results/stage3/deployment_rl_analysis_r1_v2/workspace.csv",
+      "public_path": "results/source/longitudinal/workspace.csv",
+      "sha256": "baf26e01ff99869fac4858cfd8ed756d3dd17556632d13f3f7dce10bb176e1e3",
+      "bytes": 367
+    },
+    {
+      "source": "results/stage3/deployment_rl_analysis_r1_v2/group_effects.csv",
+      "public_path": "results/source/longitudinal/group_effects.csv",
+      "sha256": "db761fa98bb01c3cfa9f929837af6a216fe666f52bcd403a61a5c6a2d154690d",
+      "bytes": 6309
+    },
+    {
+      "source": "results/stage2/deployment_calibration_r1_v1/accepted_score_table.json",
+      "public_path": "results/source/calibration/accepted_score_table.json",
+      "sha256": "4da8649774a399afcf4ed69ee55e05b2beeb0af94f1f8d59a97f966d58c419c3",
+      "bytes": 1950362
+    },
+    {
+      "source": "results/stage2/deployment_attribution_r1_v1/view_contributions.csv",
+      "public_path": "results/source/calibration/view_contributions.csv",
+      "sha256": "fd8b70002b4d4b413ba6939996b3e096b0f66d1f7ba977ef01f1ca25ab5fb94d",
+      "bytes": 54012
+    }
+  ],
+  "raw_sources": {
+    "v1/bundle_manifest.json": "results/kaggle_downloads/bicp-full-test-v1/experiment/bundle_manifest.json",
+    "v1/environment.json": "results/kaggle_downloads/bicp-full-test-v1/experiment/environment.json",
+    "v1/frozen_calibration.json": "results/kaggle_downloads/bicp-full-test-v1/experiment/frozen_calibration.json",
+    "v1/model.json": "results/kaggle_downloads/bicp-full-test-v1/experiment/model.json",
+    "v1/protocol.json": "results/kaggle_downloads/bicp-full-test-v1/experiment/protocol.json",
+    "v1/records.jsonl": "results/kaggle_downloads/bicp-full-test-v1/experiment/records.jsonl",
+    "v1/run_status.json": "results/kaggle_downloads/bicp-full-test-v1/experiment/run_status.json",
+    "v1/selection.json": "results/kaggle_downloads/bicp-full-test-v1/experiment/selection.json",
+    "v1/summary.json": "results/kaggle_downloads/bicp-full-test-v1/experiment/summary.json",
+    "v1/torch_numeric_check.json": "results/kaggle_downloads/bicp-full-test-v1/experiment/torch_numeric_check.json",
+    "v1/workers/worker_0/environment.json": "results/kaggle_downloads/bicp-full-test-v1/experiment/workers/worker_0/environment.json",
+    "v1/workers/worker_0/model.json": "results/kaggle_downloads/bicp-full-test-v1/experiment/workers/worker_0/model.json",
+    "v1/workers/worker_0/warmup.json": "results/kaggle_downloads/bicp-full-test-v1/experiment/workers/worker_0/warmup.json",
+    "v1/workers/worker_1/environment.json": "results/kaggle_downloads/bicp-full-test-v1/experiment/workers/worker_1/environment.json",
+    "v1/workers/worker_1/model.json": "results/kaggle_downloads/bicp-full-test-v1/experiment/workers/worker_1/model.json",
+    "v1/workers/worker_1/warmup.json": "results/kaggle_downloads/bicp-full-test-v1/experiment/workers/worker_1/warmup.json",
+    "mechanism/completion.json": "results/kaggle_downloads/mechanism-v4-pilot-r1-v1/mechanism_v4_experiment/run/completion.json",
+    "mechanism/mechanism_execution.json": "results/kaggle_downloads/mechanism-v4-pilot-r1-v1/mechanism_v4_experiment/run/mechanism_execution.json",
+    "mechanism/mechanism_model.json": "results/kaggle_downloads/mechanism-v4-pilot-r1-v1/mechanism_v4_experiment/run/mechanism_model.json",
+    "mechanism/mechanism_protocol.json": "results/kaggle_downloads/mechanism-v4-pilot-r1-v1/mechanism_v4_experiment/run/mechanism_protocol.json",
+    "mechanism/mechanism_schedule.json": "results/kaggle_downloads/mechanism-v4-pilot-r1-v1/mechanism_v4_experiment/run/mechanism_schedule.json",
+    "mechanism/records.jsonl": "results/kaggle_downloads/mechanism-v4-pilot-r1-v1/mechanism_v4_experiment/run/records.jsonl",
+    "mechanism/workers/worker_0/environment.json": "results/kaggle_downloads/mechanism-v4-pilot-r1-v1/mechanism_v4_experiment/run/workers/worker_0/environment.json",
+    "mechanism/workers/worker_0/model.json": "results/kaggle_downloads/mechanism-v4-pilot-r1-v1/mechanism_v4_experiment/run/workers/worker_0/model.json",
+    "mechanism/workers/worker_1/environment.json": "results/kaggle_downloads/mechanism-v4-pilot-r1-v1/mechanism_v4_experiment/run/workers/worker_1/environment.json",
+    "mechanism/workers/worker_1/model.json": "results/kaggle_downloads/mechanism-v4-pilot-r1-v1/mechanism_v4_experiment/run/workers/worker_1/model.json",
+    "calibration/calibration_execution_schedule.json": "results/kaggle_downloads/deployment-calibration-r1-v1/deployment_calibration_experiment/run/calibration_execution_schedule.json",
+    "calibration/completion.json": "results/kaggle_downloads/deployment-calibration-r1-v1/deployment_calibration_experiment/run/completion.json",
+    "calibration/deployment_execution.json": "results/kaggle_downloads/deployment-calibration-r1-v1/deployment_calibration_experiment/run/deployment_execution.json",
+    "calibration/deployment_model.json": "results/kaggle_downloads/deployment-calibration-r1-v1/deployment_calibration_experiment/run/deployment_model.json",
+    "calibration/deployment_protocol.json": "results/kaggle_downloads/deployment-calibration-r1-v1/deployment_calibration_experiment/run/deployment_protocol.json",
+    "calibration/records.jsonl": "results/kaggle_downloads/deployment-calibration-r1-v1/deployment_calibration_experiment/run/records.jsonl",
+    "calibration/preflight/environment.json": "results/kaggle_downloads/deployment-calibration-r1-v1/deployment_calibration_experiment/run/preflight/environment.json",
+    "calibration/preflight/model.json": "results/kaggle_downloads/deployment-calibration-r1-v1/deployment_calibration_experiment/run/preflight/model.json",
+    "calibration/preflight/warmup.json": "results/kaggle_downloads/deployment-calibration-r1-v1/deployment_calibration_experiment/run/preflight/warmup.json",
+    "calibration/workers/worker_0/environment.json": "results/kaggle_downloads/deployment-calibration-r1-v1/deployment_calibration_experiment/run/workers/worker_0/environment.json",
+    "calibration/workers/worker_0/model.json": "results/kaggle_downloads/deployment-calibration-r1-v1/deployment_calibration_experiment/run/workers/worker_0/model.json",
+    "calibration/workers/worker_0/warmup.json": "results/kaggle_downloads/deployment-calibration-r1-v1/deployment_calibration_experiment/run/workers/worker_0/warmup.json",
+    "calibration/workers/worker_1/environment.json": "results/kaggle_downloads/deployment-calibration-r1-v1/deployment_calibration_experiment/run/workers/worker_1/environment.json",
+    "calibration/workers/worker_1/model.json": "results/kaggle_downloads/deployment-calibration-r1-v1/deployment_calibration_experiment/run/workers/worker_1/model.json",
+    "calibration/workers/worker_1/warmup.json": "results/kaggle_downloads/deployment-calibration-r1-v1/deployment_calibration_experiment/run/workers/worker_1/warmup.json",
+    "calibration/preflight/proposal_00.json": "results/kaggle_downloads/deployment-calibration-r1-v1/deployment_calibration_experiment/run/preflight/proposal_00.json",
+    "calibration/preflight/proposal_01.json": "results/kaggle_downloads/deployment-calibration-r1-v1/deployment_calibration_experiment/run/preflight/proposal_01.json",
+    "calibration/preflight/proposal_02.json": "results/kaggle_downloads/deployment-calibration-r1-v1/deployment_calibration_experiment/run/preflight/proposal_02.json",
+    "calibration/preflight/proposal_03.json": "results/kaggle_downloads/deployment-calibration-r1-v1/deployment_calibration_experiment/run/preflight/proposal_03.json",
+    "calibration/preflight/proposal_04.json": "results/kaggle_downloads/deployment-calibration-r1-v1/deployment_calibration_experiment/run/preflight/proposal_04.json",
+    "calibration/preflight/proposal_05.json": "results/kaggle_downloads/deployment-calibration-r1-v1/deployment_calibration_experiment/run/preflight/proposal_05.json",
+    "calibration/preflight/proposal_06.json": "results/kaggle_downloads/deployment-calibration-r1-v1/deployment_calibration_experiment/run/preflight/proposal_06.json",
+    "calibration/preflight/proposal_07.json": "results/kaggle_downloads/deployment-calibration-r1-v1/deployment_calibration_experiment/run/preflight/proposal_07.json",
+    "calibration/preflight/proposal_08.json": "results/kaggle_downloads/deployment-calibration-r1-v1/deployment_calibration_experiment/run/preflight/proposal_08.json",
+    "calibration/preflight/proposal_09.json": "results/kaggle_downloads/deployment-calibration-r1-v1/deployment_calibration_experiment/run/preflight/proposal_09.json",
+    "calibration/preflight/proposal_10.json": "results/kaggle_downloads/deployment-calibration-r1-v1/deployment_calibration_experiment/run/preflight/proposal_10.json",
+    "calibration/preflight/proposal_11.json": "results/kaggle_downloads/deployment-calibration-r1-v1/deployment_calibration_experiment/run/preflight/proposal_11.json",
+    "pilot/completion.json": "results/kaggle_downloads/deployment-pilot-r1-v2/deployment_pilot_experiment/run/completion.json",
+    "pilot/deployment_model.json": "results/kaggle_downloads/deployment-pilot-r1-v2/deployment_pilot_experiment/run/deployment_model.json",
+    "pilot/frozen_policy.json": "results/kaggle_downloads/deployment-pilot-r1-v2/deployment_pilot_experiment/run/frozen_policy.json",
+    "pilot/pilot_execution.json": "results/kaggle_downloads/deployment-pilot-r1-v2/deployment_pilot_experiment/run/pilot_execution.json",
+    "pilot/records.jsonl": "results/kaggle_downloads/deployment-pilot-r1-v2/deployment_pilot_experiment/run/records.jsonl",
+    "pilot/schedule_public.json": "results/kaggle_downloads/deployment-pilot-r1-v2/deployment_pilot_experiment/run/schedule_public.json",
+    "pilot/workers/worker_0/environment.json": "results/kaggle_downloads/deployment-pilot-r1-v2/deployment_pilot_experiment/run/workers/worker_0/environment.json",
+    "pilot/workers/worker_0/model.json": "results/kaggle_downloads/deployment-pilot-r1-v2/deployment_pilot_experiment/run/workers/worker_0/model.json",
+    "pilot/workers/worker_0/warmup.json": "results/kaggle_downloads/deployment-pilot-r1-v2/deployment_pilot_experiment/run/workers/worker_0/warmup.json",
+    "pilot/workers/worker_1/environment.json": "results/kaggle_downloads/deployment-pilot-r1-v2/deployment_pilot_experiment/run/workers/worker_1/environment.json",
+    "pilot/workers/worker_1/model.json": "results/kaggle_downloads/deployment-pilot-r1-v2/deployment_pilot_experiment/run/workers/worker_1/model.json",
+    "pilot/workers/worker_1/warmup.json": "results/kaggle_downloads/deployment-pilot-r1-v2/deployment_pilot_experiment/run/workers/worker_1/warmup.json",
+    "longitudinal/completion.json": "results/kaggle_downloads/deployment-rl-r1-v1/deployment_rl_experiment/run/completion.json",
+    "longitudinal/completion.json.transfer-identity.json": "results/kaggle_downloads/deployment-rl-r1-v1/deployment_rl_experiment/run/completion.json.transfer-identity.json",
+    "longitudinal/deployment_model.json": "results/kaggle_downloads/deployment-rl-r1-v1/deployment_rl_experiment/run/deployment_model.json",
+    "longitudinal/deployment_model.json.transfer-identity.json": "results/kaggle_downloads/deployment-rl-r1-v1/deployment_rl_experiment/run/deployment_model.json.transfer-identity.json",
+    "longitudinal/frozen_policy.json": "results/kaggle_downloads/deployment-rl-r1-v1/deployment_rl_experiment/run/frozen_policy.json",
+    "longitudinal/frozen_policy.json.transfer-identity.json": "results/kaggle_downloads/deployment-rl-r1-v1/deployment_rl_experiment/run/frozen_policy.json.transfer-identity.json",
+    "longitudinal/longitudinal_records.jsonl": "results/kaggle_downloads/deployment-rl-r1-v1/deployment_rl_experiment/run/longitudinal_records.jsonl",
+    "longitudinal/longitudinal_records.jsonl.transfer-identity.json": "results/kaggle_downloads/deployment-rl-r1-v1/deployment_rl_experiment/run/longitudinal_records.jsonl.transfer-identity.json",
+    "longitudinal/rl_execution.json": "results/kaggle_downloads/deployment-rl-r1-v1/deployment_rl_experiment/run/rl_execution.json",
+    "longitudinal/rl_execution.json.transfer-identity.json": "results/kaggle_downloads/deployment-rl-r1-v1/deployment_rl_experiment/run/rl_execution.json.transfer-identity.json",
+    "longitudinal/schedule.json": "results/kaggle_downloads/deployment-rl-r1-v1/deployment_rl_experiment/run/schedule.json",
+    "longitudinal/schedule.json.transfer-identity.json": "results/kaggle_downloads/deployment-rl-r1-v1/deployment_rl_experiment/run/schedule.json.transfer-identity.json",
+    "longitudinal/workspace_record.json": "results/kaggle_downloads/deployment-rl-r1-v1/deployment_rl_experiment/run/workspace_record.json",
+    "longitudinal/workers/worker_0/environment.json": "results/kaggle_downloads/deployment-rl-r1-v1/deployment_rl_experiment/run/workers/worker_0/environment.json",
+    "longitudinal/workers/worker_0/model.json": "results/kaggle_downloads/deployment-rl-r1-v1/deployment_rl_experiment/run/workers/worker_0/model.json",
+    "longitudinal/workers/worker_0/warmup.json": "results/kaggle_downloads/deployment-rl-r1-v1/deployment_rl_experiment/run/workers/worker_0/warmup.json",
+    "longitudinal/workers/worker_1/environment.json": "results/kaggle_downloads/deployment-rl-r1-v1/deployment_rl_experiment/run/workers/worker_1/environment.json",
+    "longitudinal/workers/worker_1/model.json": "results/kaggle_downloads/deployment-rl-r1-v1/deployment_rl_experiment/run/workers/worker_1/model.json",
+    "longitudinal/workers/worker_1/warmup.json": "results/kaggle_downloads/deployment-rl-r1-v1/deployment_rl_experiment/run/workers/worker_1/warmup.json",
+    "evaluation/longitudinal.json": "results/kaggle_downloads/deployment-rl-r1-v1/deployment_rl_experiment/private_evaluation.json",
+    "evaluation/pilot.json": "selected evaluations from results/stage3/deployment_pilot_validation_r1_v2.json"
+  }
+}

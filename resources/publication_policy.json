@@ -1,0 +1,38 @@
+{
+  "manuscript_publication_authorized": false,
+  "forbidden_fingerprints": [
+    {
+      "name": "arxiv_source.tar.gz",
+      "sha256": "7c1681e8ff5c5888531e1d2bffd50e678cf388e253cadec8d48fd632acea0344"
+    },
+    {
+      "name": "main.bbl",
+      "sha256": "7626d6a6d011b5e689a4561b6f58e4dc52f107783c0d0350aeac93510c0dd38c"
+    },
+    {
+      "name": "main.pdf",
+      "sha256": "9f64acc26739a025a8d76bfe3c1493e9d3c25c09473a63636606c2e63351a693"
+    },
+    {
+      "name": "main.tex",
+      "sha256": "35b7a631495aec2efd91792b3993f22d9edcbc9dd89f40ae4f3419b9b48aaf87"
+    },
+    {
+      "name": "preprint_zh.md",
+      "sha256": "4493fa1cff077d1932682874a2f93c6e695f6a5862415a76d2041a4aec70e391"
+    },
+    {
+      "name": "references.bib",
+      "sha256": "c451cacc5c41e2eb81202b24d15e19e29ac889635896de92e607f43859ba7767"
+    },
+    {
+      "name": "main.bbl",
+      "sha256": "7626d6a6d011b5e689a4561b6f58e4dc52f107783c0d0350aeac93510c0dd38c"
+    },
+    {
+      "name": "main.pdf",
+      "sha256": "9f64acc26739a025a8d76bfe3c1493e9d3c25c09473a63636606c2e63351a693"
+    }
+  ],
+  "allowed_document_paths": []
+}

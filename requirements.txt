@@ -1,0 +1,2 @@
+# CPU quick start, table reconstruction, and unittest suite use Python's standard library.
+# Real GPU inference additionally requires requirements-gpu.txt.

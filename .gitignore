@@ -1,0 +1,18 @@
+__pycache__/
+*.pyc
+.venv*/
+.pytest_cache/
+artifacts/
+outputs/
+.env
+.env.*
+*.token
+kaggle.json
+# Path-specific manuscript exclusions; other PDF/TEX files require explicit audit.
+/paper/
+/manuscript/
+/submission/
+/review_response/
+/main.pdf
+/main.tex
+/arxiv_source.tar.gz

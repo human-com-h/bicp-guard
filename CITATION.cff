@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "Please cite this software release when using the code or evaluation artifacts."
+type: software
+title: "BiCP v2: Reasoning-Prefix Deconfounding for Dual-Axis Counterfactual Probing and Operation-Risk Routing"
+authors:
+  - family-names: Hao
+    given-names: Zida
+    affiliation: "School of Software, Xinjiang University, Urumqi, China"
+  - family-names: Li
+    given-names: Yubo
+    affiliation: "School of Software, Xinjiang University, Urumqi, China"
+version: 0.9.0-rc1
+date-released: 2026-10-26
+license: MIT
+repository-code: "https://github.com/human-com-h/bicp-guard"
+url: "https://github.com/human-com-h/bicp-guard/releases/tag/v0.9.0-rc1"
+abstract: "Code and accepted evaluation artifacts for a training-free execution-time guard combining reasoning-prefix removal, dual tool/argument likelihood axes, and operation-risk routing."

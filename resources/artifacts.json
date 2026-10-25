@@ -1,0 +1,2127 @@
+{
+  "version": "v0.9.0-rc1",
+  "assets": [
+    {
+      "name": "bicp-frozen-inputs-v1.zip",
+      "sha256": "fb0ad5e270c5f9350b07e139ca3ab67fd054667f08e4e9f8e1b6900c2d46f8d6",
+      "bytes": 3080732,
+      "description": "exact frozen code, prompts, splits and runtime inputs",
+      "url": "https://github.com/human-com-h/bicp-guard/releases/download/v0.9.0-rc1/bicp-frozen-inputs-v1.zip",
+      "files": {
+        "calibration/configs/deployment_execution.json": {
+          "sha256": "3d4d53508d95126ec0e62e71257581fb0e9a4ced06196fc40c8ad0d9b6c5a766",
+          "bytes": 5438
+        },
+        "calibration/configs/deployment_model.json": {
+          "sha256": "d0ec15276f666ef854691c78b1df3d2fc5b79d34a054a1255cc6f74bee6b14bc",
+          "bytes": 1515
+        },
+        "calibration/configs/deployment_protocol.json": {
+          "sha256": "efd54c236db45935802ed5a25ee01881e602ac85e2c76c3924236aefdd076346",
+          "bytes": 9462
+        },
+        "calibration/data/deployment_calibration/calibration_execution_schedule.json": {
+          "sha256": "0996c9b510d3b37ba96d6490a87d2364e17d2618be33f2f6a9b39b7ff3db149c",
+          "bytes": 72284
+        },
+        "calibration/data/deployment_calibration/calibration_forced_proposals.jsonl": {
+          "sha256": "15200455fe7ed1b319610f4deee1ac934c2287633cc9bf91e3765698a94b422b",
+          "bytes": 62484
+        },
+        "calibration/data/deployment_calibration/calibration_grounding_contracts.json": {
+          "sha256": "e9b3d1f7423d7bdad8727abd0369e760490df581e1ddbe1523739cb03ef3b85c",
+          "bytes": 67445
+        },
+        "calibration/data/deployment_calibration/calibration_injecagent_high_risk_controls.jsonl": {
+          "sha256": "9af2d0a2255a1cbd4beccb0b81145acdb25602208be25a4ccfd462fa254ff673",
+          "bytes": 155861
+        },
+        "calibration/data/deployment_calibration/calibration_public_inputs.jsonl": {
+          "sha256": "022f40d41627bba17c19a8b8832a1458b199cc4cbc928c1e1667b77b3a517189",
+          "bytes": 8446656
+        },
+        "calibration/data/deployment_calibration/future_7b_preflight_schedule.json": {
+          "sha256": "31a63efc6dea9c14f2d5f3a9758ab139246ea652b0573245e169a68adfdd9afe",
+          "bytes": 1968
+        },
+        "calibration/data/deployment_calibration/schemas.json": {
+          "sha256": "d47bdef9fd5c1e630a921d3dcd21b85e72776972a31fa6e8c0d611790b0ab889",
+          "bytes": 75536
+        },
+        "calibration/data/deployment_calibration/tool_risks.json": {
+          "sha256": "e5d821a39b1d22e695f6f4ff2628902dceb529eaef6418d6bc1fc6c60a05f859",
+          "bytes": 25041
+        },
+        "calibration/requirements-kaggle.txt": {
+          "sha256": "e926b3f21d4a81786c2e7c4b6f44971c2dd556a55269b2552219d7004e1bdc47",
+          "bytes": 131
+        },
+        "calibration/src/__init__.py": {
+          "sha256": "b9d0a9f04da15931d354ba7e67aa749505c83b3756a539944bd7c56376ba087e",
+          "bytes": 37
+        },
+        "calibration/src/agentdojo_core.py": {
+          "sha256": "8ae783e416d69d9f9e3c619b8cb08406e251ccd29933a76630be1f60c27d7c0c",
+          "bytes": 2942
+        },
+        "calibration/src/conditional_tasks.py": {
+          "sha256": "156a4191f4dd1add096dcb3695244ee48647a6395a12291f0d90ae744550cb2d",
+          "bytes": 27342
+        },
+        "calibration/src/deployment_calibration_v1.py": {
+          "sha256": "b6f56f519188ce3a50bc193935138eb91cffc02f0fda55d138ba8dcce720f392",
+          "bytes": 4375
+        },
+        "calibration/src/deployment_collection_v1.py": {
+          "sha256": "250695cf4ea783bff7a791ad186fb8d4baeac27a6d8c36dc1cdd99eaa35cdc02",
+          "bytes": 24762
+        },
+        "calibration/src/deployment_guard_v1.py": {
+          "sha256": "71e61a08ec9f16971baf877746cea54da2c88dae7a226bdfe11582218f8538d7",
+          "bytes": 16714
+        },
+        "calibration/src/deployment_probe_v1.py": {
+          "sha256": "9c11d006ef2c28b00e0ad732c52a9196a92e5613196dd82ab144da23630902be",
+          "bytes": 9040
+        },
+        "calibration/src/injecagent.py": {
+          "sha256": "f4f5a4009b52fc89a06a93a413ad77dfd7ce55b9223d07006dd155becd6def3c",
+          "bytes": 4621
+        },
+        "calibration/src/mechanism_probe.py": {
+          "sha256": "46fbd193754891184b57b950fa8cae73d568309a0c4325f745107ed0627c9fd2",
+          "bytes": 17318
+        },
+        "calibration/src/mechanism_v3.py": {
+          "sha256": "1e654473ac00de0e70e6b71be829f34be84d7ce00627fbf806a6deb6f95e59d7",
+          "bytes": 9570
+        },
+        "calibration/src/mechanism_v4.py": {
+          "sha256": "a17c8f76c9f9f67ddbfa6c2cd1a47c382a45ac3472eb930ef1e505473fa5d58e",
+          "bytes": 12452
+        },
+        "calibration/src/metrics.py": {
+          "sha256": "f1f82d1e2caa9d9b946dadb252cbdb8cddcf812c930a02c9c881e3d2d227186d",
+          "bytes": 2484
+        },
+        "calibration/src/parsing.py": {
+          "sha256": "8ee69e46a7d405420daa6938933da542fa037af7275a43d0750338ce5e7f477c",
+          "bytes": 3387
+        },
+        "calibration/src/probe.py": {
+          "sha256": "b5c9d4e4224ee179dfb4fd2b88f73bd2f95da2d118ce73cee6406ac635e7c9ef",
+          "bytes": 23643
+        },
+        "calibration/src/run_agentdojo_bicp.py": {
+          "sha256": "9b6c4d39029462d5b9c5697bd8fd747b1c777ba5cc3f73db2598a4a0467ca3b0",
+          "bytes": 35152
+        },
+        "calibration/src/run_baseline.py": {
+          "sha256": "5811f8ea5926d2dadec1ace974bbeef2a1653f21cb0fd62e6b58be0bd352430b",
+          "bytes": 13331
+        },
+        "calibration/src/run_bicp.py": {
+          "sha256": "a1ac044aee5539ec04481a1f94e44318fa7403084b907a5f25957f93174770c3",
+          "bytes": 51298
+        },
+        "calibration/src/run_bicp_parallel.py": {
+          "sha256": "c37855877829238888d965dcce7406baee2657a09df5c34371b2fc6da9069ba0",
+          "bytes": 9500
+        },
+        "calibration/src/run_deployment_calibration_v1.py": {
+          "sha256": "0fdc268bf5cfb7a18774497236ffbe1a43debbeca213bb39ad8ac23fc63187eb",
+          "bytes": 9040
+        },
+        "calibration/src/run_mechanism_diagnostic.py": {
+          "sha256": "c2f15bb5a42de8648ac9e4f5ab4d89302f87b667707ab13c86be0374efa40e58",
+          "bytes": 28622
+        },
+        "calibration/src/run_mechanism_v3.py": {
+          "sha256": "c702bf0c9ddb3edb85279928feee7dd291691415e4402d8427131228946f9490",
+          "bytes": 22092
+        },
+        "calibration/src/run_mechanism_v4.py": {
+          "sha256": "9b16d02febaf4b3f4f530c1ac355b6b2f70a62fd7e3a162db63c5fb71724b62d",
+          "bytes": 17422
+        },
+        "calibration/src/run_toolbench.py": {
+          "sha256": "c64dfd2c8cc7c0aef8dbcbbdda3aa98f3e58649a15ef1b7dde5d5a02c6b6b420",
+          "bytes": 5255
+        },
+        "calibration/src/test_analysis.py": {
+          "sha256": "f1b2f3c7fadc54d15eaaf1bc1157876c19b0c1291d9de614eb4e44a142a7eaae",
+          "bytes": 5660
+        },
+        "calibration/src/toolbench.py": {
+          "sha256": "e9f33f73500ae9ead4abc65490ad160dbf88dadf88024bdeb02f52f32d8e0410",
+          "bytes": 1885
+        },
+        "longitudinal/configs/deployment_model.json": {
+          "sha256": "d0ec15276f666ef854691c78b1df3d2fc5b79d34a054a1255cc6f74bee6b14bc",
+          "bytes": 1515
+        },
+        "longitudinal/configs/frozen_policy.json": {
+          "sha256": "95a3f6afcd8fe47aeade2a5fa6499b2ccaadc4d0683ea8968bea02d7dce62e99",
+          "bytes": 1240
+        },
+        "longitudinal/configs/native_adapter_v3.json": {
+          "sha256": "98a108b53451d1079cc396f843c0b7721db1f4ebf70b7a9749796f4d40d7c93c",
+          "bytes": 3574
+        },
+        "longitudinal/configs/rl_design.md": {
+          "sha256": "73fdb4e321c1c59e605934be6d745363efdd4cfb05c00eba7f95191d8e88f168",
+          "bytes": 7837
+        },
+        "longitudinal/configs/rl_execution.json": {
+          "sha256": "5ccae51b894c86c807fecb4cfa6192d29c8b8df831a48ff853cd0811a8c527db",
+          "bytes": 8836
+        },
+        "longitudinal/configs/tool_risk_layers.json": {
+          "sha256": "76ff10f81d5b55c0544dad8c8ee1e1094951dfab0919581ce27a6dcdf83bee8a",
+          "bytes": 64654
+        },
+        "longitudinal/data/agentdojo_source_audit_v1.json": {
+          "sha256": "7793abcb5b3f149979acb528e10303858f96dcff82e7b3038612475653400907",
+          "bytes": 2654
+        },
+        "longitudinal/data/rl/continuations.json": {
+          "sha256": "fcc6334e57307147cf82808a5f9357c11d7c57f18b475cbc41e6003e07fd14fb",
+          "bytes": 74259
+        },
+        "longitudinal/data/rl/healthcheck_public.json": {
+          "sha256": "ea368dbc39e7b855a71e5cecd107cfdf5f5cc982fbf26d72bfe52d02643099a8",
+          "bytes": 202676
+        },
+        "longitudinal/data/rl/public_inputs.jsonl": {
+          "sha256": "6ff72bdf78ee2dfc72f5bfa926a1d5173c3c8fd7642113b56aec0209fd407c4c",
+          "bytes": 34200170
+        },
+        "longitudinal/data/rl/schedule.json": {
+          "sha256": "272d2929ce326a9bebc9b14c93a41da61e4cdac1e319c6bbcb69176b828d4535",
+          "bytes": 246281
+        },
+        "longitudinal/data/rl/tool_risks.json": {
+          "sha256": "e5d821a39b1d22e695f6f4ff2628902dceb529eaef6418d6bc1fc6c60a05f859",
+          "bytes": 25041
+        },
+        "longitudinal/data/rl/workspace_public.json": {
+          "sha256": "30628b5d8d3db1912f0f73114855311cfd0ad070086db6e21e9921dcbdd8b9e3",
+          "bytes": 163942
+        },
+        "longitudinal/data/upstream/AgentDojo/LICENSE": {
+          "sha256": "a090c871ff2aa6abb58a0eda1b6262dca39a7610de3df3411497fba7aa6fad09",
+          "bytes": 1182
+        },
+        "longitudinal/data/upstream/AgentDojo/src/agentdojo/__init__.py": {
+          "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+          "bytes": 2
+        },
+        "longitudinal/data/upstream/AgentDojo/src/agentdojo/agent_pipeline/tool_execution.py": {
+          "sha256": "102f83e431f9757c2f16dfe934bd27412d504f15705bccb26507d154fd7fbffa",
+          "bytes": 6781
+        },
+        "longitudinal/data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/__init__.py": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        "longitudinal/data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/banking_client.py": {
+          "sha256": "4f8afb40e526143438ed71a2fe128488c705d76c9d111319edb362859c7c9f70",
+          "bytes": 5315
+        },
+        "longitudinal/data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/calendar_client.py": {
+          "sha256": "0ea556c5ced4219cedba60d2b31ef016ee23b72c50da52430988a5f5f8dc1d8a",
+          "bytes": 10491
+        },
+        "longitudinal/data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/cloud_drive_client.py": {
+          "sha256": "2319db571ebfbdd882745c9eb21ed68437231ba26287fbd719af108a1c757b75",
+          "bytes": 5732
+        },
+        "longitudinal/data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/email_client.py": {
+          "sha256": "f5f7ef9aea23e65811145341e70d955a14585e45af6d6eae6e2d5af540cb92d0",
+          "bytes": 10488
+        },
+        "longitudinal/data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/file_reader.py": {
+          "sha256": "dbfa976819adf19b8f896dceb29960ff5cc32c3d1034f52aee70ecea81e472f9",
+          "bytes": 453
+        },
+        "longitudinal/data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/slack.py": {
+          "sha256": "940004acaa2aca8e65b5ada91e49990caf9f35a3188c660c964ac8cd50f3691a",
+          "bytes": 4715
+        },
+        "longitudinal/data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/travel_booking_client.py": {
+          "sha256": "2889df7b6cd50883d2151906ee10390c4cc6689a2ddae6b5dd85e2cc2c2e5f40",
+          "bytes": 15594
+        },
+        "longitudinal/data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/types.py": {
+          "sha256": "1595421019d2368c8c2faab3d5f0a5162a4b2a76a87ede573880d866229e8fdd",
+          "bytes": 3507
+        },
+        "longitudinal/data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/user_account.py": {
+          "sha256": "b0472ff64d7708c2cf177d5fcafa6c2a124c0c33db23fb37b13f06a6d28d1715",
+          "bytes": 2053
+        },
+        "longitudinal/data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/web.py": {
+          "sha256": "5b5e2c3dfd6a5b2e170618f55c285d22507b96120c8c6a6ba359b7966c7db4fc",
+          "bytes": 1492
+        },
+        "longitudinal/data/upstream/AgentDojo/src/agentdojo/default_suites/v1/workspace/task_suite.py": {
+          "sha256": "8dd86e015496d0408f8532b4f49aad0af17f757699d66d32eee102a07c85ad11",
+          "bytes": 2290
+        },
+        "longitudinal/data/upstream/AgentDojo/src/agentdojo/functions_runtime.py": {
+          "sha256": "dce2bdf4b1c04b77ebd82f9ee165c283cda492045615a9e510e6d5c9423e9248",
+          "bytes": 12939
+        },
+        "longitudinal/data/upstream/AgentDojo/src/agentdojo/strenum.py": {
+          "sha256": "50cad98e9f29926c3f6ba1167fde52705920079b0e67d888d8e8ee1e4fe0da01",
+          "bytes": 297
+        },
+        "longitudinal/requirements-agentdojo.txt": {
+          "sha256": "8206fad5c04a1108ab853da3eff956e72c19e573a1585b1c453965e3f5053318",
+          "bytes": 133
+        },
+        "longitudinal/requirements-kaggle.txt": {
+          "sha256": "e926b3f21d4a81786c2e7c4b6f44971c2dd556a55269b2552219d7004e1bdc47",
+          "bytes": 131
+        },
+        "longitudinal/src/__init__.py": {
+          "sha256": "b9d0a9f04da15931d354ba7e67aa749505c83b3756a539944bd7c56376ba087e",
+          "bytes": 37
+        },
+        "longitudinal/src/agentdojo_core.py": {
+          "sha256": "8ae783e416d69d9f9e3c619b8cb08406e251ccd29933a76630be1f60c27d7c0c",
+          "bytes": 2942
+        },
+        "longitudinal/src/conditional_tasks.py": {
+          "sha256": "156a4191f4dd1add096dcb3695244ee48647a6395a12291f0d90ae744550cb2d",
+          "bytes": 27342
+        },
+        "longitudinal/src/deployment_calibration_v1.py": {
+          "sha256": "b6f56f519188ce3a50bc193935138eb91cffc02f0fda55d138ba8dcce720f392",
+          "bytes": 4375
+        },
+        "longitudinal/src/deployment_collection_v1.py": {
+          "sha256": "250695cf4ea783bff7a791ad186fb8d4baeac27a6d8c36dc1cdd99eaa35cdc02",
+          "bytes": 24762
+        },
+        "longitudinal/src/deployment_guard_v1.py": {
+          "sha256": "71e61a08ec9f16971baf877746cea54da2c88dae7a226bdfe11582218f8538d7",
+          "bytes": 16714
+        },
+        "longitudinal/src/deployment_pilot_v1.py": {
+          "sha256": "b6998ec9929527f27cec6480b7fc73f0dc94421554d08928679104f0d6a084bf",
+          "bytes": 14349
+        },
+        "longitudinal/src/deployment_pilot_v2.py": {
+          "sha256": "28b9081527f2b941b1014355de926b1e3fbe6afc2d15f0332fba00a3a893cde7",
+          "bytes": 8321
+        },
+        "longitudinal/src/deployment_probe_v1.py": {
+          "sha256": "9c11d006ef2c28b00e0ad732c52a9196a92e5613196dd82ab144da23630902be",
+          "bytes": 9040
+        },
+        "longitudinal/src/deployment_rl_v1.py": {
+          "sha256": "6263ea2316db5f511cdb56b4fbecc2537f3b08f9b1bca8b1f29c2b9d211b6eb0",
+          "bytes": 11352
+        },
+        "longitudinal/src/injecagent.py": {
+          "sha256": "f4f5a4009b52fc89a06a93a413ad77dfd7ce55b9223d07006dd155becd6def3c",
+          "bytes": 4621
+        },
+        "longitudinal/src/mechanism_probe.py": {
+          "sha256": "46fbd193754891184b57b950fa8cae73d568309a0c4325f745107ed0627c9fd2",
+          "bytes": 17318
+        },
+        "longitudinal/src/mechanism_v3.py": {
+          "sha256": "1e654473ac00de0e70e6b71be829f34be84d7ce00627fbf806a6deb6f95e59d7",
+          "bytes": 9570
+        },
+        "longitudinal/src/mechanism_v4.py": {
+          "sha256": "a17c8f76c9f9f67ddbfa6c2cd1a47c382a45ac3472eb930ef1e505473fa5d58e",
+          "bytes": 12452
+        },
+        "longitudinal/src/metrics.py": {
+          "sha256": "f1f82d1e2caa9d9b946dadb252cbdb8cddcf812c930a02c9c881e3d2d227186d",
+          "bytes": 2484
+        },
+        "longitudinal/src/native_adapter_v3.py": {
+          "sha256": "97e61e54fcb8f2c0aee04dafbcd862393d61d7c924d9491b0e3ee73085b11860",
+          "bytes": 17946
+        },
+        "longitudinal/src/parsing.py": {
+          "sha256": "8ee69e46a7d405420daa6938933da542fa037af7275a43d0750338ce5e7f477c",
+          "bytes": 3387
+        },
+        "longitudinal/src/probe.py": {
+          "sha256": "b5c9d4e4224ee179dfb4fd2b88f73bd2f95da2d118ce73cee6406ac635e7c9ef",
+          "bytes": 23643
+        },
+        "longitudinal/src/public_workspace_runtime_v1.py": {
+          "sha256": "f80fe00111d78ba730db9b8be36d6961ce8ae5ead34dfead469981c2c6faea1a",
+          "bytes": 2602
+        },
+        "longitudinal/src/run_agentdojo_bicp.py": {
+          "sha256": "9b6c4d39029462d5b9c5697bd8fd747b1c777ba5cc3f73db2598a4a0467ca3b0",
+          "bytes": 35152
+        },
+        "longitudinal/src/run_baseline.py": {
+          "sha256": "5811f8ea5926d2dadec1ace974bbeef2a1653f21cb0fd62e6b58be0bd352430b",
+          "bytes": 13331
+        },
+        "longitudinal/src/run_bicp.py": {
+          "sha256": "a1ac044aee5539ec04481a1f94e44318fa7403084b907a5f25957f93174770c3",
+          "bytes": 51298
+        },
+        "longitudinal/src/run_bicp_parallel.py": {
+          "sha256": "c37855877829238888d965dcce7406baee2657a09df5c34371b2fc6da9069ba0",
+          "bytes": 9500
+        },
+        "longitudinal/src/run_deployment_calibration_v1.py": {
+          "sha256": "0fdc268bf5cfb7a18774497236ffbe1a43debbeca213bb39ad8ac23fc63187eb",
+          "bytes": 9040
+        },
+        "longitudinal/src/run_deployment_pilot_v1.py": {
+          "sha256": "270c3974aadbe1f536bc7a0066a67068c50b152b0cbf492c4d4b9bb757dfbec2",
+          "bytes": 5644
+        },
+        "longitudinal/src/run_deployment_pilot_v2.py": {
+          "sha256": "78eb6c5cbfc488e1b0be2a4d79e13472460aec75a062093262ca6f879215dd25",
+          "bytes": 6040
+        },
+        "longitudinal/src/run_deployment_rl_v1.py": {
+          "sha256": "3d613eca89d72f85d564c10ca77acbbd06572177cf9826bd461b893031e67f7f",
+          "bytes": 6177
+        },
+        "longitudinal/src/run_mechanism_diagnostic.py": {
+          "sha256": "c2f15bb5a42de8648ac9e4f5ab4d89302f87b667707ab13c86be0374efa40e58",
+          "bytes": 28622
+        },
+        "longitudinal/src/run_mechanism_v3.py": {
+          "sha256": "c702bf0c9ddb3edb85279928feee7dd291691415e4402d8427131228946f9490",
+          "bytes": 22092
+        },
+        "longitudinal/src/run_mechanism_v4.py": {
+          "sha256": "9b16d02febaf4b3f4f530c1ac355b6b2f70a62fd7e3a162db63c5fb71724b62d",
+          "bytes": 17422
+        },
+        "longitudinal/src/run_toolbench.py": {
+          "sha256": "c64dfd2c8cc7c0aef8dbcbbdda3aa98f3e58649a15ef1b7dde5d5a02c6b6b420",
+          "bytes": 5255
+        },
+        "longitudinal/src/test_analysis.py": {
+          "sha256": "f1b2f3c7fadc54d15eaaf1bc1157876c19b0c1291d9de614eb4e44a142a7eaae",
+          "bytes": 5660
+        },
+        "longitudinal/src/toolbench.py": {
+          "sha256": "e9f33f73500ae9ead4abc65490ad160dbf88dadf88024bdeb02f52f32d8e0410",
+          "bytes": 1885
+        },
+        "mechanism/configs/mechanism_execution.json": {
+          "sha256": "8f8120b9b257a31821c529cb08361e09e1794c2fb3c2cec4bdc49ae6045414e3",
+          "bytes": 22192
+        },
+        "mechanism/configs/mechanism_model.json": {
+          "sha256": "641239f5b827662f232c278f2cc12e04b771d977df74c338b24cb94cefdd316f",
+          "bytes": 1346
+        },
+        "mechanism/configs/mechanism_protocol.json": {
+          "sha256": "6e730b875fffd27b41774ad96408cbcce03441812efc0448474cc690a15f2e23",
+          "bytes": 10920
+        },
+        "mechanism/configs/mechanism_schedule.json": {
+          "sha256": "679ef2185c044103ef092c1f1ab9e64ebdd9adf0d751bf1fa87ce2d28b3e1d02",
+          "bytes": 42776
+        },
+        "mechanism/configs/mechanism_v4_design.md": {
+          "sha256": "81c1eb3e90e3c8597b4ba6c41f5c82defe40591656c012de3c2c4cf29383fd48",
+          "bytes": 16136
+        },
+        "mechanism/data/agentdojo_bicp_splits_v1.json": {
+          "sha256": "229e24504dd01203a7034fb03fe085ce456bacc545ca15387e1e464c48e10b82",
+          "bytes": 37959
+        },
+        "mechanism/data/agentdojo_source_audit_v1.json": {
+          "sha256": "6dfa8185b951704bba193325ec24f4f810ac3be57f8bc766b8b0f26c122a4614",
+          "bytes": 104837
+        },
+        "mechanism/data/mechanism_v4/actual_malicious_parameter_target.json": {
+          "sha256": "322e937f5eee52be1db6f7fab5174e883fbd5e71040a9fc8d4afb56dd310af36",
+          "bytes": 17972
+        },
+        "mechanism/data/mechanism_v4/conditional_evaluation_cases.json": {
+          "sha256": "9592dfb48b60fe5dd0944d3699bfa5962bfd0a7f3e343d9f6be0a0ff1566dd33",
+          "bytes": 21994
+        },
+        "mechanism/data/mechanism_v4/conditional_free_smoke_inputs.jsonl": {
+          "sha256": "e1ce08abb840b34c6c002a1bdc23ae3efc5592c13e671bfcb009cbede8749e37",
+          "bytes": 68641
+        },
+        "mechanism/data/mechanism_v4/historical_model_binding.json": {
+          "sha256": "ea46ea3b1b996dd4f273be10b81489132de88227dd21cbc2e139af2e41ac5d23",
+          "bytes": 1336
+        },
+        "mechanism/data/mechanism_v4/native_discovery_pool.jsonl": {
+          "sha256": "10dcd470e0d7a6cc4a06a598b16b4b49c8faf48b3fd7fabd49435e8958ecc59e",
+          "bytes": 427904
+        },
+        "mechanism/data/mechanism_v4/native_evaluation_labels.json": {
+          "sha256": "002268d81ceadc5011fd78d2cae27163ddda235075d5bbcab3712957c683c946",
+          "bytes": 2784
+        },
+        "mechanism/data/mechanism_v4/parameter_evaluation_labels.json": {
+          "sha256": "6c1988811df048ebdd7731c3a19f25fba85bb7a3990210ec8c260afa7799edd2",
+          "bytes": 9055
+        },
+        "mechanism/data/mechanism_v4/parameter_factorial_payloads.json": {
+          "sha256": "2d062a058fa9eb665044f912cd17ed714cc148db66b51d4d977a8485626fbbcb",
+          "bytes": 261801
+        },
+        "mechanism/data/mechanism_v4/thought_evaluation_labels.json": {
+          "sha256": "8fded8b7488e3db99ce992778249b7fa75053de95efb46f93734db38eb81fb17",
+          "bytes": 30118
+        },
+        "mechanism/data/mechanism_v4/thought_replay_pool.jsonl": {
+          "sha256": "e6f0c8e5a715f748a0f0087eb216e335188d9306bd30014b29b9019447660e9b",
+          "bytes": 2709457
+        },
+        "mechanism/data/mechanism_v4/tool_risk_layers.json": {
+          "sha256": "5dcd7937ef9ce09150944c67176cf30954f96caf5d366992ea37289175f4bd9c",
+          "bytes": 23186
+        },
+        "mechanism/data/mechanism_v4/workspace_evaluation_state.json": {
+          "sha256": "6d2cea3fd519af162d4f40560704a09ba4597f286b0e2dd594df09950cf8cc4a",
+          "bytes": 148076
+        },
+        "mechanism/data/mechanism_v4/workspace_truncation_fixture.json": {
+          "sha256": "b7b9784b7ffe2bd101c5f1ed3b85722f837874eeef68ad5449f9145ac61604a9",
+          "bytes": 75899
+        },
+        "mechanism/data/upstream/AgentDojo/LICENSE": {
+          "sha256": "a090c871ff2aa6abb58a0eda1b6262dca39a7610de3df3411497fba7aa6fad09",
+          "bytes": 1182
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/__init__.py": {
+          "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+          "bytes": 2
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/agent_pipeline/__init__.py": {
+          "sha256": "98ac187c90c29f05954197a3e44beb14d59f9d36f906c1ba7937415bfc6782e9",
+          "bytes": 1594
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/agent_pipeline/agent_pipeline.py": {
+          "sha256": "0de07a163216b996b42da3db2032236ba15065a5a781ff2cdde206fbf8306ad9",
+          "bytes": 12005
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/agent_pipeline/base_pipeline_element.py": {
+          "sha256": "5ab8b0173aeb1886d35c25774ebc3645dcc00096e60bff82e76ef9a99cd3456e",
+          "bytes": 1355
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/agent_pipeline/basic_elements.py": {
+          "sha256": "4001b0ed7ba07d47723cacf2fa270178dd297aa792965b25693223e893424521",
+          "bytes": 2124
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/agent_pipeline/errors.py": {
+          "sha256": "5c778ab81b26819b53c47f5b1d2e85bbcf503666039977f23d6f52bb31a9dc7c",
+          "bytes": 898
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/agent_pipeline/ground_truth_pipeline.py": {
+          "sha256": "e92f71a3a63332523f589d229c38b774a01676898deafceeaedfeb555a41b245",
+          "bytes": 2478
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/agent_pipeline/llms/__init__.py": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/agent_pipeline/llms/anthropic_llm.py": {
+          "sha256": "54cc4fcb69ea683eb73cfc86a3a07c30f8e6d59a139d45c9dbf6d3cf3085c87c",
+          "bytes": 13087
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/agent_pipeline/llms/cohere_llm.py": {
+          "sha256": "4417c0a15775faa8e0eb7e58b076abeb7fba844176b6b77c15f9783c52d183bf",
+          "bytes": 10380
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/agent_pipeline/llms/google_llm.py": {
+          "sha256": "03b38f45fbd43eef8de6f6a62ff174ae3161fd5746e0d0b1a8ae34e503f4d15d",
+          "bytes": 11918
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/agent_pipeline/llms/local_llm.py": {
+          "sha256": "4325eb5fbb0dbdf633db04e9478c55e8848ba7f0bfbe7b608966803b7711b0fb",
+          "bytes": 7587
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/agent_pipeline/llms/openai_llm.py": {
+          "sha256": "487493a70b4d1cb5f580c4b0fab5b8d47e43b514c1409e9151e6f5d6414285a1",
+          "bytes": 9252
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/agent_pipeline/llms/prompting_llm.py": {
+          "sha256": "9ccad9f0d7b1d91af6ed59907a2ea2693813127ca4c2900bfd1b3e4149b75464",
+          "bytes": 16727
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/agent_pipeline/pi_detector.py": {
+          "sha256": "96c8de3c3c2c42c18cc913e97cfedf29eaf295f5adcf199dc773f7eed69a0d19",
+          "bytes": 7275
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/agent_pipeline/planner.py": {
+          "sha256": "f056d24bac054ce5be1f3ee0dab9804b72cfd7df9d16eceb17104061307f0565",
+          "bytes": 1917
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/agent_pipeline/tool_execution.py": {
+          "sha256": "102f83e431f9757c2f16dfe934bd27412d504f15705bccb26507d154fd7fbffa",
+          "bytes": 6781
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/ast_utils.py": {
+          "sha256": "075f0decdc1f0c456b2bcd2398273f3d7b65525ee0cb1b45872d5f66c498a0da",
+          "bytes": 3482
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/attacks/__init__.py": {
+          "sha256": "ffa69b90e307234d79774585fdb8ddfa958d608948a376f170b2ee31efb32609",
+          "bytes": 500
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/attacks/attack_registry.py": {
+          "sha256": "1b54ecfc6d59d6e5c724e5df3604bf5a4cdf125bc95388b74c6c60305ca26a4d",
+          "bytes": 1376
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/attacks/base_attacks.py": {
+          "sha256": "9f5276ddb0e7b4beb2379c2483e0b87f16aa90f40253e57d5da50ec409e9797b",
+          "bytes": 6476
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/attacks/baseline_attacks.py": {
+          "sha256": "3f9e597f1543d911a753801d8964f91f5ded12810be8cce34e4235f81449f907",
+          "bytes": 2957
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/attacks/dos_attacks.py": {
+          "sha256": "91a826337792213ba8a18a1f422c1d69052ae9cf4fe103feeedefa27aa865f6a",
+          "bytes": 4655
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/attacks/important_instructions_attacks.py": {
+          "sha256": "dceb60b6202aa3391f83814cd8d18973afb6a49f6dff9bc95f360f00a923d62d",
+          "bytes": 6366
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/base_tasks.py": {
+          "sha256": "6e288eaa9119d0ca506d6cf6d08c6db54a68bed23a11c545a2325c7b6ae05d0b",
+          "bytes": 7040
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/benchmark.py": {
+          "sha256": "d238a9e8db56d1cfbf49b0b0b0f6c213a2dd456ada2631e7da22758b39826c63",
+          "bytes": 18190
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/data/suites/banking/environment.yaml": {
+          "sha256": "7aacb512c23edcce0418dd8f9d5197664fb1bba7e4adcb266d2152092d88320e",
+          "bytes": 2336
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/data/suites/banking/injection_vectors.yaml": {
+          "sha256": "af58685cd9218b1a2d6bc82f9b282169b8a7dd553d5554bd7b89515bf39fbf33",
+          "bytes": 669
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/data/suites/slack/environment.yaml": {
+          "sha256": "0179511945aa31d065acc58372e1d6643dcb9d51d1a8fb570c5d249fc2970c3b",
+          "bytes": 3940
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/data/suites/slack/injection_vectors.yaml": {
+          "sha256": "0c247011c42423b5bf19b5195b66b56ebe628a0d96cc1ea3b043b6e8925ba84d",
+          "bytes": 571
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/data/suites/travel/environment.yaml": {
+          "sha256": "74f3b10ffd5c33b4c2adcf9dc46047c12336d79e945a8d872b8b9034fcaec7db",
+          "bytes": 21560
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/data/suites/travel/injection_vectors.yaml": {
+          "sha256": "26c43c58784d827ee9e6c0a6a10dc3f3bcbf5cf981ff11bd9a03173ba1afd401",
+          "bytes": 1582
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/data/suites/workspace/environment.yaml": {
+          "sha256": "c0f93e6b6f9de005fec63588dc579313f227a87235c10259375a9f43aa13db3e",
+          "bytes": 126
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/data/suites/workspace/gpt_prompts.txt": {
+          "sha256": "741300af9e1c8e1ab00c617ab12eca48267c2e0ca882a52d77397427ac04e678",
+          "bytes": 5891
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/data/suites/workspace/include/calendar.yaml": {
+          "sha256": "0cc12f15f0d9b03e2ef025c3f1b6cb0b807db2e83bee76e2b0c90af78deee9ea",
+          "bytes": 9929
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/data/suites/workspace/include/cloud_drive.yaml": {
+          "sha256": "95b52f6f408016b42adfdff3d1005514fec3a629e92348c28e05f3dba113eaca",
+          "bytes": 28913
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/data/suites/workspace/include/inbox.yaml": {
+          "sha256": "13cf70a0a40252708b5f879987fa1fa24dbd92a3639c975bfe294ab7f4fd3c50",
+          "bytes": 14315
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/data/suites/workspace/injection_vectors.yaml": {
+          "sha256": "13223dbffc51cf7c843657b80939f89c82a46e8b2faf062522241dc5bf928722",
+          "bytes": 3048
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/data/system_messages.yaml": {
+          "sha256": "627465d34bba41adc4ac8b575db247cc3fed37ba593a6087460bdde3c6a38279",
+          "bytes": 502
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/default_suites/__init__.py": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/default_suites/v1/__init__.py": {
+          "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+          "bytes": 2
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/default_suites/v1/banking/__init__.py": {
+          "sha256": "7d8ba4aea3fde28dca5f77077a29991f3fc1055d6c1fd6cbbb48f39d3ca0e0f9",
+          "bytes": 353
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/default_suites/v1/banking/injection_tasks.py": {
+          "sha256": "2b9c0572d83234b2aba9ecd9004ab9c5ce327f0076976334f1d1b97e87263d25",
+          "bytes": 15727
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/default_suites/v1/banking/task_suite.py": {
+          "sha256": "dd7fd03dc7c7b50c3f5c5ed62c82073b0018d9d96805d229564642b9ecb72908",
+          "bytes": 1130
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/default_suites/v1/banking/user_tasks.py": {
+          "sha256": "670cd9cff9ce04f152c8ede4b18a4f0b2591be4caf84c27bb761fc25ec3a16c1",
+          "bytes": 20021
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/default_suites/v1/slack/__init__.py": {
+          "sha256": "2278fe6e837cd180db32ce0714af81770b6c14a48337ed0e710f60f0646576e3",
+          "bytes": 339
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/default_suites/v1/slack/injection_tasks.py": {
+          "sha256": "b2bd28e2548d51d8c2f0111bb5bd8c6dfa3781a304dda3039910ccf9078148ec",
+          "bytes": 9370
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/default_suites/v1/slack/task_suite.py": {
+          "sha256": "1301f32c392fefc59fbfc05edc34a2a81c929aa449ddefdb7eac24af9d07c6df",
+          "bytes": 976
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/default_suites/v1/slack/user_tasks.py": {
+          "sha256": "0f799978be0a3eb40628ae5d55ee34b1930505e26fc813efbe9ddf8d896a5014",
+          "bytes": 26722
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/__init__.py": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/banking_client.py": {
+          "sha256": "4f8afb40e526143438ed71a2fe128488c705d76c9d111319edb362859c7c9f70",
+          "bytes": 5315
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/calendar_client.py": {
+          "sha256": "0ea556c5ced4219cedba60d2b31ef016ee23b72c50da52430988a5f5f8dc1d8a",
+          "bytes": 10491
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/cloud_drive_client.py": {
+          "sha256": "2319db571ebfbdd882745c9eb21ed68437231ba26287fbd719af108a1c757b75",
+          "bytes": 5732
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/email_client.py": {
+          "sha256": "f5f7ef9aea23e65811145341e70d955a14585e45af6d6eae6e2d5af540cb92d0",
+          "bytes": 10488
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/file_reader.py": {
+          "sha256": "dbfa976819adf19b8f896dceb29960ff5cc32c3d1034f52aee70ecea81e472f9",
+          "bytes": 453
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/slack.py": {
+          "sha256": "940004acaa2aca8e65b5ada91e49990caf9f35a3188c660c964ac8cd50f3691a",
+          "bytes": 4715
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/travel_booking_client.py": {
+          "sha256": "2889df7b6cd50883d2151906ee10390c4cc6689a2ddae6b5dd85e2cc2c2e5f40",
+          "bytes": 15594
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/types.py": {
+          "sha256": "1595421019d2368c8c2faab3d5f0a5162a4b2a76a87ede573880d866229e8fdd",
+          "bytes": 3507
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/user_account.py": {
+          "sha256": "b0472ff64d7708c2cf177d5fcafa6c2a124c0c33db23fb37b13f06a6d28d1715",
+          "bytes": 2053
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/web.py": {
+          "sha256": "5b5e2c3dfd6a5b2e170618f55c285d22507b96120c8c6a6ba359b7966c7db4fc",
+          "bytes": 1492
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/default_suites/v1/travel/__init__.py": {
+          "sha256": "3254c4c6a969ed0144fd74c12703e66256beca364eaa99627e3425ce75eb40ea",
+          "bytes": 346
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/default_suites/v1/travel/injection_tasks.py": {
+          "sha256": "6ceae9355da8c3d9cacd22cc595908b19e8ac5ea28e20cba725e0c517a12ad6b",
+          "bytes": 12905
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/default_suites/v1/travel/task_suite.py": {
+          "sha256": "d3045f04e12e7d5a9e7e44382c96b18c6b0c207643f4007b6a86a6ae9388254c",
+          "bytes": 3239
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/default_suites/v1/travel/user_tasks.py": {
+          "sha256": "09c75b52dfcbd40d07f5ff86164c0ba3801305e5624f1847916322c0702c6d86",
+          "bytes": 78734
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/default_suites/v1/workspace/__init__.py": {
+          "sha256": "df368957485c3c8754c0420c32e07612914fbf3c5fad17a6153ba5ee5923f37a",
+          "bytes": 367
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/default_suites/v1/workspace/injection_tasks.py": {
+          "sha256": "deeb63534fe5af5e86e7d9daa0c62f7e32df29c5d0772328dc0fcf14525fe4d3",
+          "bytes": 10915
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/default_suites/v1/workspace/task_suite.py": {
+          "sha256": "8dd86e015496d0408f8532b4f49aad0af17f757699d66d32eee102a07c85ad11",
+          "bytes": 2290
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/default_suites/v1/workspace/user_tasks.py": {
+          "sha256": "994e4801e44f2673083095d5be2e80d3e5b81f85e8bf211cbcceda092b17d535",
+          "bytes": 56978
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/default_suites/v1_1/__init__.py": {
+          "sha256": "a206c229ceab2c8166db1c387558c5219db9355554fa5ec37e693490f4ca7c8d",
+          "bytes": 70
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/default_suites/v1_1/travel/user_tasks.py": {
+          "sha256": "52046f87761e1ced4cf9c49a8c0767f19b3decd76fcf7eab1f6e44dfc97663b7",
+          "bytes": 75153
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/default_suites/v1_1_1/__init__.py": {
+          "sha256": "ae7f633870a9188c5dd8d953082b35c6b4f8d85338f8daf557460e848988b9fb",
+          "bytes": 312
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/default_suites/v1_1_1/banking/__init__.py": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/default_suites/v1_1_1/banking/user_tasks.py": {
+          "sha256": "0e743f7d8a9c9996f7bc69fc283c82cf38b739fd4298b2f22c2fab94bb4910f8",
+          "bytes": 2815
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/default_suites/v1_1_1/slack/__init__.py": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/default_suites/v1_1_1/slack/user_tasks.py": {
+          "sha256": "cd06c3e417ad19b8c24578f99fda06cf0979d677fe1d76d55e1d7afe5c4a931b",
+          "bytes": 11393
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/default_suites/v1_1_1/travel/__init__.py": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/default_suites/v1_1_1/travel/injection_tasks.py": {
+          "sha256": "0b80e911f5c20bcf30fa9a9023da4db3abe609667661d8ad09aa12d38b1c4e4d",
+          "bytes": 3060
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/default_suites/v1_1_1/travel/user_tasks.py": {
+          "sha256": "9033878cb7104da4720dadd7d15e73161c0f5168c21f76a5672a87ef9d72406f",
+          "bytes": 4350
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/default_suites/v1_1_1/workspace/user_tasks.py": {
+          "sha256": "975388152e7cda71d2b5a5bcf4ecf79352fe37ada23b682d808e45be903b943d",
+          "bytes": 8218
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/default_suites/v1_1_2/__init__.py": {
+          "sha256": "f05a520fbb91337255604420b519e806cd438324819950c57d6a03173034d8fb",
+          "bytes": 204
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/default_suites/v1_1_2/travel/__init__.py": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/default_suites/v1_1_2/travel/injection_tasks.py": {
+          "sha256": "f127dbad0cc33c9cab3168ab075e3ae92a228352ee9bd6daeff6af1910f0e2b5",
+          "bytes": 5382
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/default_suites/v1_1_2/workspace/__init__.py": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/default_suites/v1_1_2/workspace/injection_tasks.py": {
+          "sha256": "e4e3ae9e48fa2a58e9877a7a2e3615016749b8caf474e81c48d6c2a0402981dc",
+          "bytes": 8568
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/default_suites/v1_1_2/workspace/user_tasks.py": {
+          "sha256": "39a96da13bd14ca4b24d808c2c5ab3c7042e951ca7ecf4558b600e7458bcade3",
+          "bytes": 5540
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/default_suites/v1_2/__init__.py": {
+          "sha256": "fd0a293d199e3d26ac7ee80c913327b07b6620840b56e08c9a8e5defacb1b169",
+          "bytes": 371
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/default_suites/v1_2/banking/injection_tasks.py": {
+          "sha256": "3df7c1299b6b67c5fb43eaea5720082564b6e0b1775852a96b68df8e8521fe1c",
+          "bytes": 15599
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/default_suites/v1_2/slack/user_tasks.py": {
+          "sha256": "7c92d8959565f5c1d5502d99ba637d93e0e53800756486f67c04d19cb4dfca98",
+          "bytes": 3471
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/default_suites/v1_2/travel/injection_tasks.py": {
+          "sha256": "91f4caa3133efd737b50a2d2e95ac652af97abf79ebf6dbcc736a0b8dd36332f",
+          "bytes": 2094
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/default_suites/v1_2/travel/user_tasks.py": {
+          "sha256": "c8d7979e0a48a2d5841c301b281f9c37e78b7bac5359b37afda90cccebac09b9",
+          "bytes": 5171
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/default_suites/v1_2/workspace/injection_tasks.py": {
+          "sha256": "197334725f4744c7c33bd0f0e1d81aa1927bce6c32cedee272bf8aae9b2a90af",
+          "bytes": 18296
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/default_suites/v1_2/workspace/user_tasks.py": {
+          "sha256": "efd426647c40b1a3087e54de12881949aeec0805776b7ebaf76f7d3b107c380a",
+          "bytes": 9201
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/default_suites/v1_2_1/__init__.py": {
+          "sha256": "fd6098580646ca13a0880ab80861aad520e7af30d01cd04609294abc50bcf6ff",
+          "bytes": 80
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/default_suites/v1_2_1/workspace/injection_tasks.py": {
+          "sha256": "dd2f56f315d74d76964440491a1bda11eaaba86d15200fd769a686b077463e30",
+          "bytes": 4464
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/default_suites/v1_2_2/__init__.py": {
+          "sha256": "59ae25a062ad6fe6084650aa559ca0cdc84764db11c213cbef556feacc811ded",
+          "bytes": 134
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/default_suites/v1_2_2/banking/__init__.py": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/default_suites/v1_2_2/banking/user_tasks.py": {
+          "sha256": "07477ec5014914fec394ffc93652772893c7fe564f461568d990771c8c3f9e00",
+          "bytes": 2002
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/default_suites/v1_2_2/workspace/__init__.py": {
+          "sha256": "c0d7dbff280453e0e15a4a3426741e70d97b2480747b8e0e242add96ee639911",
+          "bytes": 75
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/default_suites/v1_2_2/workspace/user_tasks.py": {
+          "sha256": "3c48f8bcc73574e38b78916aa4f33ba36fcefd9abcd4b579770a76ee58a54576",
+          "bytes": 1493
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/functions_runtime.py": {
+          "sha256": "dce2bdf4b1c04b77ebd82f9ee165c283cda492045615a9e510e6d5c9423e9248",
+          "bytes": 12939
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/logging.py": {
+          "sha256": "109d3fde1e7fc3aedf44ad0c8d86cc719d9ea1faf43d4745f2555d6628681db0",
+          "bytes": 10282
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/models.py": {
+          "sha256": "839b8ef78df6d877b52863570427f916317be784df3b51206c5819baebe87612",
+          "bytes": 5130
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/scripts/__init__.py": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/scripts/benchmark.py": {
+          "sha256": "9a138404c09fd99a2e197515b3c2a1ed5e75b54d2fc9e59d50976fc3c0587c0e",
+          "bytes": 10642
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/scripts/check_suites.py": {
+          "sha256": "dac0058ad1b4b8a6f3538fdd1f6d55884bb0d21cc8461195b6eaeb0aecf1d931",
+          "bytes": 2678
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/strenum.py": {
+          "sha256": "50cad98e9f29926c3f6ba1167fde52705920079b0e67d888d8e8ee1e4fe0da01",
+          "bytes": 297
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/task_suite/__init__.py": {
+          "sha256": "63d16afb6ffb4b8f394028b2a54aa5e42312f552fe88eaebaed2778476f9d629",
+          "bytes": 387
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/task_suite/load_suites.py": {
+          "sha256": "5670a05b045f21085a89f8d08acca04215ba162dc8ed80dffe1d63ab6ecc7954",
+          "bytes": 3229
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/task_suite/task_combinators.py": {
+          "sha256": "85ee94e09fdc8f45949c5e440404e06ee138c100acc91d1acb705ab2179dd416",
+          "bytes": 3620
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/task_suite/task_suite.py": {
+          "sha256": "5a989815b0d66d87a0f1b802b1753c6a37d181d02b3dbc5933a330f2eb85fef1",
+          "bytes": 20309
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/types.py": {
+          "sha256": "a8b682192ccad524ebeaa610a78d494270043913bf9b1d4ac159de5c9b0df3a7",
+          "bytes": 3582
+        },
+        "mechanism/data/upstream/AgentDojo/src/agentdojo/yaml_loader.py": {
+          "sha256": "f1728735dc5732ee7fddf7af0c31762193180a24fa74526bdba9330edd824511",
+          "bytes": 2670
+        },
+        "mechanism/data/upstream/InjecAgent/LICENCE": {
+          "sha256": "2889829a6a4c3b0b340af05612d2f4fc5424693bf504a49a82dbb6e9fa73e7b9",
+          "bytes": 1086
+        },
+        "mechanism/data/upstream/InjecAgent/src/output_parsing.py": {
+          "sha256": "ffbc9e8286d8bc19c53a3e4ee8ee37ae01707ae3b4f5de74f104bcbd9eb63ddd",
+          "bytes": 9906
+        },
+        "mechanism/requirements-agentdojo.txt": {
+          "sha256": "6e3234a105dd123223d0a68494657480cf8a589289afe84a8e4caca46eef0f3c",
+          "bytes": 181
+        },
+        "mechanism/requirements-kaggle.txt": {
+          "sha256": "e926b3f21d4a81786c2e7c4b6f44971c2dd556a55269b2552219d7004e1bdc47",
+          "bytes": 131
+        },
+        "mechanism/scripts/check_mechanism_torch.py": {
+          "sha256": "1ff780ea2e0b9785d73c68ec7628dd4b511fc7c1b487eba6236f04e6ca2d2592",
+          "bytes": 3120
+        },
+        "mechanism/scripts/check_mechanism_v3_runtime_torch.py": {
+          "sha256": "3083a6e2bee33abc3a985a90f94ade02528f931d3067b655ce98bf5f0bb6ac49",
+          "bytes": 3536
+        },
+        "mechanism/scripts/check_mechanism_v4_torch.py": {
+          "sha256": "134435e557aedc8fe2a35ff515860a93a2cf360fb65966a7d4fd954351ec8a14",
+          "bytes": 4286
+        },
+        "mechanism/src/__init__.py": {
+          "sha256": "b9d0a9f04da15931d354ba7e67aa749505c83b3756a539944bd7c56376ba087e",
+          "bytes": 37
+        },
+        "mechanism/src/agentdojo_core.py": {
+          "sha256": "8ae783e416d69d9f9e3c619b8cb08406e251ccd29933a76630be1f60c27d7c0c",
+          "bytes": 2942
+        },
+        "mechanism/src/conditional_tasks.py": {
+          "sha256": "156a4191f4dd1add096dcb3695244ee48647a6395a12291f0d90ae744550cb2d",
+          "bytes": 27342
+        },
+        "mechanism/src/injecagent.py": {
+          "sha256": "f4f5a4009b52fc89a06a93a413ad77dfd7ce55b9223d07006dd155becd6def3c",
+          "bytes": 4621
+        },
+        "mechanism/src/mechanism_probe.py": {
+          "sha256": "46fbd193754891184b57b950fa8cae73d568309a0c4325f745107ed0627c9fd2",
+          "bytes": 17318
+        },
+        "mechanism/src/mechanism_v3.py": {
+          "sha256": "1e654473ac00de0e70e6b71be829f34be84d7ce00627fbf806a6deb6f95e59d7",
+          "bytes": 9570
+        },
+        "mechanism/src/mechanism_v4.py": {
+          "sha256": "a17c8f76c9f9f67ddbfa6c2cd1a47c382a45ac3472eb930ef1e505473fa5d58e",
+          "bytes": 12452
+        },
+        "mechanism/src/metrics.py": {
+          "sha256": "f1f82d1e2caa9d9b946dadb252cbdb8cddcf812c930a02c9c881e3d2d227186d",
+          "bytes": 2484
+        },
+        "mechanism/src/parsing.py": {
+          "sha256": "8ee69e46a7d405420daa6938933da542fa037af7275a43d0750338ce5e7f477c",
+          "bytes": 3387
+        },
+        "mechanism/src/probe.py": {
+          "sha256": "b5c9d4e4224ee179dfb4fd2b88f73bd2f95da2d118ce73cee6406ac635e7c9ef",
+          "bytes": 23643
+        },
+        "mechanism/src/run_agentdojo_bicp.py": {
+          "sha256": "9b6c4d39029462d5b9c5697bd8fd747b1c777ba5cc3f73db2598a4a0467ca3b0",
+          "bytes": 35152
+        },
+        "mechanism/src/run_baseline.py": {
+          "sha256": "5811f8ea5926d2dadec1ace974bbeef2a1653f21cb0fd62e6b58be0bd352430b",
+          "bytes": 13331
+        },
+        "mechanism/src/run_bicp.py": {
+          "sha256": "a1ac044aee5539ec04481a1f94e44318fa7403084b907a5f25957f93174770c3",
+          "bytes": 51298
+        },
+        "mechanism/src/run_mechanism_diagnostic.py": {
+          "sha256": "c2f15bb5a42de8648ac9e4f5ab4d89302f87b667707ab13c86be0374efa40e58",
+          "bytes": 28622
+        },
+        "mechanism/src/run_mechanism_v3.py": {
+          "sha256": "c702bf0c9ddb3edb85279928feee7dd291691415e4402d8427131228946f9490",
+          "bytes": 22092
+        },
+        "mechanism/src/run_mechanism_v4.py": {
+          "sha256": "9b16d02febaf4b3f4f530c1ac355b6b2f70a62fd7e3a162db63c5fb71724b62d",
+          "bytes": 17422
+        },
+        "mechanism/src/toolbench.py": {
+          "sha256": "e9f33f73500ae9ead4abc65490ad160dbf88dadf88024bdeb02f52f32d8e0410",
+          "bytes": 1885
+        },
+        "pilot/configs/deployment_model.json": {
+          "sha256": "d0ec15276f666ef854691c78b1df3d2fc5b79d34a054a1255cc6f74bee6b14bc",
+          "bytes": 1515
+        },
+        "pilot/configs/deployment_protocol.json": {
+          "sha256": "efd54c236db45935802ed5a25ee01881e602ac85e2c76c3924236aefdd076346",
+          "bytes": 9462
+        },
+        "pilot/configs/frozen_policy.json": {
+          "sha256": "95a3f6afcd8fe47aeade2a5fa6499b2ccaadc4d0683ea8968bea02d7dce62e99",
+          "bytes": 1240
+        },
+        "pilot/configs/pilot_execution.json": {
+          "sha256": "89231b72bee6545f9999f366a4386d1021acaa6bc52943e74882e1d357b70afe",
+          "bytes": 22543
+        },
+        "pilot/data/agentdojo_source_audit_v1.json": {
+          "sha256": "6dfa8185b951704bba193325ec24f4f810ac3be57f8bc766b8b0f26c122a4614",
+          "bytes": 104837
+        },
+        "pilot/data/pilot/healthcheck_public.json": {
+          "sha256": "ea368dbc39e7b855a71e5cecd107cfdf5f5cc982fbf26d72bfe52d02643099a8",
+          "bytes": 202676
+        },
+        "pilot/data/pilot/public_inputs.jsonl": {
+          "sha256": "ad23ab401c36ab5ca2bc75917ec5390f82817280a765227209df00ca13f706ea",
+          "bytes": 707690
+        },
+        "pilot/data/pilot/schedule_public.json": {
+          "sha256": "3787f62d0262079dc5cf80fe437dbbc88eb691985197afbe7d17112d002dacdd",
+          "bytes": 8812
+        },
+        "pilot/data/pilot/tool_risks.json": {
+          "sha256": "e5d821a39b1d22e695f6f4ff2628902dceb529eaef6418d6bc1fc6c60a05f859",
+          "bytes": 25041
+        },
+        "pilot/data/upstream/AgentDojo/LICENSE": {
+          "sha256": "a090c871ff2aa6abb58a0eda1b6262dca39a7610de3df3411497fba7aa6fad09",
+          "bytes": 1182
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/__init__.py": {
+          "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+          "bytes": 2
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/agent_pipeline/__init__.py": {
+          "sha256": "98ac187c90c29f05954197a3e44beb14d59f9d36f906c1ba7937415bfc6782e9",
+          "bytes": 1594
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/agent_pipeline/agent_pipeline.py": {
+          "sha256": "0de07a163216b996b42da3db2032236ba15065a5a781ff2cdde206fbf8306ad9",
+          "bytes": 12005
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/agent_pipeline/base_pipeline_element.py": {
+          "sha256": "5ab8b0173aeb1886d35c25774ebc3645dcc00096e60bff82e76ef9a99cd3456e",
+          "bytes": 1355
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/agent_pipeline/basic_elements.py": {
+          "sha256": "4001b0ed7ba07d47723cacf2fa270178dd297aa792965b25693223e893424521",
+          "bytes": 2124
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/agent_pipeline/errors.py": {
+          "sha256": "5c778ab81b26819b53c47f5b1d2e85bbcf503666039977f23d6f52bb31a9dc7c",
+          "bytes": 898
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/agent_pipeline/ground_truth_pipeline.py": {
+          "sha256": "e92f71a3a63332523f589d229c38b774a01676898deafceeaedfeb555a41b245",
+          "bytes": 2478
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/agent_pipeline/llms/__init__.py": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/agent_pipeline/llms/anthropic_llm.py": {
+          "sha256": "54cc4fcb69ea683eb73cfc86a3a07c30f8e6d59a139d45c9dbf6d3cf3085c87c",
+          "bytes": 13087
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/agent_pipeline/llms/cohere_llm.py": {
+          "sha256": "4417c0a15775faa8e0eb7e58b076abeb7fba844176b6b77c15f9783c52d183bf",
+          "bytes": 10380
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/agent_pipeline/llms/google_llm.py": {
+          "sha256": "03b38f45fbd43eef8de6f6a62ff174ae3161fd5746e0d0b1a8ae34e503f4d15d",
+          "bytes": 11918
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/agent_pipeline/llms/local_llm.py": {
+          "sha256": "4325eb5fbb0dbdf633db04e9478c55e8848ba7f0bfbe7b608966803b7711b0fb",
+          "bytes": 7587
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/agent_pipeline/llms/openai_llm.py": {
+          "sha256": "487493a70b4d1cb5f580c4b0fab5b8d47e43b514c1409e9151e6f5d6414285a1",
+          "bytes": 9252
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/agent_pipeline/llms/prompting_llm.py": {
+          "sha256": "9ccad9f0d7b1d91af6ed59907a2ea2693813127ca4c2900bfd1b3e4149b75464",
+          "bytes": 16727
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/agent_pipeline/pi_detector.py": {
+          "sha256": "96c8de3c3c2c42c18cc913e97cfedf29eaf295f5adcf199dc773f7eed69a0d19",
+          "bytes": 7275
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/agent_pipeline/planner.py": {
+          "sha256": "f056d24bac054ce5be1f3ee0dab9804b72cfd7df9d16eceb17104061307f0565",
+          "bytes": 1917
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/agent_pipeline/tool_execution.py": {
+          "sha256": "102f83e431f9757c2f16dfe934bd27412d504f15705bccb26507d154fd7fbffa",
+          "bytes": 6781
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/ast_utils.py": {
+          "sha256": "075f0decdc1f0c456b2bcd2398273f3d7b65525ee0cb1b45872d5f66c498a0da",
+          "bytes": 3482
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/attacks/__init__.py": {
+          "sha256": "ffa69b90e307234d79774585fdb8ddfa958d608948a376f170b2ee31efb32609",
+          "bytes": 500
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/attacks/attack_registry.py": {
+          "sha256": "1b54ecfc6d59d6e5c724e5df3604bf5a4cdf125bc95388b74c6c60305ca26a4d",
+          "bytes": 1376
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/attacks/base_attacks.py": {
+          "sha256": "9f5276ddb0e7b4beb2379c2483e0b87f16aa90f40253e57d5da50ec409e9797b",
+          "bytes": 6476
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/attacks/baseline_attacks.py": {
+          "sha256": "3f9e597f1543d911a753801d8964f91f5ded12810be8cce34e4235f81449f907",
+          "bytes": 2957
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/attacks/dos_attacks.py": {
+          "sha256": "91a826337792213ba8a18a1f422c1d69052ae9cf4fe103feeedefa27aa865f6a",
+          "bytes": 4655
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/attacks/important_instructions_attacks.py": {
+          "sha256": "dceb60b6202aa3391f83814cd8d18973afb6a49f6dff9bc95f360f00a923d62d",
+          "bytes": 6366
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/base_tasks.py": {
+          "sha256": "6e288eaa9119d0ca506d6cf6d08c6db54a68bed23a11c545a2325c7b6ae05d0b",
+          "bytes": 7040
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/benchmark.py": {
+          "sha256": "d238a9e8db56d1cfbf49b0b0b0f6c213a2dd456ada2631e7da22758b39826c63",
+          "bytes": 18190
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/data/suites/banking/environment.yaml": {
+          "sha256": "7aacb512c23edcce0418dd8f9d5197664fb1bba7e4adcb266d2152092d88320e",
+          "bytes": 2336
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/data/suites/banking/injection_vectors.yaml": {
+          "sha256": "af58685cd9218b1a2d6bc82f9b282169b8a7dd553d5554bd7b89515bf39fbf33",
+          "bytes": 669
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/data/suites/slack/environment.yaml": {
+          "sha256": "0179511945aa31d065acc58372e1d6643dcb9d51d1a8fb570c5d249fc2970c3b",
+          "bytes": 3940
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/data/suites/slack/injection_vectors.yaml": {
+          "sha256": "0c247011c42423b5bf19b5195b66b56ebe628a0d96cc1ea3b043b6e8925ba84d",
+          "bytes": 571
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/data/suites/travel/environment.yaml": {
+          "sha256": "74f3b10ffd5c33b4c2adcf9dc46047c12336d79e945a8d872b8b9034fcaec7db",
+          "bytes": 21560
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/data/suites/travel/injection_vectors.yaml": {
+          "sha256": "26c43c58784d827ee9e6c0a6a10dc3f3bcbf5cf981ff11bd9a03173ba1afd401",
+          "bytes": 1582
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/data/suites/workspace/environment.yaml": {
+          "sha256": "c0f93e6b6f9de005fec63588dc579313f227a87235c10259375a9f43aa13db3e",
+          "bytes": 126
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/data/suites/workspace/gpt_prompts.txt": {
+          "sha256": "741300af9e1c8e1ab00c617ab12eca48267c2e0ca882a52d77397427ac04e678",
+          "bytes": 5891
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/data/suites/workspace/include/calendar.yaml": {
+          "sha256": "0cc12f15f0d9b03e2ef025c3f1b6cb0b807db2e83bee76e2b0c90af78deee9ea",
+          "bytes": 9929
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/data/suites/workspace/include/cloud_drive.yaml": {
+          "sha256": "95b52f6f408016b42adfdff3d1005514fec3a629e92348c28e05f3dba113eaca",
+          "bytes": 28913
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/data/suites/workspace/include/inbox.yaml": {
+          "sha256": "13cf70a0a40252708b5f879987fa1fa24dbd92a3639c975bfe294ab7f4fd3c50",
+          "bytes": 14315
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/data/suites/workspace/injection_vectors.yaml": {
+          "sha256": "13223dbffc51cf7c843657b80939f89c82a46e8b2faf062522241dc5bf928722",
+          "bytes": 3048
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/data/system_messages.yaml": {
+          "sha256": "627465d34bba41adc4ac8b575db247cc3fed37ba593a6087460bdde3c6a38279",
+          "bytes": 502
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/default_suites/__init__.py": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/default_suites/v1/__init__.py": {
+          "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+          "bytes": 2
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/default_suites/v1/banking/__init__.py": {
+          "sha256": "7d8ba4aea3fde28dca5f77077a29991f3fc1055d6c1fd6cbbb48f39d3ca0e0f9",
+          "bytes": 353
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/default_suites/v1/banking/injection_tasks.py": {
+          "sha256": "2b9c0572d83234b2aba9ecd9004ab9c5ce327f0076976334f1d1b97e87263d25",
+          "bytes": 15727
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/default_suites/v1/banking/task_suite.py": {
+          "sha256": "dd7fd03dc7c7b50c3f5c5ed62c82073b0018d9d96805d229564642b9ecb72908",
+          "bytes": 1130
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/default_suites/v1/banking/user_tasks.py": {
+          "sha256": "670cd9cff9ce04f152c8ede4b18a4f0b2591be4caf84c27bb761fc25ec3a16c1",
+          "bytes": 20021
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/default_suites/v1/slack/__init__.py": {
+          "sha256": "2278fe6e837cd180db32ce0714af81770b6c14a48337ed0e710f60f0646576e3",
+          "bytes": 339
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/default_suites/v1/slack/injection_tasks.py": {
+          "sha256": "b2bd28e2548d51d8c2f0111bb5bd8c6dfa3781a304dda3039910ccf9078148ec",
+          "bytes": 9370
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/default_suites/v1/slack/task_suite.py": {
+          "sha256": "1301f32c392fefc59fbfc05edc34a2a81c929aa449ddefdb7eac24af9d07c6df",
+          "bytes": 976
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/default_suites/v1/slack/user_tasks.py": {
+          "sha256": "0f799978be0a3eb40628ae5d55ee34b1930505e26fc813efbe9ddf8d896a5014",
+          "bytes": 26722
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/__init__.py": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/banking_client.py": {
+          "sha256": "4f8afb40e526143438ed71a2fe128488c705d76c9d111319edb362859c7c9f70",
+          "bytes": 5315
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/calendar_client.py": {
+          "sha256": "0ea556c5ced4219cedba60d2b31ef016ee23b72c50da52430988a5f5f8dc1d8a",
+          "bytes": 10491
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/cloud_drive_client.py": {
+          "sha256": "2319db571ebfbdd882745c9eb21ed68437231ba26287fbd719af108a1c757b75",
+          "bytes": 5732
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/email_client.py": {
+          "sha256": "f5f7ef9aea23e65811145341e70d955a14585e45af6d6eae6e2d5af540cb92d0",
+          "bytes": 10488
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/file_reader.py": {
+          "sha256": "dbfa976819adf19b8f896dceb29960ff5cc32c3d1034f52aee70ecea81e472f9",
+          "bytes": 453
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/slack.py": {
+          "sha256": "940004acaa2aca8e65b5ada91e49990caf9f35a3188c660c964ac8cd50f3691a",
+          "bytes": 4715
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/travel_booking_client.py": {
+          "sha256": "2889df7b6cd50883d2151906ee10390c4cc6689a2ddae6b5dd85e2cc2c2e5f40",
+          "bytes": 15594
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/types.py": {
+          "sha256": "1595421019d2368c8c2faab3d5f0a5162a4b2a76a87ede573880d866229e8fdd",
+          "bytes": 3507
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/user_account.py": {
+          "sha256": "b0472ff64d7708c2cf177d5fcafa6c2a124c0c33db23fb37b13f06a6d28d1715",
+          "bytes": 2053
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/default_suites/v1/tools/web.py": {
+          "sha256": "5b5e2c3dfd6a5b2e170618f55c285d22507b96120c8c6a6ba359b7966c7db4fc",
+          "bytes": 1492
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/default_suites/v1/travel/__init__.py": {
+          "sha256": "3254c4c6a969ed0144fd74c12703e66256beca364eaa99627e3425ce75eb40ea",
+          "bytes": 346
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/default_suites/v1/travel/injection_tasks.py": {
+          "sha256": "6ceae9355da8c3d9cacd22cc595908b19e8ac5ea28e20cba725e0c517a12ad6b",
+          "bytes": 12905
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/default_suites/v1/travel/task_suite.py": {
+          "sha256": "d3045f04e12e7d5a9e7e44382c96b18c6b0c207643f4007b6a86a6ae9388254c",
+          "bytes": 3239
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/default_suites/v1/travel/user_tasks.py": {
+          "sha256": "09c75b52dfcbd40d07f5ff86164c0ba3801305e5624f1847916322c0702c6d86",
+          "bytes": 78734
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/default_suites/v1/workspace/__init__.py": {
+          "sha256": "df368957485c3c8754c0420c32e07612914fbf3c5fad17a6153ba5ee5923f37a",
+          "bytes": 367
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/default_suites/v1/workspace/injection_tasks.py": {
+          "sha256": "deeb63534fe5af5e86e7d9daa0c62f7e32df29c5d0772328dc0fcf14525fe4d3",
+          "bytes": 10915
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/default_suites/v1/workspace/task_suite.py": {
+          "sha256": "8dd86e015496d0408f8532b4f49aad0af17f757699d66d32eee102a07c85ad11",
+          "bytes": 2290
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/default_suites/v1/workspace/user_tasks.py": {
+          "sha256": "994e4801e44f2673083095d5be2e80d3e5b81f85e8bf211cbcceda092b17d535",
+          "bytes": 56978
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/default_suites/v1_1/__init__.py": {
+          "sha256": "a206c229ceab2c8166db1c387558c5219db9355554fa5ec37e693490f4ca7c8d",
+          "bytes": 70
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/default_suites/v1_1/travel/user_tasks.py": {
+          "sha256": "52046f87761e1ced4cf9c49a8c0767f19b3decd76fcf7eab1f6e44dfc97663b7",
+          "bytes": 75153
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/default_suites/v1_1_1/__init__.py": {
+          "sha256": "ae7f633870a9188c5dd8d953082b35c6b4f8d85338f8daf557460e848988b9fb",
+          "bytes": 312
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/default_suites/v1_1_1/banking/__init__.py": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/default_suites/v1_1_1/banking/user_tasks.py": {
+          "sha256": "0e743f7d8a9c9996f7bc69fc283c82cf38b739fd4298b2f22c2fab94bb4910f8",
+          "bytes": 2815
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/default_suites/v1_1_1/slack/__init__.py": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/default_suites/v1_1_1/slack/user_tasks.py": {
+          "sha256": "cd06c3e417ad19b8c24578f99fda06cf0979d677fe1d76d55e1d7afe5c4a931b",
+          "bytes": 11393
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/default_suites/v1_1_1/travel/__init__.py": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/default_suites/v1_1_1/travel/injection_tasks.py": {
+          "sha256": "0b80e911f5c20bcf30fa9a9023da4db3abe609667661d8ad09aa12d38b1c4e4d",
+          "bytes": 3060
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/default_suites/v1_1_1/travel/user_tasks.py": {
+          "sha256": "9033878cb7104da4720dadd7d15e73161c0f5168c21f76a5672a87ef9d72406f",
+          "bytes": 4350
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/default_suites/v1_1_1/workspace/user_tasks.py": {
+          "sha256": "975388152e7cda71d2b5a5bcf4ecf79352fe37ada23b682d808e45be903b943d",
+          "bytes": 8218
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/default_suites/v1_1_2/__init__.py": {
+          "sha256": "f05a520fbb91337255604420b519e806cd438324819950c57d6a03173034d8fb",
+          "bytes": 204
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/default_suites/v1_1_2/travel/__init__.py": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/default_suites/v1_1_2/travel/injection_tasks.py": {
+          "sha256": "f127dbad0cc33c9cab3168ab075e3ae92a228352ee9bd6daeff6af1910f0e2b5",
+          "bytes": 5382
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/default_suites/v1_1_2/workspace/__init__.py": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/default_suites/v1_1_2/workspace/injection_tasks.py": {
+          "sha256": "e4e3ae9e48fa2a58e9877a7a2e3615016749b8caf474e81c48d6c2a0402981dc",
+          "bytes": 8568
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/default_suites/v1_1_2/workspace/user_tasks.py": {
+          "sha256": "39a96da13bd14ca4b24d808c2c5ab3c7042e951ca7ecf4558b600e7458bcade3",
+          "bytes": 5540
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/default_suites/v1_2/__init__.py": {
+          "sha256": "fd0a293d199e3d26ac7ee80c913327b07b6620840b56e08c9a8e5defacb1b169",
+          "bytes": 371
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/default_suites/v1_2/banking/injection_tasks.py": {
+          "sha256": "3df7c1299b6b67c5fb43eaea5720082564b6e0b1775852a96b68df8e8521fe1c",
+          "bytes": 15599
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/default_suites/v1_2/slack/user_tasks.py": {
+          "sha256": "7c92d8959565f5c1d5502d99ba637d93e0e53800756486f67c04d19cb4dfca98",
+          "bytes": 3471
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/default_suites/v1_2/travel/injection_tasks.py": {
+          "sha256": "91f4caa3133efd737b50a2d2e95ac652af97abf79ebf6dbcc736a0b8dd36332f",
+          "bytes": 2094
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/default_suites/v1_2/travel/user_tasks.py": {
+          "sha256": "c8d7979e0a48a2d5841c301b281f9c37e78b7bac5359b37afda90cccebac09b9",
+          "bytes": 5171
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/default_suites/v1_2/workspace/injection_tasks.py": {
+          "sha256": "197334725f4744c7c33bd0f0e1d81aa1927bce6c32cedee272bf8aae9b2a90af",
+          "bytes": 18296
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/default_suites/v1_2/workspace/user_tasks.py": {
+          "sha256": "efd426647c40b1a3087e54de12881949aeec0805776b7ebaf76f7d3b107c380a",
+          "bytes": 9201
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/default_suites/v1_2_1/__init__.py": {
+          "sha256": "fd6098580646ca13a0880ab80861aad520e7af30d01cd04609294abc50bcf6ff",
+          "bytes": 80
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/default_suites/v1_2_1/workspace/injection_tasks.py": {
+          "sha256": "dd2f56f315d74d76964440491a1bda11eaaba86d15200fd769a686b077463e30",
+          "bytes": 4464
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/default_suites/v1_2_2/__init__.py": {
+          "sha256": "59ae25a062ad6fe6084650aa559ca0cdc84764db11c213cbef556feacc811ded",
+          "bytes": 134
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/default_suites/v1_2_2/banking/__init__.py": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/default_suites/v1_2_2/banking/user_tasks.py": {
+          "sha256": "07477ec5014914fec394ffc93652772893c7fe564f461568d990771c8c3f9e00",
+          "bytes": 2002
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/default_suites/v1_2_2/workspace/__init__.py": {
+          "sha256": "c0d7dbff280453e0e15a4a3426741e70d97b2480747b8e0e242add96ee639911",
+          "bytes": 75
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/default_suites/v1_2_2/workspace/user_tasks.py": {
+          "sha256": "3c48f8bcc73574e38b78916aa4f33ba36fcefd9abcd4b579770a76ee58a54576",
+          "bytes": 1493
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/functions_runtime.py": {
+          "sha256": "dce2bdf4b1c04b77ebd82f9ee165c283cda492045615a9e510e6d5c9423e9248",
+          "bytes": 12939
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/logging.py": {
+          "sha256": "109d3fde1e7fc3aedf44ad0c8d86cc719d9ea1faf43d4745f2555d6628681db0",
+          "bytes": 10282
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/models.py": {
+          "sha256": "839b8ef78df6d877b52863570427f916317be784df3b51206c5819baebe87612",
+          "bytes": 5130
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/scripts/__init__.py": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/scripts/benchmark.py": {
+          "sha256": "9a138404c09fd99a2e197515b3c2a1ed5e75b54d2fc9e59d50976fc3c0587c0e",
+          "bytes": 10642
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/scripts/check_suites.py": {
+          "sha256": "dac0058ad1b4b8a6f3538fdd1f6d55884bb0d21cc8461195b6eaeb0aecf1d931",
+          "bytes": 2678
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/strenum.py": {
+          "sha256": "50cad98e9f29926c3f6ba1167fde52705920079b0e67d888d8e8ee1e4fe0da01",
+          "bytes": 297
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/task_suite/__init__.py": {
+          "sha256": "63d16afb6ffb4b8f394028b2a54aa5e42312f552fe88eaebaed2778476f9d629",
+          "bytes": 387
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/task_suite/load_suites.py": {
+          "sha256": "5670a05b045f21085a89f8d08acca04215ba162dc8ed80dffe1d63ab6ecc7954",
+          "bytes": 3229
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/task_suite/task_combinators.py": {
+          "sha256": "85ee94e09fdc8f45949c5e440404e06ee138c100acc91d1acb705ab2179dd416",
+          "bytes": 3620
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/task_suite/task_suite.py": {
+          "sha256": "5a989815b0d66d87a0f1b802b1753c6a37d181d02b3dbc5933a330f2eb85fef1",
+          "bytes": 20309
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/types.py": {
+          "sha256": "a8b682192ccad524ebeaa610a78d494270043913bf9b1d4ac159de5c9b0df3a7",
+          "bytes": 3582
+        },
+        "pilot/data/upstream/AgentDojo/src/agentdojo/yaml_loader.py": {
+          "sha256": "f1728735dc5732ee7fddf7af0c31762193180a24fa74526bdba9330edd824511",
+          "bytes": 2670
+        },
+        "pilot/requirements-agentdojo.txt": {
+          "sha256": "7a9b8d30030d0ffcec97a9b5dd8b11237f9c536d56eca949200468e8ea66bc58",
+          "bytes": 181
+        },
+        "pilot/requirements-kaggle.txt": {
+          "sha256": "e926b3f21d4a81786c2e7c4b6f44971c2dd556a55269b2552219d7004e1bdc47",
+          "bytes": 131
+        },
+        "pilot/src/__init__.py": {
+          "sha256": "b9d0a9f04da15931d354ba7e67aa749505c83b3756a539944bd7c56376ba087e",
+          "bytes": 37
+        },
+        "pilot/src/agentdojo_core.py": {
+          "sha256": "8ae783e416d69d9f9e3c619b8cb08406e251ccd29933a76630be1f60c27d7c0c",
+          "bytes": 2942
+        },
+        "pilot/src/conditional_tasks.py": {
+          "sha256": "156a4191f4dd1add096dcb3695244ee48647a6395a12291f0d90ae744550cb2d",
+          "bytes": 27342
+        },
+        "pilot/src/deployment_calibration_v1.py": {
+          "sha256": "b6f56f519188ce3a50bc193935138eb91cffc02f0fda55d138ba8dcce720f392",
+          "bytes": 4375
+        },
+        "pilot/src/deployment_collection_v1.py": {
+          "sha256": "250695cf4ea783bff7a791ad186fb8d4baeac27a6d8c36dc1cdd99eaa35cdc02",
+          "bytes": 24762
+        },
+        "pilot/src/deployment_guard_v1.py": {
+          "sha256": "71e61a08ec9f16971baf877746cea54da2c88dae7a226bdfe11582218f8538d7",
+          "bytes": 16714
+        },
+        "pilot/src/deployment_pilot_v1.py": {
+          "sha256": "b6998ec9929527f27cec6480b7fc73f0dc94421554d08928679104f0d6a084bf",
+          "bytes": 14349
+        },
+        "pilot/src/deployment_pilot_v2.py": {
+          "sha256": "28b9081527f2b941b1014355de926b1e3fbe6afc2d15f0332fba00a3a893cde7",
+          "bytes": 8321
+        },
+        "pilot/src/deployment_probe_v1.py": {
+          "sha256": "9c11d006ef2c28b00e0ad732c52a9196a92e5613196dd82ab144da23630902be",
+          "bytes": 9040
+        },
+        "pilot/src/injecagent.py": {
+          "sha256": "f4f5a4009b52fc89a06a93a413ad77dfd7ce55b9223d07006dd155becd6def3c",
+          "bytes": 4621
+        },
+        "pilot/src/mechanism_probe.py": {
+          "sha256": "46fbd193754891184b57b950fa8cae73d568309a0c4325f745107ed0627c9fd2",
+          "bytes": 17318
+        },
+        "pilot/src/mechanism_v3.py": {
+          "sha256": "1e654473ac00de0e70e6b71be829f34be84d7ce00627fbf806a6deb6f95e59d7",
+          "bytes": 9570
+        },
+        "pilot/src/mechanism_v4.py": {
+          "sha256": "a17c8f76c9f9f67ddbfa6c2cd1a47c382a45ac3472eb930ef1e505473fa5d58e",
+          "bytes": 12452
+        },
+        "pilot/src/metrics.py": {
+          "sha256": "f1f82d1e2caa9d9b946dadb252cbdb8cddcf812c930a02c9c881e3d2d227186d",
+          "bytes": 2484
+        },
+        "pilot/src/parsing.py": {
+          "sha256": "8ee69e46a7d405420daa6938933da542fa037af7275a43d0750338ce5e7f477c",
+          "bytes": 3387
+        },
+        "pilot/src/probe.py": {
+          "sha256": "b5c9d4e4224ee179dfb4fd2b88f73bd2f95da2d118ce73cee6406ac635e7c9ef",
+          "bytes": 23643
+        },
+        "pilot/src/run_agentdojo_bicp.py": {
+          "sha256": "9b6c4d39029462d5b9c5697bd8fd747b1c777ba5cc3f73db2598a4a0467ca3b0",
+          "bytes": 35152
+        },
+        "pilot/src/run_baseline.py": {
+          "sha256": "5811f8ea5926d2dadec1ace974bbeef2a1653f21cb0fd62e6b58be0bd352430b",
+          "bytes": 13331
+        },
+        "pilot/src/run_bicp.py": {
+          "sha256": "a1ac044aee5539ec04481a1f94e44318fa7403084b907a5f25957f93174770c3",
+          "bytes": 51298
+        },
+        "pilot/src/run_bicp_parallel.py": {
+          "sha256": "c37855877829238888d965dcce7406baee2657a09df5c34371b2fc6da9069ba0",
+          "bytes": 9500
+        },
+        "pilot/src/run_deployment_calibration_v1.py": {
+          "sha256": "0fdc268bf5cfb7a18774497236ffbe1a43debbeca213bb39ad8ac23fc63187eb",
+          "bytes": 9040
+        },
+        "pilot/src/run_deployment_pilot_v1.py": {
+          "sha256": "270c3974aadbe1f536bc7a0066a67068c50b152b0cbf492c4d4b9bb757dfbec2",
+          "bytes": 5644
+        },
+        "pilot/src/run_deployment_pilot_v2.py": {
+          "sha256": "78eb6c5cbfc488e1b0be2a4d79e13472460aec75a062093262ca6f879215dd25",
+          "bytes": 6040
+        },
+        "pilot/src/run_mechanism_diagnostic.py": {
+          "sha256": "c2f15bb5a42de8648ac9e4f5ab4d89302f87b667707ab13c86be0374efa40e58",
+          "bytes": 28622
+        },
+        "pilot/src/run_mechanism_v3.py": {
+          "sha256": "c702bf0c9ddb3edb85279928feee7dd291691415e4402d8427131228946f9490",
+          "bytes": 22092
+        },
+        "pilot/src/run_mechanism_v4.py": {
+          "sha256": "9b16d02febaf4b3f4f530c1ac355b6b2f70a62fd7e3a162db63c5fb71724b62d",
+          "bytes": 17422
+        },
+        "pilot/src/run_toolbench.py": {
+          "sha256": "c64dfd2c8cc7c0aef8dbcbbdda3aa98f3e58649a15ef1b7dde5d5a02c6b6b420",
+          "bytes": 5255
+        },
+        "pilot/src/test_analysis.py": {
+          "sha256": "f1b2f3c7fadc54d15eaaf1bc1157876c19b0c1291d9de614eb4e44a142a7eaae",
+          "bytes": 5660
+        },
+        "pilot/src/toolbench.py": {
+          "sha256": "e9f33f73500ae9ead4abc65490ad160dbf88dadf88024bdeb02f52f32d8e0410",
+          "bytes": 1885
+        },
+        "v1/configs/baseline.json": {
+          "sha256": "ab29fb4fc995183ad6dcfc575898d6c7866aa4ffd5914c8cace0841fe254dd2d",
+          "bytes": 852
+        },
+        "v1/configs/bicp_frozen_calibration.json": {
+          "sha256": "8e53c9b789a0923f6a87e1572ae6743798af72424af73ff93ed61047faecf397",
+          "bytes": 670524
+        },
+        "v1/configs/bicp_run_protocol.json": {
+          "sha256": "118bff722e2303856d0af28c95ff2c243ff95267579b81336ebcec3e5e6489ee",
+          "bytes": 2540
+        },
+        "v1/configs/tool_risks.json": {
+          "sha256": "e5d821a39b1d22e695f6f4ff2628902dceb529eaef6418d6bc1fc6c60a05f859",
+          "bytes": 25041
+        },
+        "v1/data/bicp_conditional_v1/cases.jsonl": {
+          "sha256": "c00a239124a6a296ce2c2a5b3211537add3f7ac9a96390d6c3faf6324a67e3e7",
+          "bytes": 1531820
+        },
+        "v1/data/bicp_conditional_v1/manifest.json": {
+          "sha256": "54982901df8f238d9b011f39e343844a76785afc32b9e96df51b80b32b9490d8",
+          "bytes": 2389
+        },
+        "v1/data/source_audit.json": {
+          "sha256": "ca35e01d16659cba9dbdbad97e88e66e34f4ebc4a549521dbda6b132132654b6",
+          "bytes": 6476
+        },
+        "v1/data/splits.json": {
+          "sha256": "cd29cd4466df7a3749df88d2df9da2681abab063e7aeef9224a5e0650f580d4d",
+          "bytes": 120400
+        },
+        "v1/data/upstream/InjecAgent/LICENCE": {
+          "sha256": "2889829a6a4c3b0b340af05612d2f4fc5424693bf504a49a82dbb6e9fa73e7b9",
+          "bytes": 1086
+        },
+        "v1/data/upstream/InjecAgent/README.md": {
+          "sha256": "48fefba69837d571825823938b599d59d2656379b4ef386152cf5ceda5e4ac18",
+          "bytes": 4701
+        },
+        "v1/data/upstream/InjecAgent/data/attacker_simulated_responses.json": {
+          "sha256": "5510060ea40ac9624784b816cd1b9f99e12f23162ecfd35bbf50be787d2107cd",
+          "bytes": 1361928
+        },
+        "v1/data/upstream/InjecAgent/data/test_cases_dh_base.json": {
+          "sha256": "4dcc0540ad86efbd1d0658b3b0eb50bb19fd89ba3853a343235b47c281c72c5d",
+          "bytes": 680569
+        },
+        "v1/data/upstream/InjecAgent/data/test_cases_ds_base.json": {
+          "sha256": "7959777711834b23e8cca2f89717a8fd6ca92ac3a0a915e38fa563a2cf9cf8bd",
+          "bytes": 774075
+        },
+        "v1/data/upstream/InjecAgent/data/tools.json": {
+          "sha256": "bb45ffcf226e037381e8b62dfad8eb503fcba58df480130f2b65f24ad61fd5f8",
+          "bytes": 553143
+        },
+        "v1/data/upstream/InjecAgent/src/output_parsing.py": {
+          "sha256": "ffbc9e8286d8bc19c53a3e4ee8ee37ae01707ae3b4f5de74f104bcbd9eb63ddd",
+          "bytes": 9906
+        },
+        "v1/data/upstream/InjecAgent/src/prompts/agent_prompts.py": {
+          "sha256": "4eccf23c59170fd3349b07fe2f1f40b7b9326557e000eee51fc0c0b60bddba6b",
+          "bytes": 9550
+        },
+        "v1/requirements-kaggle.txt": {
+          "sha256": "e926b3f21d4a81786c2e7c4b6f44971c2dd556a55269b2552219d7004e1bdc47",
+          "bytes": 131
+        },
+        "v1/scripts/check_bicp_torch.py": {
+          "sha256": "e351ebd3554cb1ad7081b2c571af37ced16b28f35e6983eb3d6be11e754de7e8",
+          "bytes": 3195
+        },
+        "v1/src/__init__.py": {
+          "sha256": "b9d0a9f04da15931d354ba7e67aa749505c83b3756a539944bd7c56376ba087e",
+          "bytes": 37
+        },
+        "v1/src/conditional_tasks.py": {
+          "sha256": "156a4191f4dd1add096dcb3695244ee48647a6395a12291f0d90ae744550cb2d",
+          "bytes": 27342
+        },
+        "v1/src/injecagent.py": {
+          "sha256": "f4f5a4009b52fc89a06a93a413ad77dfd7ce55b9223d07006dd155becd6def3c",
+          "bytes": 4621
+        },
+        "v1/src/metrics.py": {
+          "sha256": "f1f82d1e2caa9d9b946dadb252cbdb8cddcf812c930a02c9c881e3d2d227186d",
+          "bytes": 2484
+        },
+        "v1/src/parsing.py": {
+          "sha256": "8ee69e46a7d405420daa6938933da542fa037af7275a43d0750338ce5e7f477c",
+          "bytes": 3387
+        },
+        "v1/src/probe.py": {
+          "sha256": "b5c9d4e4224ee179dfb4fd2b88f73bd2f95da2d118ce73cee6406ac635e7c9ef",
+          "bytes": 23643
+        },
+        "v1/src/run_baseline.py": {
+          "sha256": "5811f8ea5926d2dadec1ace974bbeef2a1653f21cb0fd62e6b58be0bd352430b",
+          "bytes": 13331
+        },
+        "v1/src/run_bicp.py": {
+          "sha256": "a1ac044aee5539ec04481a1f94e44318fa7403084b907a5f25957f93174770c3",
+          "bytes": 51298
+        },
+        "v1/src/run_bicp_parallel.py": {
+          "sha256": "c37855877829238888d965dcce7406baee2657a09df5c34371b2fc6da9069ba0",
+          "bytes": 9500
+        },
+        "v1/src/toolbench.py": {
+          "sha256": "e9f33f73500ae9ead4abc65490ad160dbf88dadf88024bdeb02f52f32d8e0410",
+          "bytes": 1885
+        }
+      }
+    },
+    {
+      "name": "bicp-accepted-runs-v1.zip",
+      "sha256": "4553fa0590f7ace4535d599054e6c822ac64ab38d4176251833a4b1d6523c874",
+      "bytes": 42828201,
+      "description": "canonical raw model measurements and separate offline evaluations",
+      "url": "https://github.com/human-com-h/bicp-guard/releases/download/v0.9.0-rc1/bicp-accepted-runs-v1.zip",
+      "files": {
+        "calibration/calibration_execution_schedule.json": {
+          "sha256": "0996c9b510d3b37ba96d6490a87d2364e17d2618be33f2f6a9b39b7ff3db149c",
+          "bytes": 72284
+        },
+        "calibration/completion.json": {
+          "sha256": "40e895f8fdefd2e146b71d8de60cd97183346c9e828b3712b70aed900897d016",
+          "bytes": 375
+        },
+        "calibration/deployment_execution.json": {
+          "sha256": "3d4d53508d95126ec0e62e71257581fb0e9a4ced06196fc40c8ad0d9b6c5a766",
+          "bytes": 5438
+        },
+        "calibration/deployment_model.json": {
+          "sha256": "d0ec15276f666ef854691c78b1df3d2fc5b79d34a054a1255cc6f74bee6b14bc",
+          "bytes": 1515
+        },
+        "calibration/deployment_protocol.json": {
+          "sha256": "efd54c236db45935802ed5a25ee01881e602ac85e2c76c3924236aefdd076346",
+          "bytes": 9462
+        },
+        "calibration/preflight/environment.json": {
+          "sha256": "db9cc98d85814eaa30c1aa9304334082067a7f86922d0ad008f4becc222d6aa3",
+          "bytes": 2183
+        },
+        "calibration/preflight/model.json": {
+          "sha256": "324591e453a985e3a20ae037c5cf76928f57135acfce2e4644cb1ff03d4b958a",
+          "bytes": 313
+        },
+        "calibration/preflight/proposal_00.json": {
+          "sha256": "595f3717d1ff703d1e392c110225a3f897713dc01383c175919e6e069c2989c7",
+          "bytes": 1134092
+        },
+        "calibration/preflight/proposal_01.json": {
+          "sha256": "0eef63479266af718e6ae4b4fb17e1b12a88e29c2ed851af6d1a25181d554c59",
+          "bytes": 1186054
+        },
+        "calibration/preflight/proposal_02.json": {
+          "sha256": "f7769b25d287b2be409061cdb2820664fa7412f7968b040bbcb98d1575b31238",
+          "bytes": 1426642
+        },
+        "calibration/preflight/proposal_03.json": {
+          "sha256": "c73dd6ae5a9794ebc2c37bedd1886e13c82ebdf99a3043e5f5a7d77c6b1c6bb6",
+          "bytes": 1497683
+        },
+        "calibration/preflight/proposal_04.json": {
+          "sha256": "51b0b932df2b57c31207ce002213fccf41b55741444a6f89ccbc045872ddc366",
+          "bytes": 1217934
+        },
+        "calibration/preflight/proposal_05.json": {
+          "sha256": "934d74f1fc0cef31cbde0ca092733a20948390a5c437fe28e98e02dc2c17ead6",
+          "bytes": 1267607
+        },
+        "calibration/preflight/proposal_06.json": {
+          "sha256": "d1fb73f22f06ec6005e71275c56704cb07fba4b46ad1c40303f8f2f7700a5dcb",
+          "bytes": 1252855
+        },
+        "calibration/preflight/proposal_07.json": {
+          "sha256": "b9abd1b9fa9ce72c8b8343ee48a31d03f0f5ee37b27a04c3b7ad7a5ad9e1d18e",
+          "bytes": 1301152
+        },
+        "calibration/preflight/proposal_08.json": {
+          "sha256": "b68f4557c0e0b5f81c967e2bca0ff00b778f70723a1b7db54f6d35c4127939b2",
+          "bytes": 1178434
+        },
+        "calibration/preflight/proposal_09.json": {
+          "sha256": "f0a80dce498270417b53c5e80db8b3c1ae3f2cf3957a9c121d843a9cee81964d",
+          "bytes": 1196778
+        },
+        "calibration/preflight/proposal_10.json": {
+          "sha256": "4fdccd6dda3de4d9ca841ecd0ff9417396b6b6023f15bd9a47c3b51aafb1fd04",
+          "bytes": 3328284
+        },
+        "calibration/preflight/proposal_11.json": {
+          "sha256": "9009a929880448815eadd8b0ad44c5e6a7b0e4ab1abb7c23cf4794aaadc2b971",
+          "bytes": 3013413
+        },
+        "calibration/preflight/warmup.json": {
+          "sha256": "81aa36363cd5f7b8fffef4a24cb835196bad84fdeaabd591e80bb9538d6a8ebf",
+          "bytes": 1547
+        },
+        "calibration/records.jsonl": {
+          "sha256": "0e9c9435120518ea02ccb18c0744608299d94f050dc0385f28f1a7622f2907fa",
+          "bytes": 60600182
+        },
+        "calibration/workers/worker_0/environment.json": {
+          "sha256": "db9cc98d85814eaa30c1aa9304334082067a7f86922d0ad008f4becc222d6aa3",
+          "bytes": 2183
+        },
+        "calibration/workers/worker_0/model.json": {
+          "sha256": "324591e453a985e3a20ae037c5cf76928f57135acfce2e4644cb1ff03d4b958a",
+          "bytes": 313
+        },
+        "calibration/workers/worker_0/warmup.json": {
+          "sha256": "c314d9536e6d2c5e8505ecc1a2ea75534cb1aa3def64dc1b53476a1cdb4b60dd",
+          "bytes": 1545
+        },
+        "calibration/workers/worker_1/environment.json": {
+          "sha256": "db9cc98d85814eaa30c1aa9304334082067a7f86922d0ad008f4becc222d6aa3",
+          "bytes": 2183
+        },
+        "calibration/workers/worker_1/model.json": {
+          "sha256": "1b61ba63e319a1c7c922ddcb1adcd4027fc3e41aab8af5a49de3bd9512589914",
+          "bytes": 313
+        },
+        "calibration/workers/worker_1/warmup.json": {
+          "sha256": "998319b6c3e1cc05b73d25332125074fd74a7cd51a5c7391bde74b9302bcbb1c",
+          "bytes": 1544
+        },
+        "evaluation/longitudinal.json": {
+          "sha256": "61f6007a8669ce381d2b1e9dc2031bad25adcabb5da5183903d95ed2d26c235b",
+          "bytes": 3449013
+        },
+        "evaluation/pilot.json": {
+          "sha256": "c8640e35be6a0e287661dea3c21fa4c768687d287cc6ae1670b12cf303656b94",
+          "bytes": 42996
+        },
+        "longitudinal/completion.json": {
+          "sha256": "38be7c6a3d5eb1891f04deb3e53df9bda2e231b5c9e39c9a396c47f0d968c88b",
+          "bytes": 372
+        },
+        "longitudinal/completion.json.transfer-identity.json": {
+          "sha256": "f2e4258b3a98c74b9db7c9597d433b615050d9b1475056fb7386e555ba06f851",
+          "bytes": 27
+        },
+        "longitudinal/deployment_model.json": {
+          "sha256": "d0ec15276f666ef854691c78b1df3d2fc5b79d34a054a1255cc6f74bee6b14bc",
+          "bytes": 1515
+        },
+        "longitudinal/deployment_model.json.transfer-identity.json": {
+          "sha256": "6aa3633a36c2e118e854d0048f1d864e9dbd57d53a942bc9966af5fd9f8dfdba",
+          "bytes": 28
+        },
+        "longitudinal/frozen_policy.json": {
+          "sha256": "95a3f6afcd8fe47aeade2a5fa6499b2ccaadc4d0683ea8968bea02d7dce62e99",
+          "bytes": 1240
+        },
+        "longitudinal/frozen_policy.json.transfer-identity.json": {
+          "sha256": "12323e176e5396a1a4e66b837b74b83ca09cbb5124c0ea9396a40a1487c39977",
+          "bytes": 28
+        },
+        "longitudinal/longitudinal_records.jsonl": {
+          "sha256": "f74a8ee57163b017f6fc06d2ac7b6345b569d30752bb052cbd7c8c4fc3f7f8da",
+          "bytes": 83243757
+        },
+        "longitudinal/longitudinal_records.jsonl.transfer-identity.json": {
+          "sha256": "128139005eed588dc2d7592a86b2c3133f95009f01ccf340f7f7bf9806647472",
+          "bytes": 32
+        },
+        "longitudinal/rl_execution.json": {
+          "sha256": "5ccae51b894c86c807fecb4cfa6192d29c8b8df831a48ff853cd0811a8c527db",
+          "bytes": 8836
+        },
+        "longitudinal/rl_execution.json.transfer-identity.json": {
+          "sha256": "736c087e2811dd5a938db89b314f44fd2551893f04a345c081bfe4cdafe034e3",
+          "bytes": 28
+        },
+        "longitudinal/schedule.json": {
+          "sha256": "272d2929ce326a9bebc9b14c93a41da61e4cdac1e319c6bbcb69176b828d4535",
+          "bytes": 246281
+        },
+        "longitudinal/schedule.json.transfer-identity.json": {
+          "sha256": "a1e3df3b0ab74a20528c7b35af5ae742161a878659e145e2e3704ad2973a389e",
+          "bytes": 30
+        },
+        "longitudinal/workers/worker_0/environment.json": {
+          "sha256": "d8f66ebd2cf87053cdc1ecbe91f8bd0a9a9ae082e8503cf8990684cc1858ade8",
+          "bytes": 2183
+        },
+        "longitudinal/workers/worker_0/model.json": {
+          "sha256": "324591e453a985e3a20ae037c5cf76928f57135acfce2e4644cb1ff03d4b958a",
+          "bytes": 313
+        },
+        "longitudinal/workers/worker_0/warmup.json": {
+          "sha256": "5be8d3953927edd3e94b196f2c9007fb5eecc5f056132c33017ba1f532316142",
+          "bytes": 1544
+        },
+        "longitudinal/workers/worker_1/environment.json": {
+          "sha256": "d8f66ebd2cf87053cdc1ecbe91f8bd0a9a9ae082e8503cf8990684cc1858ade8",
+          "bytes": 2183
+        },
+        "longitudinal/workers/worker_1/model.json": {
+          "sha256": "1b61ba63e319a1c7c922ddcb1adcd4027fc3e41aab8af5a49de3bd9512589914",
+          "bytes": 313
+        },
+        "longitudinal/workers/worker_1/warmup.json": {
+          "sha256": "df8dff6dcb38f0d327aa3bd2a84b4abf1ff269d1c67f8053b2aae82bb7137e12",
+          "bytes": 1545
+        },
+        "longitudinal/workspace_record.json": {
+          "sha256": "7d652769fd2d16af1492c71262217f950585b10a96de55ca4638d2d37b23dcb8",
+          "bytes": 14370065
+        },
+        "mechanism/completion.json": {
+          "sha256": "d895a9f3b4230f3166aae5f48d5690834f9a9b8e81c70b5842d7e20c5d2c9adf",
+          "bytes": 290
+        },
+        "mechanism/mechanism_execution.json": {
+          "sha256": "8f8120b9b257a31821c529cb08361e09e1794c2fb3c2cec4bdc49ae6045414e3",
+          "bytes": 22192
+        },
+        "mechanism/mechanism_model.json": {
+          "sha256": "641239f5b827662f232c278f2cc12e04b771d977df74c338b24cb94cefdd316f",
+          "bytes": 1346
+        },
+        "mechanism/mechanism_protocol.json": {
+          "sha256": "6e730b875fffd27b41774ad96408cbcce03441812efc0448474cc690a15f2e23",
+          "bytes": 10920
+        },
+        "mechanism/mechanism_schedule.json": {
+          "sha256": "679ef2185c044103ef092c1f1ab9e64ebdd9adf0d751bf1fa87ce2d28b3e1d02",
+          "bytes": 42776
+        },
+        "mechanism/records.jsonl": {
+          "sha256": "87e1700dbbb066d8894eebcf67106fffdd02b98abec305d2ed1e9ec9a932d11f",
+          "bytes": 57614916
+        },
+        "mechanism/workers/worker_0/environment.json": {
+          "sha256": "f6387d39c0ff0597d14614c9b61edf40ce71eac8fddee30ec9c318c7a9f86581",
+          "bytes": 2014
+        },
+        "mechanism/workers/worker_0/model.json": {
+          "sha256": "51445fdae94405baee331934385a304957b7c9e9750f9eb456812875da29c69b",
+          "bytes": 1641
+        },
+        "mechanism/workers/worker_1/environment.json": {
+          "sha256": "f6387d39c0ff0597d14614c9b61edf40ce71eac8fddee30ec9c318c7a9f86581",
+          "bytes": 2014
+        },
+        "mechanism/workers/worker_1/model.json": {
+          "sha256": "e8513ffc18de758e7d9cf90926979ccf3321903dbad1167c8f82adf697470e5f",
+          "bytes": 1641
+        },
+        "pilot/completion.json": {
+          "sha256": "5360dd4ddfc6a6a300e0904197eeb125c051c940e37210c01b089b93bed6e9ef",
+          "bytes": 353
+        },
+        "pilot/deployment_model.json": {
+          "sha256": "d0ec15276f666ef854691c78b1df3d2fc5b79d34a054a1255cc6f74bee6b14bc",
+          "bytes": 1515
+        },
+        "pilot/frozen_policy.json": {
+          "sha256": "95a3f6afcd8fe47aeade2a5fa6499b2ccaadc4d0683ea8968bea02d7dce62e99",
+          "bytes": 1240
+        },
+        "pilot/pilot_execution.json": {
+          "sha256": "89231b72bee6545f9999f366a4386d1021acaa6bc52943e74882e1d357b70afe",
+          "bytes": 22543
+        },
+        "pilot/records.jsonl": {
+          "sha256": "3069451c4820372f76e2fb1d602a28af7de3cd33175d1d2346a4ddf23def358e",
+          "bytes": 9774918
+        },
+        "pilot/schedule_public.json": {
+          "sha256": "3787f62d0262079dc5cf80fe437dbbc88eb691985197afbe7d17112d002dacdd",
+          "bytes": 8812
+        },
+        "pilot/workers/worker_0/environment.json": {
+          "sha256": "d8f66ebd2cf87053cdc1ecbe91f8bd0a9a9ae082e8503cf8990684cc1858ade8",
+          "bytes": 2183
+        },
+        "pilot/workers/worker_0/model.json": {
+          "sha256": "324591e453a985e3a20ae037c5cf76928f57135acfce2e4644cb1ff03d4b958a",
+          "bytes": 313
+        },
+        "pilot/workers/worker_0/warmup.json": {
+          "sha256": "523cb8af6a08dbbe5b35ec50efc8124f44d03049ba3bf6a9a683202b502cb3b1",
+          "bytes": 1547
+        },
+        "pilot/workers/worker_1/environment.json": {
+          "sha256": "d8f66ebd2cf87053cdc1ecbe91f8bd0a9a9ae082e8503cf8990684cc1858ade8",
+          "bytes": 2183
+        },
+        "pilot/workers/worker_1/model.json": {
+          "sha256": "1b61ba63e319a1c7c922ddcb1adcd4027fc3e41aab8af5a49de3bd9512589914",
+          "bytes": 313
+        },
+        "pilot/workers/worker_1/warmup.json": {
+          "sha256": "f7e68015d165dc9ec5f10765c43233b57eaf1263142add557491201a78ac83ca",
+          "bytes": 1548
+        },
+        "v1/bundle_manifest.json": {
+          "sha256": "447c7e715da2acb3181f795a14d93e1449d8a4f9e25f537d9b6f052e30ba1f67",
+          "bytes": 2890
+        },
+        "v1/environment.json": {
+          "sha256": "cd6a775465a4f1467e2923df23cafcbb828b334d120642f55701b57c6845897c",
+          "bytes": 1554
+        },
+        "v1/frozen_calibration.json": {
+          "sha256": "475b409cee1f0d77fdd676c82b248e435518fb3933f9251dda07c5d7e6e081a5",
+          "bytes": 646492
+        },
+        "v1/model.json": {
+          "sha256": "e30e7aa36b99eb77d69299f1a7734e105b186782a2b9acd73c334538b40a9da8",
+          "bytes": 1274
+        },
+        "v1/protocol.json": {
+          "sha256": "7d63b90fa5c57f6e07abc07904947a17ea328851b9bf48b2eb2bf1c9cf13fb4e",
+          "bytes": 3067
+        },
+        "v1/records.jsonl": {
+          "sha256": "73ceb7d65b473cc11bafad0b1ddbe15477b17389224fb838e283dabbb4b07d0d",
+          "bytes": 118959033
+        },
+        "v1/run_status.json": {
+          "sha256": "66b2064321ca0e68678b9b7a0ef2a932fbc98fd05ef6a33c7b6a111fae9be6c3",
+          "bytes": 731
+        },
+        "v1/selection.json": {
+          "sha256": "eeb83c1b6154e8a2a3b7ee9e1c7e4af4469050809a1dc9b581b12b8794c99fc2",
+          "bytes": 27904
+        },
+        "v1/summary.json": {
+          "sha256": "728507413efb50e3e9b99fa93db100dd8d7c3c87794fa71838d2f55af1538cf7",
+          "bytes": 117930
+        },
+        "v1/torch_numeric_check.json": {
+          "sha256": "44d70b816df9d9dfaa5501fe6e5de305a631c9a954438c5fcdfd554035a1b6cd",
+          "bytes": 1751
+        },
+        "v1/workers/worker_0/environment.json": {
+          "sha256": "e1b1a6186452af302a9ecb6c0ba913687904537b43175cd155f82093589e0b27",
+          "bytes": 1529
+        },
+        "v1/workers/worker_0/model.json": {
+          "sha256": "1f2654ec3c341b0db17182afc13188b06fdfb956529aa575bee773cfcae999bb",
+          "bytes": 375
+        },
+        "v1/workers/worker_0/warmup.json": {
+          "sha256": "d4d6c13b69f5fb50801f9a067bffd6d544fc94de7af370d86fceebd2ece46e8b",
+          "bytes": 896
+        },
+        "v1/workers/worker_1/environment.json": {
+          "sha256": "e1b1a6186452af302a9ecb6c0ba913687904537b43175cd155f82093589e0b27",
+          "bytes": 1529
+        },
+        "v1/workers/worker_1/model.json": {
+          "sha256": "24c2a8ec2f7937f307276571f1a0fe8356c3d0efbe8682673b7f0a0acc4e5bcb",
+          "bytes": 375
+        },
+        "v1/workers/worker_1/warmup.json": {
+          "sha256": "e2c0be623ccb04357f6b090c0b2af1baab9dad245d744526a3089125ec96a5cf",
+          "bytes": 896
+        }
+      }
+    }
+  ]
+}
