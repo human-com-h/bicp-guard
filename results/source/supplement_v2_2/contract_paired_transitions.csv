@@ -1,0 +1,9 @@
+subset,comparison,n,retained_before,retained_after,rescued,newly_rejected,unchanged_allow,unchanged_reject
+all47,template_residual,47,30,43,13,0,30,4
+all47,template_suffix,47,32,44,13,1,31,2
+all47,suffix_at_v3,47,43,44,1,0,43,3
+all47,combined_vs_original,47,30,44,14,0,30,3
+condition_true40,template_residual,40,24,36,12,0,24,4
+condition_true40,template_suffix,40,26,37,12,1,25,2
+condition_true40,suffix_at_v3,40,36,37,1,0,36,3
+condition_true40,combined_vs_original,40,24,37,13,0,24,3

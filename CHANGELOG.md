@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+- Added accepted v2.2 prompt-contract pairs, Mistral fixed-proposal controls, and 30 native development trajectories with raw records and sealed collector inputs.
+- Added CPU token-score reconstruction, gate/AUC/source checks, optional exact bootstrap reconstruction, and a check-only collector-input verifier.
+- Corrected attack attribution: 40 evidence-unsupported substitutions stop at anchoring; seven observation-supported injected targets pass anchoring and are rejected by both probes. Formal policy, original 922-case outcomes, RC tag/assets, and manuscript-publication restrictions are unchanged.
+
 - Reorganized the README around the method, results, installation, evaluation, and citation, with release-validation details kept in the dedicated documentation.
 
 ## 0.9.0-rc1 — 2026-10-26

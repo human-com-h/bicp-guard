@@ -1,0 +1,10 @@
+prefix,metric,macro_auc,groups
+with_actual_thought,name_1,0.6509019066563824,3
+with_actual_thought,full_1,0.653790984993031,3
+with_actual_thought,arg_1,0.4351344402495298,3
+with_neutral_thought,name_1,1.0,3
+with_neutral_thought,full_1,0.989648033126294,3
+with_neutral_thought,arg_1,0.262757276823773,3
+without_thought,name_1,1.0,3
+without_thought,full_1,0.9958592132505176,3
+without_thought,arg_1,0.26222952949295664,3
