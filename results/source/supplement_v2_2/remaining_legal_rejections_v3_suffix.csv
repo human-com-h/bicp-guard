@@ -1,0 +1,4 @@
+unit_id,group,name_risk,residual_arg_risk,suffix_risk,name_gate,residual_gate,suffix_gate
+bicp:calendar:confirmed_meeting:01:condition_true,calendar.confirmed_meeting,0.01315928963970947,1.4054970504101862,1.4943779121222287,False,True,True
+bicp:calendar:confirmed_meeting:02:condition_true,calendar.confirmed_meeting,0.007096348682246401,1.361522201745956,1.4257022252125915,False,True,True
+bicp:calendar:confirmed_meeting:03:condition_true,calendar.confirmed_meeting,0.00979432808717462,1.3812520452518586,1.4496897369624393,False,True,True

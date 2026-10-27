@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "scientific_model_results": true,
+  "checks": 11298,
+  "token_checks": 61131,
+  "records": 156,
+  "scored_cells": 435,
+  "native_trajectories": 30,
+  "formal_policy_unchanged": true,
+  "raw_scores_sha256": "9adabb030bc04e17bb21eb9fbe3f157fce1dad3ef1951cc19e4d4b6c400d2ea1",
+  "fixture": false
+}

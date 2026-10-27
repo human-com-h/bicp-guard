@@ -24,4 +24,6 @@ jobs:
       - run: python examples/quick_start.py
       - run: python -m unittest discover -s tests -v
       - run: python scripts/reproduce_tables.py --output outputs/ci-tables
+      - run: python scripts/reproduce_supplement.py --output outputs/ci-supplement
+      - run: python scripts/run_supplement.py --check-only
       - run: python scripts/audit_publication.py --history

@@ -1,5 +1,11 @@
 # Reproducibility map
 
+## Supplementary validation v2.2 (main-branch addition)
+
+[The supplementary protocol and results](docs/SUPPLEMENT_V2_2.md) cover paired prompt contracts, Mistral fixed-proposal mechanisms, and native answer reservation. Run `python scripts/reproduce_supplement.py --output outputs/supplement` on CPU to verify the archives and reconstruct all 435 fixed scoring cells plus eight native probes; `--bootstrap` additionally uses NumPy 1.26.4 to reproduce the accepted intervals. `python scripts/run_supplement.py --check-only` verifies all 67 original collector inputs without loading a model. Utility labels retain the independent official evaluation from acceptance; the default CPU command does not rerun that evaluator.
+
+`resources/supplement_v2_2_manifest.json` binds the original input archive, raw-output archive, source tables, model configurations, and collector code. Collection inputs exclude evaluator answers; evaluation labels are held separately with the recorded outputs. The original release and its immutable assets remain unchanged. A fresh complete GPU reproduction has not been performed.
+
 The software release corresponds to the authors' final internal research version of **BiCP v2: Reasoning-Prefix Deconfounding for Dual-Axis Counterfactual Probing and Operation-Risk Routing**. Manuscripts are excluded. The map below identifies internal table numbers solely to associate code/data with research claims.
 
 ## Evidence to command mapping

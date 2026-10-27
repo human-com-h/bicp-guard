@@ -1,0 +1,7 @@
+reserve_final_step,arm,official_success,tasks,final_answers,budget_failures
+False,schema_scope,1,5,3,0
+False,schema_scope_grounding,1,5,1,0
+False,schema_scope_grounding_dual_probe,1,5,1,0
+True,schema_scope,2,5,4,0
+True,schema_scope_grounding,2,5,2,0
+True,schema_scope_grounding_dual_probe,2,5,1,0

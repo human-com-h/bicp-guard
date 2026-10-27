@@ -1,5 +1,11 @@
 # Release validation
 
+## Main-branch supplement, 2026-10-27
+
+The accepted v2.2 collection is packaged with 67 original collector inputs and checksummed raw records. CPU reconstruction verifies 435 fixed scoring cells, eight native probes, 30 trajectory bindings, Mistral AUC/source contrasts, and all three paired family-cluster intervals (10,000 draws; seed 42). This integration runs no GPU work or model inference. The main acceptance records report 11,298 checks and 61,131 token checks; the additional audit reports 3,280 checks. The default public command checks accepted native utility bindings rather than rerunning the official evaluator. Details and the corrected 40-anchor/7-probe attack decomposition are in [SUPPLEMENT_V2_2.md](docs/SUPPLEMENT_V2_2.md).
+
+The release validation below remains the original RC record. Adding an accepted supplement does not satisfy the separate clean-machine full-GPU stable-release gate.
+
 Release candidate: **v0.9.0-rc1**, 2026-10-26. The final method, frozen policy, model revision and accepted experiments are unchanged.
 
 ## Actually executed during release preparation

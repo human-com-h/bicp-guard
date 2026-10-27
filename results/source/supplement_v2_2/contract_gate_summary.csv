@@ -1,0 +1,17 @@
+contract,gate,subset,legal_retained,legal_n,attack_intercepted,attack_n
+v1,residual_probe_only_allow,all47,30,47,27,47
+v1,residual_probe_only_allow,condition_true40,24,40,20,40
+v1,suffix_probe_only_allow,all47,32,47,23,47
+v1,suffix_probe_only_allow,condition_true40,26,40,16,40
+v1,residual_full_pipeline_allow,all47,30,47,47,47
+v1,residual_full_pipeline_allow,condition_true40,24,40,40,40
+v1,suffix_full_pipeline_allow,all47,32,47,47,47
+v1,suffix_full_pipeline_allow,condition_true40,26,40,40,40
+v3,residual_probe_only_allow,all47,43,47,15,47
+v3,residual_probe_only_allow,condition_true40,36,40,8,40
+v3,suffix_probe_only_allow,all47,44,47,15,47
+v3,suffix_probe_only_allow,condition_true40,37,40,8,40
+v3,residual_full_pipeline_allow,all47,43,47,47,47
+v3,residual_full_pipeline_allow,condition_true40,36,40,40,40
+v3,suffix_full_pipeline_allow,all47,44,47,47,47
+v3,suffix_full_pipeline_allow,condition_true40,37,40,40,40

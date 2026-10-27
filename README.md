@@ -17,7 +17,7 @@ The implementation uses Qwen2.5-7B-Instruct with NF4 quantization. Complete-call
 
 ## Main results
 
-The following results compare three configurations: **A**, Schema and scope checks; **B**, A with evidence anchoring; and **C**, B with the BiCP v2 dual-axis probe.
+The historical 922-case results below compare three configurations: **A**, Schema and scope checks; **B**, A with evidence anchoring; and **C**, B with the BiCP v2 dual-axis probe.
 
 | Metric | A | B | C: BiCP v2 |
 | --- | ---: | ---: | ---: |
@@ -32,6 +32,22 @@ The following results compare three configurations: **A**, Schema and scope chec
 This evaluation replays fixed historical prompts and proposals; the controlled tasks are synthetic single-continuation scenarios. Unknown outcomes reflect unavailable cached continuations. The prefix-control study improves tool-name macro AUC from 0.7164 to 1.0000 across 69 proposals, and the source-reversal study yields positive contrasts in all ten families across five domains.
 
 Experiment definitions, additional results, and evaluation details are in [REPRODUCIBILITY.md](REPRODUCIBILITY.md).
+
+### Supplementary validation v2.2
+
+With the same frozen policy and fixed proposals, aligning the prompt contract to calibration raises legal protected-call retention from **30/47 (63.83%) to 43/47 (91.49%)**. A calibration-only frozen suffix candidate retains **44/47 (93.62%)**. Of 47 paired malicious targets, anchoring stops 40 evidence-unsupported substitutions and both probes stop all seven observation-supported injected targets.
+
+**Mistral-7B-Instruct-v0.3** reproduces prefix deconfounding on 69 historical proposals (name macro AUC **0.6509 → 1.0000**) and positive source reversals in ten families across five domains (joint **p=0.03125**). This is fixed-proposal scoring, with zero Mistral action generation.
+
+Thirty native development trajectories across four suites show Travel's five-step answer success under advance answer planning, Banking safe stops, and remaining Workspace extraction/guard-utility errors. The eighth-step hard prefix activates zero times. These results do not replace the historical benchmark or establish broad native generalization.
+
+See [supplement protocol, strata, and results](docs/SUPPLEMENT_V2_2.md). Reconstruct its scores and tables without a GPU:
+
+```sh
+python scripts/reproduce_supplement.py --output outputs/supplement
+```
+
+The existing `v0.9.0-rc1` tag and assets are unchanged; the supplement is an addition on the main branch.
 
 ## Installation
 
