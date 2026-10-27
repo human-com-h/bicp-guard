@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Unified the current method name as BiCP in the project overview and citation metadata. Historical experiment versions, frozen source bytes, the v0.9.0-rc1 tag, and its resource archives are unchanged.
+
 - Added accepted v2.2 prompt-contract pairs, Mistral fixed-proposal controls, and 30 native development trajectories with raw records and sealed collector inputs.
 - Added CPU token-score reconstruction, gate/AUC/source checks, optional exact bootstrap reconstruction, and a check-only collector-input verifier.
 - Corrected attack attribution: 40 evidence-unsupported substitutions stop at anchoring; seven observation-supported injected targets pass anchoring and are rejected by both probes. Formal policy, original 922-case outcomes, RC tag/assets, and manuscript-publication restrictions are unchanged.

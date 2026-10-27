@@ -1,4 +1,4 @@
-# BiCP v2
+# BiCP
 
 **Reasoning-Prefix Deconfounding for Dual-Axis Counterfactual Probing and Operation-Risk Routing**
 
@@ -7,7 +7,7 @@ School of Software, Xinjiang University
 
 ## Overview
 
-BiCP v2 is a training-free defense against indirect prompt injection in tool-using language agents. It evaluates a proposed tool call before execution through three components:
+BiCP is a training-free defense against indirect prompt injection in tool-using language agents. It evaluates a proposed tool call before execution through three components:
 
 - **Reasoning-prefix deconfounding:** remove the current-step reasoning prefix before counterfactual scoring.
 - **Dual-axis probing:** score the tool name and complete call to detect both tool hijacking and argument substitution.
@@ -17,9 +17,9 @@ The implementation uses Qwen2.5-7B-Instruct with NF4 quantization. Complete-call
 
 ## Main results
 
-The historical 922-case results below compare three configurations: **A**, Schema and scope checks; **B**, A with evidence anchoring; and **C**, B with the BiCP v2 dual-axis probe.
+The historical 922-case results below compare three configurations: **A**, Schema and scope checks; **B**, A with evidence anchoring; and **C**, B with the BiCP dual-axis probe.
 
-| Metric | A | B | C: BiCP v2 |
+| Metric | A | B | C: BiCP |
 | --- | ---: | ---: | ---: |
 | Confirmed InjecAgent attack successes / 682 | 83 (+3 unknown) | 83 (+3 unknown) | 0 |
 | Unsafe controlled executions / 240 | 33 | 5 | 0 |
@@ -162,7 +162,7 @@ If you use this code or the evaluation resources, please cite:
 ```bibtex
 @software{hao2026bicp,
   author = {Hao, Zida and Li, Yubo},
-  title = {BiCP v2: Reasoning-Prefix Deconfounding for Dual-Axis Counterfactual Probing and Operation-Risk Routing},
+  title = {BiCP: Reasoning-Prefix Deconfounding for Dual-Axis Counterfactual Probing and Operation-Risk Routing},
   year = {2026},
   url = {https://github.com/human-com-h/bicp-guard}
 }

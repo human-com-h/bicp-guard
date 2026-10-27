@@ -6,7 +6,7 @@
 
 `resources/supplement_v2_2_manifest.json` binds the original input archive, raw-output archive, source tables, model configurations, and collector code. Collection inputs exclude evaluator answers; evaluation labels are held separately with the recorded outputs. The original release and its immutable assets remain unchanged. A fresh complete GPU reproduction has not been performed.
 
-The software release corresponds to the authors' final internal research version of **BiCP v2: Reasoning-Prefix Deconfounding for Dual-Axis Counterfactual Probing and Operation-Risk Routing**. Manuscripts are excluded. The map below identifies internal table numbers solely to associate code/data with research claims.
+The code and evaluation artifacts support **BiCP: Reasoning-Prefix Deconfounding for Dual-Axis Counterfactual Probing and Operation-Risk Routing**. Original experiment identifiers, release tags, and archived source bytes retain their historical versions. Manuscripts are excluded. The map below identifies internal table numbers solely to associate code/data with research claims.
 
 ## Evidence to command mapping
 
