@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "Please cite this software release when using the code or evaluation artifacts."
 type: software
-title: "BiCP v2: Reasoning-Prefix Deconfounding for Dual-Axis Counterfactual Probing and Operation-Risk Routing"
+title: "BiCP: Reasoning-Prefix Deconfounding for Dual-Axis Counterfactual Probing and Operation-Risk Routing"
 authors:
   - family-names: Hao
     given-names: Zida
